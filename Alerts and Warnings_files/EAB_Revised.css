@@ -1,0 +1,335 @@
+
+/* CSS Document */
+
+@font-face {
+    font-family: 'oswald_regular';
+    src: url('/apps/basic/components/content/resources/fonts/oswald-regular-webfont.eot');
+    src: url('/apps/basic/components/content/resources/fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/apps/basic/components/content/resources/fonts/oswald-regular-webfont.woff2') format('woff2'),
+         url('/apps/basic/components/content/resources/fonts/oswald-regular-webfont.woff') format('woff'),
+         url('/apps/basic/components/content/resources/fonts/oswald-regular-webfont.ttf') format('truetype'),
+         url('/apps/basic/components/content/resources/fonts/oswald-regular-webfont.svg#oswald_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'oswald_stencilbold';
+    src: url('/apps/basic/components/content/resources/fonts/oswald-stencil-webfont.eot');
+    src: url('/apps/basic/components/content/resources/fonts/oswald-stencil-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/apps/basic/components/content/resources/fonts/oswald-stencil-webfont.woff2') format('woff2'),
+         url('/apps/basic/components/content/resources/fonts/oswald-stencil-webfont.woff') format('woff'),
+         url('/apps/basic/components/content/resources/fonts/oswald-stencil-webfont.ttf') format('truetype'),
+         url('/apps/basic/components/content/resources/fonts/oswald-stencil-webfont.svg#oswald_stencilbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto-thin-webfont';
+    src: url('/apps/basic/components/content/resources/fonts/roboto-thin-webfont.eot');
+    src: url('/apps/basic/components/content/resources/fonts/roboto-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/apps/basic/components/content/resources/fonts/roboto-thin-webfont.woff2') format('woff2'),
+         url('/apps/basic/components/content/resources/fonts/fonts/roboto-thin-webfont.woff') format('woff'),
+         url('/apps/basic/components/content/resources/fonts/fonts/roboto-thin-webfont.ttf') format('truetype'),
+         url('/apps/basic/components/content/resources/fonts/roboto-thin-webfont.svg#roboto_thin_webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotocondensed-bold-webfont';
+    src: url('/apps/basic/components/content/resources/fonts/robotocondensed-bold-webfont.eot');
+    src: url('/apps/basic/components/content/resources/fonts/robotocondensed-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/apps/basic/components/content/resources/fonts/robotocondensed-bold-webfont.woff2') format('woff2'),
+         url('/apps/basic/components/content/resources/fonts/robotocondensed-bold-webfont.woff') format('woff'),
+         url('/apps/basic/components/content/resources/fonts/robotocondensed-bold-webfont.ttf') format('truetype'),
+         url('/apps/basic/components/content/resources/fonts/robotocondensed-bold-webfont.svg#robotocondensed_bold_webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotocondensed-regular-webfont';
+    src: url('/apps/basic/components/content/resources/fonts/robotocondensed-regular-webfont.eot');
+    src: url('/apps/basic/components/content/resources/fonts/robotocondensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/apps/basic/components/content/resources/fonts/robotocondensed-regular-webfont.woff2') format('woff2'),
+         url('/apps/basic/components/content/resources/fonts/robotocondensed-regular-webfont.woff') format('woff'),
+         url('/apps/basic/components/content/resources/fonts/robotocondensed-regular-webfont.ttf') format('truetype'),
+         url('/apps/basic/components/content/resources/fonts/robotocondensed-regular-webfont.svg#robotocondensed_regular_webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotocondensed-light-webfont';
+    src: url('/apps/basic/components/content/resources/fonts/robotocondensed-light-webfont.eot');
+    src: url('/apps/basic/components/content/resources/fonts/robotocondensed-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/apps/basic/components/content/resources/fonts/robotocondensed-light-webfont.woff2') format('woff2'),
+         url('/apps/basic/components/content/resources/fonts/robotocondensed-light-webfont.woff') format('woff'),
+         url('/apps/basic/components/content/resources/fonts/robotocondensed-light-webfont.ttf') format('truetype'),
+         url('/apps/basic/components/content/resources/fonts/robotocondensed-light-webfont.svg#robotocondensed_light_webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'fontawesome';
+    src: url('/apps/basic/components/content/resources/fonts/fontawesome-webfont.eot');
+    src: url('/apps/basic/components/content/resources/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/apps/basic/components/content/resources/fonts/fontawesome-webfont.woff2') format('woff2'),
+         url('/apps/basic/components/content/resources/fonts/fontawesome-webfont.woff') format('woff'),
+         url('/apps/basic/components/content/resources/fonts/fontawesome-webfont.ttf') format('truetype'),
+         url('/apps/basic/components/content/resources/fonts/fontawesome-webfont.svg#fontawesome') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('/apps/basic/components/content/resources/fonts/roboto-thin-webfont.eot');
+    src: url('/apps/basic/components/content/resources/fonts/roboto-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/apps/basic/components/content/resources/fonts/roboto-thin-webfont.woff2') format('woff2'),
+         url('/apps/basic/components/content/resources/fonts/roboto-thin-webfont.woff') format('woff'),
+         url('/apps/basic/components/content/resources/fonts/roboto-thin-webfont.ttf') format('truetype'),
+         url('/apps/basic/components/content/resources/fonts/roboto-thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+.eab-alerts-mainframe{
+
+        width:100%;
+        padding:0px;
+        margin:0px;
+    min-width: 350px;
+
+    }
+
+.eab-alerts-frame{
+     padding:0px; 
+     margin: 0px; 
+    display: block; 
+   float:left; 
+   width:100%;
+        }
+
+.eab-alerts-ul{
+   list-style-type:none; 
+        padding:0px; 
+        margin: 0px; 
+        display: block; 
+        float:left;
+        width:100%;
+}
+
+
+.eab-alert-li{
+    float:left;
+    width: 100%; 
+    display: block; 
+    background-color: #ff9900; 
+    color: #fff; 
+    border-bottom: 1px #fff solid;
+
+}
+.Emergency{
+background-color: red;
+
+    }
+
+.Agency{
+
+ background-color:#629333;
+        }
+
+
+.System{
+
+  background-color:#9E8037;
+            }        
+
+.eabv3-alert-tag{
+  	color: #000;
+	font-family: 'oswald_regular';
+	font-size: 12px;
+background-color: #F47A00;
+	float:left;
+	width: 15%!important;
+	height: auto!important;
+	text-align: center;
+	margin: 0px 8px 0px 0px;
+    padding: 15px 9px 20px 6px !important;
+	line-height: 14px; 
+}
+
+.Emergency .eabv3-alert-tag{
+  	background-color: #D13217 !important;
+    color: #fff;
+
+    }
+
+
+.System .eabv3-alert-tag{
+  	background-color: #916011 !important;
+    color: #fff;
+
+    }
+
+
+.Agency .eabv3-alert-tag{
+  	background-color: #5E700D !important;
+    color: #fff;
+
+    }
+
+.alternateAlerts{
+    color: #fff;
+    }
+
+ .eab-alert-header{
+	height:auto; 
+ 	width: 60%; 
+	margin: 0px auto; 
+	padding: 0px 0px 0px 0px;
+    max-width: 1440px;
+}
+
+
+.eabv3-header-name{
+    float:left;
+	width:60%;
+	margin: 0px auto;
+	padding: 10px 2% 0px 0px;
+	font-family: 'robotocondensed-regular-webfont';
+	text-align: left;
+	line-height: 16px;
+    color: #fff;
+	font-size: .9em;
+
+}
+
+
+.eabv3-header-name a{
+ text-decoration: none;
+    font-family: 'oswald_regular'!important;
+color: #fff;
+}
+
+
+.eabv3-article-date{
+    font-size: .7em;
+        float: right;
+    }
+
+
+@media (max-width: 768px){
+
+
+.studentsAbroadFrameForEmergencyAlerts .eab-alerts-mainframe{
+        float:left;
+        width:100%;
+        padding:0px;
+        margin:40px 0px 0px 0px;
+
+    }
+
+ .eab-alert-header{
+	height:auto; 
+ 	width: 100%; 
+	margin: 0px auto; 
+	padding: 0px 0px 0px 0px;
+}
+
+
+
+.eabv3-alert-tag{
+  	color: #000;
+	font-family: 'oswald_regular';
+	font-size: 12px;
+	background-color: #F47A00;
+
+	float:left;
+	width: 15%!important;
+    min-width: 70px;
+	height: auto!important;
+	text-align: center;
+	margin: 0px 8px 0px 0px;
+    padding: 15px 9px 10px 6px !important;
+	line-height: 14px; 
+}
+.eabv3-header-name{
+    float:left;
+	width:70%;
+	margin: 0px auto;
+	padding: 10px 2% 0px 0px;
+	font-size: 13px;
+font-family: 'robotocondensed-regular-webfont';
+	text-align: left;
+	line-height: 16px;
+        color: #fff;
+
+}
+}
+
+@media (max-width: 400px){
+
+
+.studentsAbroadFrameForEmergencyAlerts .eab-alerts-mainframe{
+        float:left;
+        width:100%;
+        padding:0px;
+        margin:40px 0px 0px 0px;
+
+    }
+
+ .eab-alert-header{
+	height:auto; 
+ 	width: 100%; 
+	margin: 0px auto; 
+	padding: 0px 0px 0px 0px;
+}
+
+
+
+.eabv3-alert-tag{
+  	color: #000;
+	font-family: 'oswald_regular';
+	font-size: .7em;
+	background-color: #F47A00;
+	float:left;
+	width: 15%!important;
+    min-width: 50px;
+	height: auto!important;
+      min-height:35px;
+	text-align: center;
+	margin: 0px 8px 0px 0px;
+    padding: 12px 5px 12px 5px !important;
+	line-height: 14px; 
+}
+
+.eabv3-header-name{
+    float:left;
+	width:75%;
+	margin: 0px auto;
+	padding: 8px 2% 0px 0px;
+	font-size: 13px;
+	font-family: 'robotocondensed-regular-webfont';
+	text-align: left;
+	line-height: 16px;
+        color: #fff;
+
+
+}
+}

@@ -1,0 +1,5871 @@
+/*
+ * TSG Global Styles
+ */
+
+
+#right_rail ol.news {
+    list-style-type: none;
+}
+
+/* IE8+ clearfix */
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.restricted-path,
+.restricted-content,
+.carousel-interval {
+    display: none;
+}
+
+/* Start Flowchart Component */
+h2.flowchart-title {
+    font: 30px Georgia, "Times New Roman", Times, serif;
+    margin: 0 0 4px 0;
+    color: #4d4d4d;
+}
+
+.flowchart-feature,
+body.immigrant-process div#featureContainer {
+    background: #fff;
+    background-image: none;
+    border: 12px solid #e5e5e5;
+    border-bottom: none;
+    width: 897px;
+    position: relative;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.flowchart-feature .process-box,
+#process_box {
+    border: 3px solid #cdcdcd;
+    border-bottom: none;
+    width: 891px;
+    float: left;
+}
+
+.flowchart-feature .task,
+#task {
+    background: #fff url('../tsg/images/bg_taskpointer-1.png') 0 0 no-repeat;
+    width: auto;
+    float: left;
+}
+
+.flowchart-feature .columns-3 .task {
+    background: #fff url('../tsg/images/bg_taskpointer-1-3.png') 0 0 no-repeat;
+    width: auto;
+    float: left;
+}
+
+.flowchart-feature .task ul,
+#task ul {
+    float: left;
+    margin: 16px 0 12px 7px;
+}
+
+.flowchart-feature .task ul.col-1,
+#task ul#petition {
+    margin-left: 16px;
+}
+
+#task li a,
+.flowchart-feature .task li a {
+    background: #91c5c8;
+    font: 12px Georgia, "Times New Roman", Times, serif;
+    color: #534741;
+    text-decoration: none;
+    width: 170px;
+    margin: 3px 0;
+    padding: 9px 14px 9px 16px;
+    display: block;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    word-wrap: break-word;
+}
+
+.flowchart-feature .columns-3 .task li a {
+    width: 244px;
+}
+
+#task li a:hover,
+.flowchart-feature .task li a:hover {
+    background: #bdd;
+}
+
+#task li:first-child a,
+.flowchart-feature .task li:first-child a {
+    margin: 0;
+    background: none;
+    color: #fff;
+    padding: 0px 0 1px 0;
+    height: 55px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+#task li:first-child,
+.flowchart-feature .task li:first-child {
+    background: transparent url('../tsg/images/sprite_process_step.png') no-repeat 0 0;
+    font: 16px/1.3em Tahoma, Geneva, sans-serif;
+    color: #fff;
+    width: 181px;
+    height: 58px;
+    padding: 3px 14px 0px 17px;
+}
+
+.flowchart-feature .task li:first-child {
+    background: transparent url('../tsg/images/sprite_process_step_rt.png') no-repeat 100% 0;
+    padding: 0 14px 0 0;
+    height: auto;
+    width: 198px;
+}
+
+.flowchart-feature .task li:first-child div {
+    background: transparent url('../tsg/images/sprite_process_step_left.png') no-repeat 0 0;
+    padding: 3px 0 0 17px;
+    height: 58px;
+}
+
+.flowchart-feature .columns-3 .task li:first-child {
+    width: 272px;
+}
+
+#task #petition li,
+.flowchart-feature .task .col-1 li:first-child div {
+    background-position: 0 0; 
+}
+.flowchart-feature .task .col-1 li:first-child { 
+    background-position: 100% 0; 
+}
+
+#task #approved li,
+#task #documents li,
+.flowchart-feature .task ul li:first-child div {
+    background-position: 0 -61px; 
+}
+.flowchart-feature .task ul li:first-child { 
+    background-position: 100% -61px; 
+}
+
+#task #interview li,
+.flowchart-feature .task .last-col li:first-child div {
+    background-position: 0 -122px; 
+}
+.flowchart-feature .task .last-col li:first-child { 
+    background-position: 100% -122px; 
+}
+
+#task #petition li:hover,
+.flowchart-feature .task .col-1 li:first-child:hover div {
+    background-position: 0 -365px;
+}
+.flowchart-feature .task .col-1 li:first-child:hover { 
+    background-position: 100% -365px; 
+}
+
+#task #approved li:hover,
+#task #documents li:hover,
+.flowchart-feature .task ul li:hover div {
+    background-position: 0 -426px; 
+}
+.flowchart-feature .task ul li:hover { 
+    background-position: 100% -426px; 
+}
+
+#task #interview li:hover,
+.flowchart-feature .task .last-col li:hover div {
+    background-position: 0 -487px; 
+}
+.flowchart-feature .task .last-col li:hover { 
+    background-position: 100% -487px; 
+}
+
+.petition #task #petition li,
+.flowchart-feature .task .col-1.current-col li:first-child div {
+    background-position: 0 -183px; 
+}
+.flowchart-feature .task .col-1.current-col li:first-child { 
+    background-position: 100% -183px; 
+}
+
+.approved #task #approved li,
+.documents #task #documents li,
+.flowchart-feature .task .current-col li:first-child div {
+    background-position: 0 -244px; 
+}
+.flowchart-feature .task .current-col li:first-child {
+    background-position: 100% -244px; 
+}
+
+.interview #task #interview li,
+.flowchart-feature .task .last-col.current-col li:first-child div {
+    background-position: 0 -305px;
+}
+.flowchart-feature .task .last-col.current-col li:first-child { 
+    background-position: 100% -305px; 
+}
+
+.petition #task #petition li:hover,
+.flowchart-feature .task .col-1.current-col li:first-child:hover div {
+    background-position: 0 -547px;
+}
+.flowchart-feature .task .col-1.current-col li:first-child:hover { 
+    background-position: 100% -547px; 
+}
+
+.approved #task #approved li:hover,
+.documents #task #documents li:hover,
+.flowchart-feature .task .current-col li:hover div {
+    background-position: 0 -608px;
+}
+.flowchart-feature .task .current-col li:hover { 
+    background-position: 100% -608px; 
+}
+
+.interview #task #interview li:hover,
+.flowchart-feature .task .last-col.current-col li:first-child:hover div {
+    background-position: 0 -669px; 
+}
+.flowchart-feature .task .last-col.current-col li:first-child:hover { 
+    background-position: 100% -669px; 
+}
+
+.petition #petition li a,
+.approved #approved li a,
+.documents #documents li a,
+.interview #interview li a,
+.flowchart-feature .task .current-col li a {
+    background: #ffd459;
+}
+
+.petition #petition li a:hover,
+.approved #approved li a:hover,
+.documents #documents li a:hover,
+.interview #interview li a:hover,
+.flowchart-feature .task .current-col li a:hover {
+    background: #fe7;
+}
+
+.petition #petition li:first-child a,
+.approved #approved li:first-child a,
+.documents #documents li:first-child a,
+.interview #interview li:first-child a,
+.flowchart-feature .task .current-col li:first-child a {
+    background:  none;
+}
+
+.petition.file li#file a,
+.approved.checkdate li#checkdate a,
+.approved.contact li#contact a,
+.approved.choose-agent li#choose-agent a,
+.approved.fees li#fees a,
+.documents.support li#support a,
+.documents.submit li#submit a,
+.documents.submit-docs li#submit-docs a,
+.documents.finance-docs li#finance-docs a,
+.approved.Step_1_Choose_an_agent li#Step_1_Choose_an_agent a,
+.approved.step_2_pay_fees li#step_2_pay_fees a,
+.documents.Supporting_documents li#Supporting_documents a,
+.documents.Submit_Visa_Application li#Submit_Visa_Application a,
+.documents.Submit_documents li#Submit_documents a,
+.documents.Step_4_Collect_Financial_Documents li#Step_4_Collect_Financial_Documents a,
+.interview.prepare li#prepare a,
+.interview.applicant_interview li#applicant_interview a,
+.interview.after li#after a,
+.flowchart-feature .task .current-col li.selected a {
+    background: #248c91;
+    color: #fff;
+}
+
+#featureContainer a.overview, 
+#featureContainer span.overview,
+.flowchart-feature a.overview, 
+.flowchart-feature span.overview {
+    background: transparent url('../tsg/images/bg_overview_bar.png') no-repeat left top;
+    font-size: 11px;
+    position: static;
+    height: auto;
+    color: #4d4d4d;
+    text-decoration: none;
+    display: block;
+    width: 907px;
+    margin: -5px 0 0 -12px;
+    padding: 19px 14px 16px 0;
+    float: left;
+    text-align: right;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#featureContainer a.overview:hover,
+.flowchart-feature a.overview:hover {
+    text-decoration: underline;
+}
+
+.approved #task,
+.task.col-2 { 
+    background-position: 218px 0;
+    background-image: url('../tsg/images/bg_taskpointer-2.png');
+}
+
+.columns-3 .task.col-2 { 
+    background-position: 292px 0;
+    background-image: url('../tsg/images/bg_taskpointer-2-3.png');
+}
+
+.task.col-2.last-col { 
+    background-position: 218px -6px;
+    background-image: url('../tsg/images/bg_taskpointer-3.png');
+}
+
+.columns-3 .task.col-2.last-col {
+    background-position: 292px -6px;
+    background-image: url('../tsg/images/bg_taskpointer-3-3.png');
+}
+
+.documents #task,
+.task.col-3 { 
+    background-position: 437px 0;
+    background-image: url('../tsg/images/bg_taskpointer-2.png');
+}
+
+.columns-3 .task.col-3 {
+    background-position: 585px 0;
+    background-image: url('../tsg/images/bg_taskpointer-2-3.png');
+}
+
+.task.col-3.last-col { 
+    background-position: 437px -6px;
+    background-image: url('../tsg/images/bg_taskpointer-3.png');
+}
+
+.columns-3 .task.col-3.last-col { 
+    background-position: 585px -6px;
+    background-image: url('../tsg/images/bg_taskpointer-3-3.png');
+}
+
+.interview #task,
+.task.col-4 { 
+    background-position: 656px -6px;
+    background-image: url('../tsg/images/bg_taskpointer-3.png');
+}
+/* END Flowchart Component */
+
+
+/* START Rail Carousel Component */
+.rail-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+}
+
+body.cq-wcm-edit .rail-carousel {
+    overflow: visible;
+}
+
+.rail-carousel .rail-carousel-wrap {
+    position: relative;
+    width: 20000em;
+}
+
+body.cq-wcm-edit .rail-carousel .rail-carousel-wrap,
+body.cq-wcm-design .rail-carousel .rail-carousel-wrap {
+    width: auto;
+}
+
+.rail-carousel .rail-carousel-wrap > .parbase.section {
+    float: left;
+}
+
+body.cq-wcm-edit .rail-carousel .rail-carousel-wrap > .parbase.section {
+    float: none;
+}
+/* END Rail Carousel Component */
+
+
+/* START Emergency Alert Page */
+.alertspage .alert-header .alerttypeinfo {
+    background-color: #faf0a5;
+    background-image: -webkit-linear-gradient(top, #faf0a5, #fcbf4d);
+    background-image:      -o-linear-gradient(top, #faf0a5, #fcbf4d);
+    background-image:         linear-gradient(top, #faf0a5, #fcbf4d);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#faf0a5, endColorstr=#fcbf4d);
+    float: left;
+    width: 190px;
+    border-right: 2px solid #000000;
+    margin-top: 9px;
+    text-align: center;
+    font-family: arial;
+    height: 96px;
+    color: #003d60;
+    display: block;
+}
+
+.alertspage .alert-header .alerttypeinfo h2 {
+    font-size: 24px;
+    margin: 28px 0 8px;
+}
+
+.cq-wcm-edit.alertspage .alert-header .alerttypeinfo h2,
+.cq-wcm-design.alertspage .alert-header .alerttypeinfo h2 {
+    margin-top: 8px;
+}
+
+.alertspage .alert-header .alerttypeinfo h3 {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.alertspage .alert-header h1 {
+    background-color: #faf0a5;
+    background-image: -webkit-linear-gradient(top, #faf0a5, #f9d070);
+    background-image:      -o-linear-gradient(top, #faf0a5, #f9d070);
+    background-image:         linear-gradient(top, #faf0a5, #f9d070);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#faf0a5, endColorstr=#f9d070);
+    float: left;
+    width: 716px;
+    text-transform: none;
+    font-size: 24px;
+    margin-top: 9px;
+    padding: 28px 26px 0;
+    height: 68px;
+}
+/* END Emergency Alert Page */
+
+﻿/*utility styles*/
+
+.clear_all_floats {
+    clear: both;
+}
+.display_none {
+    display: none;
+}
+
+/* main wrapper layout */
+html {
+    background-color: #002b3d;
+}
+#html_bg_hook {
+    background: transparent url(images/bg_passports.jpg) repeat-x left top;
+    height: 100%;
+}
+#body_bg_hook {
+    padding: 0;
+    margin: 0;
+    background: transparent url(images/bg_passports_header_large.jpg) no-repeat center top;
+    width: 100%;
+    display: table;
+}
+#wrapper {
+    width: 960px;
+    margin: 0px auto;
+}
+#header {
+    position: relative;
+    height: 148px;
+    background: transparent url(images/banner_passports.png) no-repeat left 40px;
+}
+#header a#seal {
+    display: block;
+    position: absolute;
+    height: 115px;
+    width: 100px;
+    top: 25px;
+    left: 0;
+}
+#header a#banner {
+    display: block;
+    position: absolute;
+    height: 115px;
+    width: 410px;
+    top: 25px;
+    left: 100px;
+}
+#search_bar {
+    width: 303px;
+    height: 40px;
+    background: transparent url(images/bg_passports_search.png) no-repeat left top;
+    position: absolute;
+    top: 57px;
+    right: 0px;
+}
+#search_bar form {
+    margin: 6px 0 0 7px;
+}
+#search_bar input {
+    float: left;
+}
+#search_bar #search_input {
+    width: 186px;
+    height: 29px;
+    border: none;
+    background: transparent url(images/bg_search_input.png) no-repeat 2px top;
+    font-size: 14px;
+    font-family: Tahoma;
+    color: #3b3b3b;
+    padding: 0 5px;
+    margin-right: 1px;
+}
+
+#content {
+    background-color: #ffffff;
+    padding: 18px 18px 90px 18px;
+    width: 924px;
+    overflow: hidden;
+}
+body.passports #content {
+    padding-bottom: 40px;
+}
+/* passports main content section */
+#passport_info {
+    width: 613px;
+    float: left;
+}
+#passport_info h1 {
+    margin-bottom: 20px;
+}
+#passport_info h1,
+#passport_info #column_container label,
+#passport_info .tw h2 {
+    font-family: Georgia, Times New Roman, times, serif;
+    font-size: 24px;
+    font-weight: lighter;
+    color: #4d4d4d;
+}
+
+/* passports main feature */
+#tabbed_view_wrapper {
+    width: 613px;
+    height: 323px;
+    background: transparent url(images/bg_passports_main_feature_dropshadow.png) no-repeat left bottom;
+    margin-bottom: 20px;
+}
+    #tabbed_view_wrapper #tabbed_view_frame {
+        width: 100%;
+        height: 273px;
+        background: transparent url(images/bg_passports_feature_frame_border.jpg) no-repeat left top;
+        position: relative;
+    }
+
+    #tabbed_view_wrapper #tabbed_viewport {
+        width: 600px;
+        height: 267px;
+        position: absolute;
+        top: 6px;
+        left: 7px;
+        overflow: hidden;
+    }
+        #tabbed_view_wrapper #tabbed_viewport li.slide {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            /*display: none;*/
+            visibility: hidden;
+        }
+        #tabbed_view_wrapper #tabbed_viewport li.selected {
+            /*display: block;*/
+            visibility: visible;
+        }
+            #tabbed_view_wrapper #tabbed_viewport li.slide img {
+                position: absolute;
+                right: 25px;
+                top: 20px;
+            }
+            #tabbed_view_wrapper #tabbed_viewport li.slide div.slide_content {
+                margin: 30px 0 0 20px;
+            }
+                #tabbed_view_wrapper #tabbed_viewport li.slide div.slide_content p {
+                    width: 180px;
+                    font-family: Verdana, Geneva, sans-serif;
+                    font-size: 14px;
+                    color: #4d4d4d;
+                }
+                #tabbed_view_wrapper #tabbed_viewport li.slide #btn_passport_get_started {
+                    width: 226px;
+                    height: 53px;
+                    margin: 0 0 0 40px;
+                    position: relative;
+                    overflow: hidden;
+                    margin: 30px 0 0 0;
+                }
+                #tabbed_view_wrapper #tabbed_viewport li.slide #btn_passport_get_started a {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+                    text-shadow: 1px 1px 3px #888; /* FF3.5+, Opera 9+, Saf1+, Chrome */
+                    width: 120px;
+                    padding: 15px 70px 15px 28px;
+                    position: absolute;
+                    top: -1px;
+                    left: 0px;
+                }
+    #tabbed_view_wrapper #image_controls {
+        background: transparent url(images/sprite_main_feature_nav_tabs.png) no-repeat 0 0;
+        overflow: hidden;
+        width: 612px;
+    
+        -moz-border-radius: 0px 0px 4px 4px; /* FF1-3.6 */
+        -webkit-border-radius: 0 0 4px 4px; /* Saf3-4, iOS 1-3.2, Android <1.6 */
+        border-radius: 0 0 4px 4px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+    }
+    #tabbed_view_wrapper #image_controls.tab_0 {
+        background-position: 0 0;
+    }
+    #tabbed_view_wrapper #image_controls.tab_1 {
+        background-position: 0 -44px;
+    }
+    #tabbed_view_wrapper #image_controls.tab_2 {
+        background-position: 0 -88px;
+    }
+        #tabbed_view_wrapper #image_controls li {
+            float: left;
+            margin-right: 1px;
+        }
+            #tabbed_view_wrapper #image_controls li a {
+                width: 203px;
+                display: block; 
+                height: 33px;
+                text-decoration: none;
+                color: #e5e5e5  ;
+                font: 12px/1.4 Verdana, Geneva, sans-serif;
+                position: relative;
+            }
+            #tabbed_view_wrapper #image_controls li.selected a {
+                color: #6a6a6a;
+            }
+                #tabbed_view_wrapper #image_controls li a span {
+                    position: absolute;
+                    top: 10px;
+                    left: 20px;
+                    cursor: pointer;
+                }       
+
+/* news, anouncements, alerts and warnings section */
+#passport_info #column_container {
+    background: transparent url(images/bg_four_dot_width_613.png);
+    width: 613px;
+    overflow: hidden;
+    margin-top: -20px;
+}
+#column_container a,
+#main_no_rail a {
+    color: #0076a3;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+#passport_info #col_left {
+    width: 271px;
+    float: left;
+    padding: 15px;
+}
+#news_section a:hover,
+#column_container .warning_alerts_content a:hover,
+#main_no_rail a:hover {
+    text-decoration: underline;
+}
+
+/*country selection*/
+
+#passport_info .country_selection {
+    background: transparent url(images/bg_four_horizontal_dots.png) repeat-x left top;
+    clear: both;
+    padding: 20px 0 0 0;
+}
+#passport_info .country_selection form label{
+    display: block;
+    margin: 0 0 10px 0; 
+}
+
+#passport_info .country_selection form input.country_name,
+#mega_menu .menu_dropdown .menu_form .country_selection #mega_menu_country_name,
+#mega_menu .menu_dropdown .menu_form #mega_menu_travel_destination,
+#country_information_section form input.country_name,
+#living_abroad_section form input.country_name,
+.locate_embassy_consulate form input.country_name,
+#travelers_checklist_tool_container #country_selection_tool form input.country_name,
+form input#zip {
+    border: 1px solid #B7B7B7;
+    float: left;
+    font-size: 12px;
+    margin: 1px 5px 0 0;
+    padding: 7px 3px;
+    width: 196px;
+   -moz-border-radius: 3px; 
+   -webkit-border-radius: 3px; 
+    border-radius: 3px; 
+}
+.ie7 .locate_embassy_consulate form input#country_finder_autocomplet_MainCSIs_input {
+    margin-left: -50px;
+}
+
+#passport_info #col_right {
+    width: 281px;
+    float: left;
+    padding: 15px;
+}
+#country_detail .tw {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+#country_detail .tw li {
+    float: left;
+    width: 210px;
+    padding: 0;
+    line-height: 1;
+}
+.tw li,
+#country_detail .tw li {
+    padding: 0 0 0 30px;
+    margin: 0 0 10px 0;
+    background: transparent url(../travel/images_global/bg_warning_alert_sprite.png) no-repeat left top;
+    overflow: hidden;
+}
+.tw li.alert,
+#country_detail .tw li.alert {
+    background-position: 0px -75px;
+}
+.tw li.warning,
+#country_detail .tw li.warning {
+    background-position: 0px 2px;
+}
+.tw li.notice,
+#country_detail .tw li.notice {
+    background-position: 0px -155px;
+}
+.tw li.caution,
+#country_detail .tw li.caution {
+    background-position: 0px -234px;
+}
+.tw li span {
+    display: block;
+    color: #ababab;
+    font: normal 9px/1.4 "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+    padding-top: 2px;
+}
+
+#country_detail .tw a.more,
+#column_container .tw a.more,
+#main_no_rail .tw a.more,
+#mega_menu .menu_dropdown .menu_alerts_warnings .tw .warning_alerts_content a.more {
+    display: block;
+    color: #c69c6d;
+    font-size: 10px;
+    text-align: right;
+    margin: 20px 10px 0 0;
+    text-decoration: none;
+}
+#country_detail .tw a.more {
+    float: right;
+}
+#column_container .tw a.more:hover,
+#main_no_rail .tw a.more:hover,
+#mega_menu .menu_dropdown .menu_alerts_warnings .tw .warning_alerts_content a.more:hover,
+#country_detail .tw a.more:hover {
+    text-decoration: underline;
+}
+/* passports right rail */
+#passport_rail {
+    width: 300px;
+    float: left;
+    margin: 0 0 0 10px;
+}
+
+/* ===================
+    Graphic Promos
+=================== */
+#right_rail .rail_button_links {    
+    margin: 0 0 10px 0;
+    border: #d7d7d7 1px solid;
+    height: 88px;
+    width: 298px;
+    overflow: hidden;
+    position: relative; 
+}
+.borderradius #right_rail .rail_button_links, 
+.borderradius #right_rail .sia_website,
+.borderradius .site-sia .sia_unit {  
+    -moz-border-radius: 6px; 
+    -webkit-border-radius: 6px; 
+    border-radius: 6px; 
+}
+.cssgradients #right_rail .rail_button_links, 
+.cssgradients #right_rail .sia_website, 
+.cssgradients .site-sia .sia_unit {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#e6e6e6)); 
+    background-image: -webkit-linear-gradient(top, #fefefe, #e6e6e6); 
+    background-image:    -moz-linear-gradient(top, #fefefe, #e6e6e6); 
+    background-image:     -ms-linear-gradient(top, #fefefe, #e6e6e6); 
+    background-image:      -o-linear-gradient(top, #fefefe, #e6e6e6); 
+    background-image:         linear-gradient(top, #fefefe, #e6e6e6);
+}
+.cssgradients #right_rail .rail_button_links.passport_forms {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffcd02), to(#fff300)); 
+    background-image: -webkit-linear-gradient(top, #ffcd02, #fff300); 
+    background-image:    -moz-linear-gradient(top, #ffcd02, #fff300); 
+    background-image:     -ms-linear-gradient(top, #ffcd02, #fff300); 
+    background-image:      -o-linear-gradient(top, #ffcd02, #fff300); 
+    background-image:         linear-gradient(top, #ffcd02, #fff300);
+}
+.no-cssgradients #right_rail .rail_button_links, 
+.no-cssgradients #right_rail .sia_website, 
+.no-cssgradients .site-sia .sia_unit {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fefefe', EndColorStr='#e6e6e6');
+    width: 300px;
+}   
+    #passports #right_rail .rail_button_links a, 
+    .site-sia #right_rail .rail_button_links a {
+        font: 21px Georgia, Times New Roman, times, serif;
+        font-size: 21px;
+        color: #4d4d4d;
+        line-height: 21px;
+        text-transform: uppercase;
+        padding: 15px 0 0 115px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left:0;
+        z-index: 1;
+        height: 100%;
+        max-width: 180px;
+        text-decoration: none;
+    } 
+    #right_rail .rail_button_links span, #right_rail .sia_website span {
+        background: transparent url('images/arrow_grey.png') no-repeat right 4px;
+    }
+    #right_rail .rail_button_links.passport_forms span.no_text {
+        background: transparent url('images/arrow_grey_dark.png') no-repeat right top;
+    }
+    #right_rail .rail_button_links span.no_text, #right_rail .sia_website span.no_text {
+        background-position: right 2px;
+        padding-right: 12px;
+    }
+    #right_rail .rail_button_links span.no_arrow, #right_rail .sia_website span.no_arrow {
+        background-image: none;
+    }
+    #right_rail .rail_button_links span, #right_rail .sia_website span {
+        font-size: 12px;
+        font-style: italic;
+        display: inline-block;
+        padding-right: 15px;
+    }
+.cssgradients #right_rail .rail_button_links:hover, 
+.cssgradients #right_rail .sia_website:hover, 
+.cssgradients .site-sia .sia_unit:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee)); 
+    background-image: -webkit-linear-gradient(top, #fff, #eee); 
+    background-image:    -moz-linear-gradient(top, #fff, #eee); 
+    background-image:     -ms-linear-gradient(top, #fff, #eee); 
+    background-image:      -o-linear-gradient(top, #fff, #eee); 
+    background-image:         linear-gradient(top, #fff, #eee);
+}
+.no-cssgradients #right_rail .rail_button_links:hover, .no-cssgradients #right_rail .sia_website:hover{
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#eeeeee');
+}
+.cssgradients #right_rail .rail_button_links.passport_forms:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff300), to(#ffcd02)); 
+    background-image: -webkit-linear-gradient(top, #fff300, #ffcd02); 
+    background-image:    -moz-linear-gradient(top, #fff300, #ffcd02); 
+    background-image:     -ms-linear-gradient(top, #fff300, #ffcd02); 
+    background-image:      -o-linear-gradient(top, #fff300, #ffcd02); 
+    background-image:         linear-gradient(top, #fff300, #ffcd02);
+}
+/* icons */
+#passports #right_rail .rail_button_links.emergency_assistance a {
+    background: transparent url('images/icon_floatation_ring.png') no-repeat 10px 7px;
+    padding-top: 5px;
+}
+#passports #right_rail .rail_button_links.replace_passport a, .site-sia #right_rail .rail_button_links.replace_passport a {
+    background: transparent url('images/icon_passport_phone.png') no-repeat 10px 7px;
+    padding-top: 5px;
+}
+#passports #right_rail .rail_button_links.replace_passport_online a, .site-sia #right_rail .rail_button_links.replace_passport_online a {
+    background: transparent url('images/icon_passport_online.png') no-repeat 10px 5px;
+    background-size: 100px 85px;
+    padding-top: 5px;
+}
+#passports #right_rail .rail_button_links.passport_forms a {
+    background: transparent url('images/icon_form_applications.png') no-repeat 10px top;
+    padding-top: 7px;
+}
+#passports #right_rail .rail_button_links.checklist a {
+    background: transparent url('images/icon_check_list.png') no-repeat 10px 7px;
+    padding-top: 21px;
+}
+#passports #right_rail .rail_button_links.visas_faq a {
+    background: transparent url('images/icon_question.png') no-repeat 10px 7px;
+}
+#passports #right_rail .rail_button_links.glossary a {
+    /*background: transparent url('images/icon_glossary.png') no-repeat 10px 7px;*/
+    /*padding: 28px 0 0 115px;*/
+}
+#passports #right_rail .rail_button_links.a-z_index a {
+    /*background: transparent url('images/icon_a-z.png') no-repeat 10px 7px;*/
+    /*padding: 28px 0 0 115px;*/
+}
+#passports #right_rail .rail_button_links.find_agency a {
+    background: transparent url('images/icon_map.png') no-repeat 10px 22px;
+    margin-top: -15px;
+}
+#passports #right_rail .rail_button_links.alerts a {
+    /*background: transparent url('images/icon_flag_mx.png') no-repeat 10px 7px;*/
+}
+#passports #right_rail .rail_button_links.learn_about a {
+    /*background: transparent url('images/icon_flag_mx.png') no-repeat 10px 7px;*/
+}
+
+/* sia icon rail promo and center stolen passports */
+#right_rail .sia_website, #passports #right_rail .rail_button_links.replace_passport_online_center {    
+    margin: 0 0 10px 0;
+    border: #d7d7d7 1px solid;
+    height: 160px;
+    width: 300px;
+    overflow: hidden;
+    position: relative; 
+}
+#passports #right_rail .sia_website a, .site-sia #right_rail .sia_website a {
+    background: transparent url('images/sia_passport_visa_icon_combo.png') no-repeat center 8px;
+    font: 17px Georgia, Times New Roman, times, serif;
+    color: #4d4d4d;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 120px 0 0 30px;
+    display: block;
+    position: static;
+    top: auto;
+    left: auto;
+    z-index: 1;
+    height: auto;
+    max-width: none;
+    text-decoration: none;
+}
+#passports #right_rail .rail_button_links.replace_passport_online_center a {
+    background: transparent url('images/icon_passport_online.png') no-repeat center 25px;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 0;
+    max-width: none;
+}
+#passports #right_rail .rail_button_links.replace_passport_online_center .alt_font_size {
+    display: inline-block;
+    background: #3f75ad;
+    border: 1px black solid;
+    color: #fff;
+    font: bold 11px Tahoma, Arial, sans-serif;
+    font-style: normal;
+    text-align: center; 
+    margin-top: 100px;    
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px #777;
+}
+#passports #right_rail .rail_button_links.replace_passport_online_center .alt_font_size {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3f75ad), to(#244370));
+    background-image: -webkit-linear-gradient(top, #3f75ad, #244370);
+    background-image:    -moz-linear-gradient(top, #3f75ad, #244370);
+    background-image:     -ms-linear-gradient(top, #3f75ad, #244370);
+    background-image:      -o-linear-gradient(top, #3f75ad, #244370);
+    background-image:         linear-gradient(top, #3f75ad, #244370);
+}
+#passports #right_rail .rail_button_links.replace_passport_online_center .alt_font_size {
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#3f75ad', EndColorStr='#244370');
+}
+#passports #right_rail .rail_button_links.replace_passport_online_center .alt_font_size:hover {
+    background: #3f75ad;
+    border: 1px black solid;
+    color: #fff;
+    text-align: center;
+    -webkit-box-shadow: 0px 1px 1px #333;
+    -moz-box-shadow: 0px 1px 1px #333;
+    box-shadow: 0px 1px 1px #333;
+}
+#passports #right_rail .rail_button_links.replace_passport_online_center .alt_font_size:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#5196E0), to(#244370));
+    background-image: -webkit-linear-gradient(top, #5196E0, #244370);
+    background-image:    -moz-linear-gradient(top, #5196E0, #244370);
+    background-image:     -ms-linear-gradient(top, #5196E0, #244370);
+    background-image:      -o-linear-gradient(top, #5196E0, #244370);
+    background-image:         linear-gradient(top, #5196E0, #244370);
+}
+#passports #right_rail .rail_button_links.replace_passport_online_center .alt_font_size:hover {
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#5196E0', EndColorStr='#244370');
+}
+   
+/* text spacings */
+#passports #right_rail #glossary.rail_button_links p  { top: 34px; }
+#passports #right_rail #a-z_index.rail_button_links p { top: 34px; }
+
+#passports #right_rail .rail_button_links.smallType a {
+    font: 21px Georgia, Times New Roman, times, serif;
+    color: #4d4d4d;
+    margin-top: 5px;
+    text-indent: 0;
+    left: -90px;
+    max-width: 100%;
+}
+    #right_rail .rail_button_links span.alt_font_size { 
+        font-size: 13px; padding-bottom: 4px; margin-bottom: -4px; 
+    }
+
+
+
+
+
+
+
+
+
+
+/* old */
+#passport_rail #rail_button_links li {  
+    margin: 0 0 10px 0;
+    border: #d7d7d7 1px solid;
+    height: 88px;
+    width: 300px;
+    overflow: hidden;
+    position: relative; 
+}
+.borderradius #passport_rail #rail_button_links li {    
+    -moz-border-radius: 6px; 
+    -webkit-border-radius: 6px; 
+    border-radius: 6px; 
+}
+.cssgradients #passport_rail #rail_button_links li {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#e6e6e6)); 
+    background-image: -webkit-linear-gradient(top, #fefefe, #e6e6e6); 
+    background-image:    -moz-linear-gradient(top, #fefefe, #e6e6e6); 
+    background-image:     -ms-linear-gradient(top, #fefefe, #e6e6e6); 
+    background-image:      -o-linear-gradient(top, #fefefe, #e6e6e6); 
+    background-image:         linear-gradient(top, #fefefe, #e6e6e6);
+}
+.no-cssgradients #passport_rail #rail_button_links li {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fefefe', EndColorStr='#e6e6e6');
+    width: 300px;
+}
+    .cssgradients #passport_rail #rail_button_links li:hover {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#c9c9c9)); 
+        background-image: -webkit-linear-gradient(top, #fefefe, #c9c9c9); 
+        background-image:    -moz-linear-gradient(top, #fefefe, #c9c9c9); 
+        background-image:     -ms-linear-gradient(top, #fefefe, #c9c9c9); 
+        background-image:      -o-linear-gradient(top, #fefefe, #c9c9c9); 
+        background-image:         linear-gradient(top, #fefefe, #c9c9c9);
+    }
+    .no-cssgradients #passport_rail #rail_button_links li:hover {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fefefe', EndColorStr='#c9c9c9');
+        width: 300px;
+    }   
+#passport_rail #rail_button_links li a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+#passport_rail #rail_button_links li p {
+    font-family: Georgia, Times New Roman, times, serif;
+    font-size: 21px;
+    color: #4d4d4d;
+    text-decoration: none;
+    line-height: 21px;
+    text-transform: uppercase;
+    width: 180px;
+    position: absolute;
+    top: 15px;
+    left: 115px;
+}
+#passport_rail #rail_button_links li a img {
+    margin: 7px 10px;
+}
+
+#passport_rail #rail_button_links li span {
+    background: transparent url(images/arrow_grey.png) no-repeat right 4px;
+}
+
+#passport_rail #rail_button_links li span.no_text {
+    background-position: right 2px;
+    padding-right: 12px;
+}
+#passport_rail #rail_button_links li span.no_arrow {
+    background-image: none;
+}
+
+#passport_rail #rail_button_links li span {
+    font-size: 12px;
+    font-style: italic;
+    display: inline-block;
+    padding-right: 15px;
+    
+}
+
+#passport_rail #rail_button_links li#travelers_assistance p  { top: 15px; }
+#passport_rail #rail_button_links li#replace_passport p      { top: 24px; }
+#passport_rail #rail_button_links li#travelers_checklist p   { top: 24px; }
+#passport_rail #rail_button_links li#passport_status p       { top: 8px; }
+#passport_rail #rail_button_links li#passport_agency p       { top: 25px;   left: 100px; width: 200px; }
+#passport_rail #rail_button_links li#learn_country p         { top: 18px; }
+
+
+
+
+/* student abroad image link */
+#passport_rail .students_aboad_image_link {
+    border: 1px solid #cacacb;
+    background-color: #cacacb;
+    position: relative;
+    width: 300px;
+    margin-bottom: 10px;
+}
+    #passport_rail .students_aboad_image_link a {
+        text-decoration: none;
+    }
+        #passport_rail .students_aboad_image_link a img {
+            position: relative;
+            left: 1px;
+            top: 1px;
+        }
+        
+        #passport_rail .students_aboad_image_link a div {
+            position: absolute;
+            left: 1px;
+            top: 129px;
+            width: 298px;
+        }
+            #passport_rail .students_aboad_image_link a div span {
+                display: block;
+                background: transparent url(images/bg_transparent_blue_map.png) no-repeat left top;
+                height: 55px;
+                color: #ffffff;
+                font: 18px/1.4 Tahoma, Geneva, sans-serif;
+                text-transform: uppercase;
+                padding: 15px 0 0 20px;
+            }
+            #passport_rail .students_aboad_image_link a div span:hover {
+                filter:alpha(opacity=90); 
+                -moz-opacity:0.9; 
+                -khtml-opacity: 0.9; 
+                opacity: 0.9;
+            }
+        
+/* enroll in step */
+#passport_rail .enroll_in_step {
+    width: 300px;
+    background-color: #dcdcdc;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.cssgradients #passport_rail .enroll_in_step {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#dcdcdc), to(#ffffff)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #dcdcdc, #ffffff); /* Chrome 10+, Saf5.1+ */
+    background-image:    -moz-linear-gradient(top, #dcdcdc, #ffffff); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, #dcdcdc, #ffffff); /* IE10 */
+    background-image:      -o-linear-gradient(top, #dcdcdc, #ffffff); /* Opera 11.10+ */
+    background-image:         linear-gradient(top, #dcdcdc, #ffffff);
+}
+
+.no-cssgradients #passport_rail .enroll_in_step{
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#dcdcdc', EndColorStr='#ffffff'); /* IE6–IE9 */
+}
+
+#passport_rail .enroll_in_step img {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+#passport_rail .enroll_in_step h2 {
+    font-size: 21px;
+    color: #4d4d4d;
+    font-weight: lighter;
+    font-style: normal;
+    padding-top: 30px;
+}
+#passport_rail .enroll_in_step p {
+    font-size: 11px;
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 16px;
+    color: #5e5e5e;
+}
+#passport_rail .enroll_in_step h2,
+#passport_rail .enroll_in_step p {
+    width: 167px;
+    margin-left: 115px; 
+}
+
+/*stay connected*/
+#footer #stayconnected ul li.stay_connected_content_active > a,
+#footer #stayconnected ul li.stay_connected_content_active .stay_connected_content > ul > li > a,
+.content-footer .stayconnected ul li.stay_connected_content_active > a,
+.content-footer .stayconnected ul li.stay_connected_content_active .stay_connected_content > ul > li > a {
+    color: #444;
+}
+#footer #stayconnected ul li.stay_connected_content_active > a,
+#footer #stayconnected .stay_connected_content,
+.content-footer .stayconnected ul li.stay_connected_content_active > a,
+.content-footer .stayconnected .stay_connected_content {
+    background-color: #ade;
+}
+.stay_connected_content li {
+    border-top: 1px solid #6AC4E2;
+}
+.stay_connected_content li > a {
+    border-top: 1px solid #D1E9EF;
+}
+#passports #footer #stayconnected > ul > li:hover,
+.content-footer .stayconnected > ul > li:hover {
+    background-image: url(images/bg_transparency_4.png);
+}
+
+
+/*footer*/
+#footer,
+.content-footer {
+    padding: 40px 0 0 0;
+    background: transparent url(images/bg_passports_top_footer_shadow.jpg) no-repeat left top;
+    overflow: auto;
+}
+.ie7 #footer,
+.ie7 .content-footer {
+    overflow: hidden;
+}
+#upper_footer,
+.upper_footer {
+    float: left;
+    width: 960px;
+    background: transparent url(images/bg_passports_bottom_footer_shadow.png) no-repeat left bottom;
+    padding: 0 0 36px 0;
+    min-height: 180px;
+}
+/* specific main footer link styles */
+#main_footer_links ul li,
+.main_footer_links ul li {
+    background: transparent url('images/bullet_passport_four_dot_transparent.png') no-repeat left 9px;
+    border-top: 1px solid #001d29;  
+}
+#main_footer_links ul li a,
+.main_footer_links ul li a {
+    color: #cccccc;
+}
+#main_footer_links ul li a:hover,
+.main_footer_links ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+#lower_footer,
+.lower_footer {
+    clear: both;
+    background: #002B3D url(images/logo_ca_passports_blue.png) no-repeat 20px bottom;
+    height: 90px;
+    padding: 30px 0 0 130px;
+    margin-bottom: 40px;
+}
+
+#lower_footer a,
+.lower_footer a {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 11px;
+}
+
+#lower_footer ul li a,
+.lower_footer ul li a {
+    text-decoration: none;
+    color: #cccccc;
+}
+#lower_footer ul li a:hover,
+#lower_footer p a:hover,
+.lower_footer ul li a:hover,
+.lower_footer p a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+#lower_footer ul,
+.lower_footer ul {
+    overflow: hidden;
+    margin: 24px 0 0 0;
+}
+.ie7 #lower_footer ul,
+.ie7 .lower_footer ul {
+    padding-top: 10px;
+}
+#lower_footer ul li,
+.lower_footer ul li {
+    float: left;
+    margin: 0 5px 0 0;
+    padding-right: 14px;
+    background: transparent url("images/bg_single_white_dot_separator.png") no-repeat right center;
+}
+#lower_footer ul li.no_background,
+.lower_footer ul .no_background{
+    background: none;
+}
+#lower_footer p,
+.lower_footer p {
+    font: 11px Tahoma, Geneva, sans-serif;
+    clear: left;
+    margin: 10px 0 0 0;
+    width: 550px;
+    color: #8c8c8c;
+    line-height: 14px;
+}
+#lower_footer p a,
+.lower_footer p a {
+    color: #CCCCCC;
+    text-decoration: none;
+}
+
+/* footer navigation */
+
+#portal_navigation,
+.portal_navigation {
+    clear: both;
+    float: left;
+    width: 960px;
+    font: 14px/1.4 georgia;
+    margin: -25px 0 0 0;
+}
+.ie7 #portal_navigation,
+.ie7 .portal_navigation {
+    height: 75px;
+    margin-top: -25px;
+}
+#portal_navigation h3,
+.portal_navigation h3 {
+    font: italic 12px georgia;
+    color: #7d7d7d;
+    margin: 0  0 10px 30px;
+}   
+#portal_navigation li,
+.portal_navigation li {
+    float: left;
+    position: relative;
+}
+#portal_navigation li a,
+.portal_navigation li a {
+    display: block;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    border-right: 1px solid #00486d;
+    color: #cccccc;
+    height: 50px;
+    background: transparent url(images/bg_transparency_8.png) repeat left top;
+}
+
+#portal_navigation li.portal_nav_abduction a,
+.portal_navigation .portal_nav_abduction a {
+    border-right: none;
+    width: 182px;
+}
+#portal_navigation li a:hover,
+.portal_navigation li a:hover {
+    color: #00b2f2;
+}
+
+#portal_navigation li.portal_nav_travel a,
+.portal_navigation .portal_nav_travel a {
+    width: 156px;
+}
+#portal_navigation li.portal_nav_passports a,
+.portal_navigation .portal_nav_passports a {
+    width: 165px;
+}
+#portal_navigation li.portal_nav_students a,
+.portal_navigation .portal_nav_students a,
+#portal_navigation li.portal_nav_studentsabroad a {
+    width: 153px;
+}
+#portal_navigation li.portal_nav_visa a,
+.portal_navigation .portal_nav_visa a {
+    width: 112px;
+}
+#portal_navigation li.portal_nav_adoption a,
+.portal_navigation .portal_nav_adoption a,
+#portal_navigation li.portal_nav_adoptionsabroad a {
+    width: 187px;
+}
+
+#portal_navigation li a span,
+.portal_navigation li a span {
+    text-align: left;
+} 
+
+#portal_navigation li.portal_nav_travel a span, 
+.portal_navigation .portal_nav_travel a span {
+    display: block; 
+    margin-top: 15px;
+    padding-left: 32px;
+}
+#portal_navigation li.portal_nav_passports a span, 
+.portal_navigation .portal_nav_passports a span {
+    display: block; 
+    margin-top: 5px;
+    padding-left: 21px;
+}
+#portal_navigation li.portal_nav_students a span,
+#portal_navigation li.portal_nav_studentsabroad a span,
+.portal_navigation .portal_nav_students a span,
+.portal_navigation .portal_nav_studentsabroad a span {
+    display: block; 
+    margin-top: 15px;
+    padding-left: 25px;
+}
+#portal_navigation li.portal_nav_visa a span, 
+.portal_navigation .portal_nav_visa a span {
+    display: block; 
+    margin-top: 15px;
+    padding-left: 27px;
+}
+#portal_navigation li.portal_nav_adoption a span,
+#portal_navigation li.portal_nav_adoptionsabroad a span, 
+.portal_navigation .portal_nav_adoption a span,
+.portal_navigation .portal_nav_adoptionsabroad a span  {
+    display: block; 
+    margin-top: 15px;
+    padding-left: 25px;
+}
+#portal_navigation li.portal_nav_abduction a span, 
+.portal_navigation .portal_nav_abduction a span {
+    display: block; 
+    margin-top: 5px;
+    padding-left: 23px;
+}
+
+body#passports #portal_navigation li.portal_nav_passports a,
+.portal_navigation .portal_nav_passports a {
+    background: transparent url(images/bg_transparency_4.png) repeat left top;
+}
+
+body#passports #portal_navigation li.portal_nav_passports a,
+.portal_navigation .portal_nav_passports a {
+    color: #636363;
+}
+
+/*stay connected*/
+
+#stayconnected h5,
+.stayconnected h5 {
+    color: #8c8c8c;
+}
+#footer #stayconnected ul li a,
+.content-footer .stayconnected ul li a {
+    color: #fff;
+}
+
+  /*****************************/
+ /* mega navigation style     */
+/*****************************/ 
+
+/*your_us_passport*/
+li#tab_1_li {
+    width: 198px;
+}
+/*normal state*/
+li#tab_1_li {
+    background: transparent url('images/passports_nav.png') no-repeat 0px 0px;
+}
+/*hover state*/
+body.your-passports li#tab_1_li.hoverable,
+li#tab_1_li.hoverable {
+    background-position: 0px -100px;
+}
+body.passports li#tab_1_li.hoverable,
+li#tab_1_li.hoverable {
+    background-position: 0px -100px;
+}
+/*selected state*/
+body.your-passports li#tab_1_li {
+    background-position: 0px -50px;
+}
+/*selected state*/
+body.passports li#tab_1_li {
+    background-position: 0px -50px;
+}
+/*before_you_go*/
+li#tab_2_li {
+    width: 189px;
+}
+/*normal state*/
+li#tab_2_li {
+    background: transparent url('images/passports_nav.png') no-repeat -198px 0px;
+}
+/*hover state*/
+body.go li#tab_2_li.hoverable,
+li#tab_2_li.hoverable {
+    background-position: -198px -100px;
+}
+/*selected state*/
+body.go li#tab_2_li {
+    background-position: -198px -50px;
+}
+
+/*country_information*/
+li#tab_3_li {
+    width: 226px;
+}
+/*normal state*/
+li#tab_3_li {
+    background: transparent url('images/passports_nav.png') no-repeat -388px 0px;
+}
+/*hover state*/
+body.country li#tab_3_li.hoverable,
+li#tab_3_li.hoverable {
+    background-position: -388px -100px;
+}
+/*selected state*/
+body.country li#tab_3_li {
+    background-position: -388px -50px;
+}
+
+/*living_abroad*/
+li#tab_4_li {
+    width: 185px;
+}
+/*normal state*/
+li#tab_4_li {
+    background: transparent url('images/passports_nav.png') no-repeat -614px 0px;
+}
+/*hover state*/
+body.abroad li#tab_4_li.hoverable,
+li#tab_4_li.hoverable  {
+    background-position: -614px -100px;
+}
+/*selected state*/
+body.abroad li#tab_4_li {
+    background-position: -614px -50px;
+}
+
+/*emergencies*/
+li#tab_5_li {
+    width: 162px;
+}
+/*normal state*/
+li#tab_5_li {
+    background: transparent url('images/passports_nav.png') no-repeat -799px 0px;
+}
+/*hover state*/
+body.emergencies li#tab_5_li.hoverable,
+li#tab_5_li.hoverable {
+    background-position: -799px -100px;
+}
+/*selected state*/
+body.emergencies li#tab_5_li {
+    background-position: -799px -50px;
+}
+/*******************************
+    specific mega menu drop down styles
+*******************************/
+/*li#tab_3_li .menu_dropdown { left: -0px; }*/
+
+#mega_menu .menu_dropdown h1,
+#mega_menu .menu_dropdown h2,
+#mega_menu .menu_dropdown h3,
+#mega_menu .menu_dropdown h4,
+#mega_menu .menu_dropdown h5 {
+    font-family: Georgia, Times New Roman, times, serif;
+    color: #454545;
+}
+
+#mega_menu .menu_dropdown h5 {
+    font-size: 14px;
+    line-height: 1.4;
+}
+#mega_menu .menu_dropdown p {
+    font: 13px/1.2 Tahoma, Geneva, sans-serif;
+    color: #959c94; 
+}
+#mega_menu .menu_dropdown a,
+#mega_menu .menu_dropdown ul.hover_background li {
+    font: 16px/1.4 Georgia, Times New Roman, times, serif;
+    display: block;
+    color: #454545;
+}
+
+#mega_menu .menu_dropdown a {
+    word-wrap: break-word;
+}
+
+#mega_menu .menu_dropdown .menu_form label {
+    font: bold 12px/1.4 Verdana, Geneva, sans-serif;
+    color: #5e5e5e; 
+}
+#mega_menu .menu_dropdown ul li {
+    padding: 9px 5px 7px 5px;
+}
+#mega_menu .menu_dropdown ul.hover_background li:hover {
+    background-color: #dbdbdb;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: -3px;
+}
+#mega_menu .menu_dropdown ul.sub_items li {
+    background: transparent url(../travel/images_global/blue_mega_menu_list_bullet.png) no-repeat left 9px;
+    padding: 0 0 0 8px;
+    margin-bottom: 5px;
+}
+
+#mega_menu .menu_dropdown ul.sub_items {
+    margin: 0 13px 10px 13px;
+}
+#mega_menu .menu_dropdown ul.sub_items li a {
+    display: inline;
+    font: 13px/1.4 Tahoma, Geneva, sans-serif;  
+}
+#mega_menu .menu_dropdown ul.sub_items li:hover a {
+    color: #0076A3;
+}
+
+#mega_menu .menu_dropdown ul.bot_border li {
+    border-top: 1px solid #d9d9d9;
+    color: #454545;
+}
+#mega_menu .menu_dropdown ul.bot_border li:first-child {
+    border: none;
+}
+
+/* menu promo */
+#mega_menu .menu_dropdown .menu_promo img {
+    height: 139px;
+    width: 209px;
+    margin-bottom: 5px;
+}
+    #mega_menu .menu_dropdown .menu_promo p {
+        margin-bottom: 10px;
+        font: 14px/1.15 Verdana, Geneva, sans-serif;    
+    }   
+    /* light blue button override */
+    #mega_menu .menu_dropdown .ltBlue .btn {
+        margin-left: 20px;
+    }
+        #mega_menu .menu_dropdown .ltBlue .btn a {
+            padding: 16px 20px;
+            border-right: 20px solid transparent;
+            color: #fff;
+        }
+        
+/* menu country selection */
+
+#mega_menu .menu_dropdown .menu_form {
+    margin-top: 25px;
+}
+    #mega_menu .menu_dropdown .menu_form  p {
+        color: #454545;
+        margin-bottom: 35px;
+        font: 16px/1.4 Georgia, Times New Roman, times, serif;
+    }
+    #mega_menu .menu_dropdown .autocompleteWrapper form label {
+        margin-bottom: 35px;
+        width: 375px;
+    }
+
+    #mega_menu .menu_dropdown .autocompleteWrapper form {
+        margin: 0 auto;
+        width: 410px;
+    }
+        #mega_menu .menu_dropdown .autocompleteWrapper input.autocomplete_input {
+            margin-left: 75px;
+        }
+    
+    
+/* Do I need a passport form */
+#mega_menu .menu_dropdown .need_passport {
+    margin-top: 0px;
+}
+    #mega_menu .menu_dropdown .need_passport input#mega_menu_travel_destination {
+        width: 145px;
+    }
+    #mega_menu .menu_dropdown .need_passport p {
+        font: 13px/1.4 Tahoma, Geneva, sans-serif;
+        margin-bottom: 20px;
+        color: #959C94;
+    }
+    #mega_menu .menu_dropdown .need_passport label {
+        display: block;
+        margin-bottom: 3px;
+    }
+    #mega_menu .menu_dropdown .need_passport fieldset {
+        margin-bottom: 20px;
+    }
+    #mega_menu .menu_dropdown .need_passport fieldset p {
+        display: block;
+        margin: 20px 0;
+        font: bold 12px/1.4 Verdana, Geneva, sans-serif;
+        color: #5e5e5e; 
+    }
+    #mega_menu .menu_dropdown .need_passport fieldset label,
+    #mega_menu .menu_dropdown .need_passport fieldset input {
+        display: inline;
+    }
+    #mega_menu .menu_dropdown .need_passport fieldset label {
+        margin-right: 30px;
+    }
+    #mega_menu .menu_dropdown .need_passport legend {
+        display: block;
+        margin: 30px 0 20px 0;
+    }
+    #mega_menu .menu_dropdown .need_passport fieldset span.btn {
+        margin: 20px 0 0 60px;
+    }
+    
+/* menu_alerts_warnings */
+    #mega_menu .menu_dropdown .menu_alerts_warnings h5 {
+        margin-left: 15px;
+    }
+    #mega_menu .menu_dropdown .menu_alerts_warnings .tw > ul li {
+        font: 13px/1.4 Tahoma, Geneva, sans-serif;
+        color: #959c94;
+        display: inline-block;
+        margin: 0;
+        padding: 10px 0;
+    }
+    .ie7 #mega_menu .menu_dropdown .menu_alerts_warnings .tw > ul li {
+        *display: inline;
+    }
+
+    #mega_menu .menu_dropdown .menu_alerts_warnings .tw ul,
+    #mega_menu .menu_dropdown .menu_alerts_warnings .tw .warning_alerts_content {
+        /*background-color: #f8f8f8;*/
+        margin-bottom: 2px;
+    }
+
+    .no-cssgradients #mega_menu .menu_dropdown .menu_alerts_warnings .tw ul {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f9f6f4', EndColorStr='#f8f5f3'); 
+    }
+    #mega_menu .menu_dropdown .menu_alerts_warnings .tw ul li {
+        padding-left: 40px;
+        
+    }
+    #mega_menu .menu_dropdown .menu_alerts_warnings .tw ul li:hover {
+        background-color: transparent;
+    }
+    #mega_menu .menu_dropdown .menu_alerts_warnings .tw .warning_alerts_content {
+        padding: 10px 0;
+    }
+    #mega_menu .menu_dropdown .menu_alerts_warnings .tw .warning_alerts_content ul li {
+        margin-left: 10px;
+    }
+    #mega_menu .menu_dropdown .menu_alerts_warnings .tw .warning_alerts_content ul li a {
+        font: 12px/1.4 Verdana, Geneva, sans-serif;
+        color: #0076a3;
+    }
+    #mega_menu .menu_dropdown .menu_alerts_warnings .tw .warning_alerts_content ul li a:hover {
+        text-decoration: underline;
+    } 
+    #mega_menu .menu_dropdown .menu_alerts_warnings .tw .warning_alerts_content ul li.alert {
+        background-position: 5px -70px;
+    }
+    
+    #mega_menu .menu_dropdown .menu_alerts_warnings .tw .warning_alerts_content ul li.warning {
+        background-position: 5px 5px;
+    }
+    
+    #mega_menu .menu_dropdown .menu_alerts_warnings .tw .warning_alerts_content ul li.caution {
+        background-position: 5px -227px;
+    }
+    
+    #mega_menu .menu_dropdown .menu_alerts_warnings .tw > ul li.alert {
+        background-position: 5px -70px;
+    }
+    
+    #mega_menu .menu_dropdown .menu_alerts_warnings .tw > ul li.warning {
+        background-position: 5px 7px;
+        margin-left: 25px;
+    }
+    #mega_menu .menu_dropdown .menu_alerts_warnings a.more {
+        font: 10px/1.4 Verdana, Geneva, sans-serif; 
+    }
+/* menu_overseas_citizens */
+#mega_menu .menu_dropdown .menu_overseas_citizens h5 {
+    font-size: 16px;
+    font-weight: lighter;
+}
+    #mega_menu .menu_dropdown .menu_overseas_citizens ul {
+        margin: 20px 0;
+    }
+    #mega_menu .menu_dropdown .menu_overseas_citizens ul li {
+        margin: 7px 0 0 15px;
+        padding: 5px 0 5px 40px;
+        background: transparent url(../travel/images_global/sprite_contact.png) no-repeat left top;
+    }
+    #mega_menu .menu_dropdown .menu_overseas_citizens ul li span {
+        display: block;
+        font-size: 18px;
+        color: #4d4d4d;
+    }
+    #mega_menu .menu_dropdown .menu_overseas_citizens ul li span.telephone_number {
+        font: 14px/1.4 Verdana, Geneva, sans-serif; 
+        color: #5e5e5e;
+        margin-top: 5px;
+    }
+    #mega_menu .menu_dropdown .menu_overseas_citizens ul li.phone_icon {
+        background-position: 0px -295px;
+    }
+    #mega_menu .menu_dropdown .menu_overseas_citizens ul li.globe_icon {
+        background-position: 0px 6px;
+    }
+    #mega_menu .menu_dropdown .menu_overseas_citizens ul li.email_icon {
+        background-position: 0px -450px;
+    }
+    #mega_menu .menu_dropdown .menu_overseas_citizens ul li.info_icon {
+        background-position: 0px -745px;
+    }
+    #mega_menu .menu_dropdown .menu_overseas_citizens ul li.print_icon {
+        background-position: 0px -595px;
+    }
+    #mega_menu .menu_dropdown .menu_overseas_citizens ul li.globe_phone_icon {
+        background-position: 0px -145px;
+    }
+
+
+div#main.norail {
+    width: 836px;
+}    
+/**************************************************/
+/*********Global CSS Styles within Main DIV************************/
+/*************************************************/
+div#main h1,
+div#main_with_scroller h1 {
+    border-bottom: 1px solid #8C8C8C;
+    color: #4D4D4D;
+    font-family: Georgia,Times New Roman,times,serif;
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 0 0 30px 0;
+    padding-bottom: 5px;
+}
+
+div#main h2 {
+    color: #4D4D4D;
+    font: 24px Georgia,"Times New Roman",Times,serif;
+} 
+
+div#main h3 {
+    color: #4D4D4D;
+    font: 21px Georgia,"Times New Roman",Times,serif;   
+}
+
+div#main h4 {
+    color: #4D4D4D;
+    font: 17px Georgia,"Times New Roman",Times,serif;   
+}
+
+div#main p,
+div#country_detail p,
+div#main_with_scroller p {
+    color: #5E5E5E;
+    font: 14px/1.5 Verdana,sans-serif;
+    margin: 0 0 25px 0;
+}
+div#main b.callout_text,
+div#main p.callout_text,
+div#main_with_scroller p.callout_text {
+    color: #406D80;
+    font: 18px "Lucida Sans","Lucida Grande",sans-serif;
+}
+div#main p.callout_text {
+    margin-bottom: 30px;
+}
+div#main a{
+    color: #006ba8; 
+    text-decoration: none;
+}
+div#main a:visited{
+    color: #000f82;
+}
+div#main a:hover, div#main a:active{
+    color: #3342b5;
+    text-decoration: underline;
+}
+
+div#main ul,
+div#country_detail ul {
+    margin-bottom: 25px;
+}
+#main ul ul, #main ol ol, #main ul ol, #main ol ul,
+div#country_detail ul ul, div#country_detail ol ol, div#country_detail ul ol, div#country_detail ol ul,
+#main_no_rail ul ul, #main_no_rail ol ol, #main_no_rail ul ol, #main_no_rail ol ul {
+    margin-bottom: 0;
+}
+div#main li,
+div#country_detail li {
+    color: #5E5E5E;
+    font: 14px/1.5 Verdana,sans-serif;
+    background: url("../travel/images/bg_li_square.gif") no-repeat scroll 30px 8px transparent;
+    padding: 1px 0 1px 45px;
+}
+
+ul.summary li span:first-child{
+    padding-right: 7px;
+}
+
+/* Fixes bullet peekaboo bug in IE7*/
+.ie7 div#main ul li,
+.ie7 div#country_detail ul li,
+.ie7 div#main_landing ul li {
+    zoom: 1;
+}
+div#main li.pdf,
+div#country_detail li.pdf {
+    background: url("../travel/images_global/icon_file_type.png") no-repeat left 4px transparent;    
+}
+
+div#main li.html,
+div#country_detail li.html {
+    background: url("../travel/images_global/icon_file_type.png") no-repeat left -58px transparent;  
+}
+
+div#main hr {
+    margin: 0 0 7px;
+}
+
+div#main .faq > h2 {
+    margin-bottom: 20px;    
+}
+
+div#main .faq > h3 {
+    font-style: italic;
+    float: left;
+}
+
+/* table styles */
+div#main table,
+.search-tips div#main_no_rail table  {
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    border-collapse: collapse;
+    background-color: #ffffff;  
+    margin-top: 20px;
+}
+
+.ie7 div#main .headerandtext table {
+    position: relative;
+}
+
+div#main table tr th,
+.search-tips div#main_no_rail table tr th {
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+div#main table th,
+div#main table td,
+.search-tips div#main_no_rail table th,
+.search-tips div#main_no_rail table td {
+    padding: 8px 0;
+    color: #5e5e5e;
+    font: 14px/1.5 Verdana,sans-serif;
+}
+
+.search-tips div#main_no_rail table td
+{
+    padding-left: 25px;
+}
+
+div#main table td
+{
+    padding-left: 5px;
+}
+
+div#main table tbody tr.odd td,
+.search-tips div#main_no_rail table tbody tr.odd td {
+    background-color: #e2f2ff;
+}
+
+.ie7 div#main table tbody tr.odd,
+.ie7 .search-tips div#main_no_rail table tbody tr.odd {
+    /*position: relative*/;
+}
+
+.faq .open_close_ctrl {
+    background-color: #A8CCEA;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    display: inline-block;
+    float: right;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 3px 15px 6px;
+    cursor: pointer;
+}
+
+.faq .open_close_ctrl:hover{
+    text-decoration: underline;
+}
+
+.faq dl {
+    clear: both;
+    margin-bottom: 40px;
+}
+
+.faq dt {
+    background-color: #FF0; 
+    cursor: pointer;    
+    background: url("images/bg_four_horizontal_dots.png") repeat-x scroll left top transparent;
+    overflow: hidden;
+}
+
+.faq dt:first-child {
+    background: none;   
+}
+
+.faq dl dt:hover {
+    background-color: #fffae5;  
+}
+
+.faq dl dt:hover div {
+    color: #fd8f00;
+}
+
+.faq dl dt div.open_close_hook {    
+    font: bold 14px/1.5 Georgia, "Times New Roman", Times, serif;
+    color: #5e5e5e;
+    padding: 10px 0 10px 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.faq dd {
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+
+.faq dl dt div.open_close_hook span.open_close_icon {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 9px;
+    left: 0;
+}
+.faq dl dt div.open span.open_close_icon {
+    background: url("../travel/images_global/faq_open_close_arrows.png") no-repeat 5px -183px transparent;
+}
+
+.faq dl dt div.close span.open_close_icon {
+    background: url("../travel/images_global/faq_open_close_arrows.png") no-repeat 5px 5px transparent;
+}
+
+
+/*--------------End Global CSS Styles-------------*/
+/*-----------------------------------------------*/
+
+/****************************
+    Content area
+****************************/
+div#main_landing { 
+    margin: 30px 0 0 0;
+    width: 604px;
+    float: left;
+}
+.four_dot_divider {
+    background: url("../travel/images_global/bg_four_verticle_dots.png") repeat-x scroll left top transparent;
+    display: block;
+}
+
+body.your-passports.new div#right_rail,
+div#right_rail {
+    margin: 20px 0 0 30px;
+    width: 300px;
+    float: left;
+    position: relative;
+  /*  background-color: #ebebeb; */
+}
+
+/*override on right rail left margin for your-passports landing page*/
+/* the body class should idicate the page id in the server code */
+body.your-passports div#right_rail,
+body.passports div#right_rail,
+body.checklist div#right_rail {
+    margin-left: 14px;
+}
+
+/*******************************
+    Landing pages   
+*******************************/
+#main .four_dot_divider,
+#main_landing .four_dot_divider,
+#country_detail .four_dot_divider {clear: both;}
+.photo_requirements #main .four_dot_divider {
+    margin-bottom: 20px;
+}
+#main_landing h2,
+#main_no_rail h2 {
+    font-family: Georgia, Times New Roman, times, serif;
+    font-size: 24px;
+    color: #4d4d4d;
+    font-weight: lighter;
+    margin: 25px 0 0 0;
+}
+#main_landing a,
+#main_with_scroller a {
+    text-decoration: none;
+    color: #0000EE;
+}
+#main_landing a:visited, #main_with_scroller a:visited{
+    color: #551A8B;
+}
+#main_landing a:hover, #main_with_scroller a:hover {
+    text-decoration: underline;
+    color: #30a7fc;
+} 
+
+#main_landing .header_date {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 9px;
+    display: block;
+    margin: 5px 0 10px 25px;
+    color: #919191;
+}
+
+/*******************************
+    processing options section
+*******************************/
+
+#your_us_passport_container h2 {
+    margin-left: 25px;
+}
+
+#main_landing #processing_options_table tr td.row_name {
+    font-family: Georgia, Times New Roman, times, serif;
+    font-size: 16px;
+}
+#main_landing #processing_options_table tr td.row_value {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    color: #5e5e5e;
+}
+#main_landing .helper_text_processing_options {
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 16px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #919191;
+}
+.restrictions {
+    background: transparent url(images/bg_passports_asterisk_red.png) no-repeat left 3px;
+}
+p.restrictions {
+    padding-left: 12px;
+}
+#processing_options_table tr td span.restrictions {
+    background-position: right 3px;
+    padding-right: 12px;
+}
+#processing_options_table {
+    margin: 0 0 0 5px;
+    width: 360px;
+}
+#processing_options_table tr.odd,
+.ie7 #processing_options_table tr.odd td {
+    background-color: #e2f2ff;
+}
+
+#processing_options_table tr td {
+    text-align: left;
+    padding: 9px 0 9px 18px;
+}
+#processing_options_table,
+#processing_options_calculate {
+    float: left;
+}
+#processing_options_calculate {
+    width: 210px;
+    margin: 0 0 40px 20px;
+}
+#processing_options_calculate div a {
+    background: transparent url(images/bg_passports_calculator.png) no-repeat left top;
+    display: inline-block;
+    padding-left: 30px;
+    height: 35px;
+    vertical-align: center;
+    margin: 0 0 0 10px;
+}
+#processing_options_calculate div a span {
+    display: inline-block;
+    height: 21px;
+    width: 145px;
+    background-color: #98adc6;
+    padding-top: 5px;
+    color: #ffffff;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
+#processing_options_calculate div a span:hover {
+    background: #abc;
+}
+
+/* National Passport Infomration Center (NPIC) section */
+#main_landing .npic_section p,
+#main_landing .npic_section span {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    color: #5e5e5e;
+}
+#main_landing .npic_section p {
+    margin: 0 0 15px 25px;
+}
+#main_landing .npic_section ul {
+    margin: 0 0 40px 0;
+}
+#main_landing .npic_section ul li {
+    margin: 7px 0 0 25px;
+    padding: 5px 0 9px 35px;
+    background: transparent url("../travel/images_global/sprite_contact.png") no-repeat left top;
+}
+#main_landing .npic_section ul li.phone_icon, 
+#main_landing .npic_section ul li.customtext_icon {
+    background-position: 0px -302px;
+}
+#main_landing .npic_section ul li.globe_icon {
+    background-position: 0px 0px;
+}
+#main_landing .npic_section ul li.email_icon {
+    background-position: 0px -452px;
+}
+
+/* News Anouncements section */
+#main_landing .news_anouncements_section #image_blurb a {
+    display: inline-block;
+    width: 100%;
+    margin-left: 10px;
+    font: 14px/1.5 Verdana, Geneva, sans-serif;
+}
+#main_landing .news_anouncements_section #image_blurb a img, 
+#main_landing .news_anouncements_section #image_blurb a p {
+    float: left;
+    margin: 10px 10px 0 15px;
+    vertical-align: top;
+} 
+#main_landing .news_anouncements_section #image_blurb a img {
+    max-width: 252px;
+    max-height: 180px;
+} 
+#main_landing .news_anouncements_section #image_blurb a span {
+    color: #5e5e5e;
+} 
+.news_anouncements_section #image_blurb {
+    border: 1px solid #dedede;
+    padding: 0 5px 8px 0;
+    margin-top: 5px;
+}
+.news_anouncements_section #news_section {
+    margin: 0 0 0 30px;
+}
+div#main_landing .news_anouncements_section #news_section li {
+    background: url("../travel/images/bg_li_square.gif") no-repeat scroll 5px 8px transparent;
+    color: #5e5e5e;
+    margin: 0 0 15px 0;
+    padding: 0 0 0 18px;
+}
+div#main_landing .news_anouncements_section #news_section li a {
+    line-height: 1.4;
+}
+div#main_landing .news_anouncements_section h2 a {
+    color: #000;
+}
+div#main_landing .news_anouncements_section h2 a:hover {
+    color: #0076a3;
+}
+/*******************************
+    country landing page
+*******************************/
+#main_country {
+    float: left;
+    margin: 30px 12px 0 0;
+    width: 580px;   
+}
+#main_country #world_map {
+    margin-top: 20px;
+}
+#country_information_section {
+    padding-left: 8px;
+}
+#country_information_section h1 {
+    font-family: Georgia, Times New Roman, times, serif;
+    font-size: 30px;
+    color: #4d4d4d;
+    border-bottom: 1px solid #8c8c8c;
+    font-weight: lighter;
+    padding-bottom: 5px;
+    margin-bottom: 30px;    
+}
+#country_information_section p {
+    font-family: Verdana, Geneva, sans-serif;   
+    font-size: 14px;
+    line-height: 21px;
+    color: #4d4d4d;
+}
+
+#country_information_section form,
+#country_information_section img {
+    margin-top: 20px
+}
+#country_information_section img {
+    margin-bottom: 50px;
+}
+/*******************************
+    country detail page
+*******************************/
+#country_detail, #main {
+    width: 550px;
+    float: left;
+    margin: 0 0 80px 44px;
+}
+
+#country_detail a {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #0076a3;
+    text-decoration: none;
+    font-size: 12px;
+}
+#country_detail h1,
+#country_detail h2,
+#country_detail h3 {
+    font-family: Georgia, Times New Roman, times, serif;
+    color: #4d4d4d;
+    font-weight: lighter;
+}
+#country_detail h1 {
+    font-size: 30px;
+}
+#country_detail h2 {
+    font-size: 24px;
+}
+#country_detail h2 a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.country #country_detail a,
+.country_information #country_detail a {
+    font-size: 14px;    
+}
+.country #country_detail a:visited,
+.country_information #country_detail a:visited{
+    color: #000F82;
+}
+.country #country_detail a:hover,
+.country_information #country_detail a:hover {
+    text-decoration: underline;
+    color: #269CC9;
+}
+.country_information #country_detail h2 a {
+    font-size: 18px;
+    color: #0076a3;
+}
+#country_detail p.phone,
+#country_detail p.address,
+#country_detail p.fax,
+#main p.phone,
+#main p.address,
+#main p.fax {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+#country_detail p.note,
+#main p.note {
+    margin: 14px 0;
+}
+#country_header_section {
+    padding-bottom: 5px;
+}
+#country_header_section img {
+    float: left;
+    vertical-align: top;
+    margin: 4px 20px 0 0;
+}
+#country_header_section h1 {
+    font-size: 30px;
+}
+
+#country_header_section .official_name,
+.warnings_alerts .alert_warning_date {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    color: #787878;
+    font-style: italic;
+}
+
+#country_header_section .official_name {
+    margin-top: 2px;    
+    margin-bottom: 8px; 
+    display: block;
+}
+
+#country_header_section .updated_date {
+    font-family: Verdana, Geneva, sans-serif;
+    text-transform: uppercase;
+    color: #919191; 
+    font-size: 9px;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    display: block;
+    border-top: 1px solid #8c8c8c;
+}
+.warnings_alerts {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+#quick_facts_section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.warnings_alerts li {
+    width: 210px;
+    float: left;
+    margin: 0 20px 5px 0;
+}
+#country_detail .four_dot_divider {
+    margin-bottom: 25px;
+}
+div#country_detail #quick_facts_section h3 {
+    font-size: 17px;
+    color: #a3a3a3;
+    margin-bottom: 5px;
+    letter-spacing: .05em;
+}
+div#country_detail #quick_facts_section ul {
+    float: left;
+    margin: 0 20px 0 0;
+}
+div#country_detail #quick_facts_section ul li {
+    margin-bottom: 9px;
+    background: transparent url(images/bg_single_dot_horizontal_rule.png) repeat-x left top;
+    padding: 10px 0 0 0;
+    width: 240px;
+    line-height: 1;
+}
+div#country_detail #quick_facts_section ul li.no_border {
+    background: none;
+    padding-top: 0;
+}
+div#country_detail #quick_facts_section ul li p {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    color: #5e5e5e;
+    line-height: 16px;
+}
+div#country_detail #quick_facts_section div > a {
+    display: inline-block;
+    clear: left;
+    height: 30px;
+    padding: 20px 0 0 50px;
+    margin: 20px 0;
+    -moz-border-radius: 4px; /* FF1-3.6 */
+    -webkit-border-radius: 4px; /* Saf3-4, iOS 1-3.2, Android <1.6 */
+    border-radius: 4px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+}
+
+div#country_detail #quick_facts_section ul a {
+    clear: none;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-size: inherit;
+}
+
+.ie7 div#country_detail #quick_facts_section a {
+    padding-bottom: 2px;
+}
+
+.ie7 div#country_detail #quick_facts_section ul a {
+    padding-bottom: 0;
+    font-size: 12px;
+}
+
+.cssgradients div#country_detail #quick_facts_section a {
+    background-image: -webkit-gradient(linear, left top, right top, from(#e5f3ff), to(#fff)); 
+    background-image: -webkit-linear-gradient(left, #e5f3ff, #fff); 
+    background-image:    -moz-linear-gradient(left, #e5f3ff, #fff); 
+    background-image:     -ms-linear-gradient(left, #e5f3ff, #fff); 
+    background-image:      -o-linear-gradient(left, #e5f3ff, #fff); 
+    background-image:         linear-gradient(left, #e5f3ff, #fff);
+}
+
+.cssgradients div#country_detail #quick_facts_section ul a {
+    background-image: none;
+}
+
+.no-cssgradients div#country_detail  #quick_facts_section a {
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#e5f3ff', EndColorStr='#ffffff');
+}
+
+.no-cssgradients div#country_detail  #quick_facts_section ul a {
+    filter: none;
+}
+
+#country_detail p.phone,
+#country_detail p.fax,
+#main p.phone,
+#main p.fax {
+    font-weight: bold;
+}
+#country_detail p.phone span,
+#country_detail p.fax span,
+#main p.phone span,
+#main p.fax span {
+    font-weight: normal;
+}
+#country_detail .embassy h3,
+#main .embassy h3 {
+    margin: 0;
+    color: #a3a3a3;
+}
+    #country_detail .embassy h3 a,
+    #main .embassy h3 a {
+        font: normal 18px/1.5em Georgia, "Times New Roman", Times, serif;
+        text-transform: none;
+    }
+#country_detail .embassy h3.consulates_section,
+#main .embassy h3.consulates_section {
+    margin-top: 42px;
+}
+#country_detail a.email, 
+#country_detail a.twitter,
+#country_detail a.facebook,
+#main a.email, 
+#main a.twitter,
+#main a.facebook {
+    background: transparent url('../travel/images_global/sprite_contact.png') no-repeat left top;
+}
+#country_detail a.email,
+#main a.email {
+    background-position: 0 -457px;
+    font-size: 14px;
+    display: block;
+    height: 16px;
+    margin: 5px 0;
+    padding-left: 30px;
+}
+#country_detail a.twitter,
+#main a.twitter {
+    background-position: 0 -1119px;
+    display: block;
+    height: 19px;
+    width: 19px;
+    margin: 3px 3px 0 0;
+    text-indent: -999px;
+    overflow: hidden;
+    float: left;
+}
+#country_detail a.facebook,
+#main a.facebook {
+    background-position: 0 -999px;
+    display: block;
+    height: 19px;
+    width: 19px;
+    margin: 3px 3px 0 0;
+    text-indent: -999px;
+    overflow: hidden;
+    float: left;
+}
+.share {
+    clear: both;
+    margin: 0 0 21px;
+    overflow: hidden;
+}
+
+/* columnizer css */
+#country_detail .tw div.column {
+    width: 262px;
+    float: left;
+}
+
+/*******************************
+    before you go page landing page
+*******************************/
+
+#before_you_go,
+#living_abroad_section,
+#emergency_section {
+    border: 5px solid #F2F2F2;
+    clear: both;
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 15px 10px;
+}
+#before_you_go > ul,
+#living_abroad_section > ul,
+#emergency_section > ul {
+     background: transparent url("images/bg_four_dot_separator_three_eq_cols.png") repeat-y left center;
+     float: left;
+}
+#before_you_go > ul li.columns,
+#living_abroad_section > ul li.columns,
+#emergency_section > ul li.columns {
+    float: left;
+    width: 261px;
+    margin: 5px 0 5px 10px;
+    padding: 0 15px;
+}
+#before_you_go > ul li.columns:first-child,
+#living_abroad_section > ul li.columns:first-child,
+#emergency_section > ul li.columns:first-child
+ {
+    margin-left: 0;
+}
+
+#before_you_go #students_aboad_image_promo {
+    position: relative;
+    width: 263px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 202px;
+}
+
+#before_you_go .students_aboad_image_link {
+    border: 1px solid #cacacb;
+    background-color: #cacacb;
+    position: relative;
+    width: 263px;
+}
+    #before_you_go .students_aboad_image_link a {
+        text-decoration: none;
+    }
+        #before_you_go .students_aboad_image_link a img {
+            position: relative;
+            left: 1px;
+            top: 1px;
+        }
+        
+        #before_you_go .students_aboad_image_link a div {
+            position: absolute;
+            left: 1px;
+            top: 129px;
+            width: 261px;
+        }
+            #before_you_go .students_aboad_image_link a div span {
+                display: block;
+                background: transparent url(images/bg_transparent_blue_map.png) no-repeat left top;
+                height: 55px;
+                color: #ffffff;
+                font: 18px/1.1 Tahoma, Geneva, sans-serif;
+                text-transform: uppercase;
+                padding: 7px 0 0 20px;
+            }
+            
+            #before_you_go .students_aboad_image_link a div span:hover {
+                filter:alpha(opacity=90); 
+                -moz-opacity:0.9; 
+                -khtml-opacity: 0.9; 
+                opacity: 0.9;
+            }
+
+#before_you_go .enroll_in_step,
+#living_abroad_section .enroll_in_step {
+    position: relative;
+}
+#before_you_go .enroll_in_step,
+#living_abroad_section .enroll_in_step {
+    /*width: 263px;
+    margin: 0 0 0 25px;*/
+}
+
+#before_you_go h2 {
+    margin: 0 0 10px 0;
+}
+#before_you_go .enroll_in_step img,
+#living_abroad_section .enroll_in_step img {
+    position: absolute;
+    top: 43px;
+    left: 20px;
+}
+#before_you_go .enroll_in_step p,
+#living_abroad_section .enroll_in_step p {
+    font-size: 11px;
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 16px;
+    color: #5e5e5e; 
+    padding-left: 130px;
+    width: 130px;
+
+}
+.ie7 #before_you_go .enroll_in_step p,
+.ie7 #living_abroad_section .enroll_in_step p {
+    margin-bottom: 35px;
+}
+
+#before_you_go .tw {
+    /*margin: 0 0 0 15px;*/
+}
+#before_you_go .warnings_alerts {
+    width: 270px;
+    margin: 0 0 0 15px;
+}
+#before_you_go .warnings_alerts ul li {
+    margin-bottom: 10px;
+}
+
+/*******************************
+    living abroad landing page
+*******************************/
+
+#living_abroad_section h2,
+#before_you_go h2 {
+    margin-left: 0;
+    margin-top: 0;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+/*#living_abroad_section .columns {
+    margin-bottom: 30px;
+}*/
+#living_abroad_section .emergency_assistance {
+    width: 263px;
+    position: relative;
+}
+#living_abroad_section .emergency_assistance img {
+    position: absolute;
+    top: 39px;
+    left: -3px;
+}
+#living_abroad_section .emergency_assistance p {
+    display: block;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    padding-left: 100px;
+    color: #5E5E5E;
+    height: 78px;
+    margin-bottom: 20px;
+}
+#living_abroad_section .emergency_assistance label,
+#living_abroad_section .country_selection label {
+    display: block;
+    color: #4D4D4D;
+    font: 24px Georgia,"Times New Roman",Times,serif;
+    margin-bottom: 18px;
+    margin-left: 0;
+    margin-top: 0;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+#living_abroad_section .emergency_assistance span.helper_text {
+    display: block;
+    font-family: Verdana, Geneva, sans-serif;   
+    font-size: 16px;
+    line-height: 21px;
+    padding-left: 100px;
+    color: #5e5e5e;
+    background: transparent url(images/icon_floatation_ring.png) no-repeat left top;
+    height: 78px;
+    margin-bottom: 20px;
+}
+#living_abroad_section .parbase.image.introparagraphwithimage.section {
+    font-family: Verdana, Geneva, sans-serif;   
+    font-size: 16px;
+    line-height: 21px;
+    color: #5e5e5e;
+}
+#living_abroad_section #enroll_in_step h2 {
+    margin-bottom: 0;
+}
+/*
+#living_abroad_section .country_selection {
+    width: 270px;
+    margin-left: 20px;
+}*/
+/*******************************
+    Emergencies landing page
+*******************************/
+#emergency_section_top_bar {
+    background-color: #ffd000;
+    color: #ffffff;
+    height: 71px;
+}
+#emergency_section_top_bar h1 {
+    display: inline-block;
+    font-family: Georgia, Times New Roman, times, serif;
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 0 0 0 10px;
+}
+.ie7 #emergency_section_top_bar h1 {
+    display: inline;
+    line-height: 1.4;
+}
+
+#emergency_section_top_bar img {
+    vertical-align: middle;
+    margin: -2px 0 0 60px;
+}
+.cssgradients #emergency_section_top_bar {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd000), to(#ffb800)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #ffd000, #ffb800); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #ffd000, #ffb800); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, #ffd000, #ffb800); /* IE10 */
+    background-image:      -o-linear-gradient(top, #ffd000, #ffb800); /* Opera 11.10+ */
+    background-image:         linear-gradient(top, #ffd000, #ffb800);
+}
+.no-cssgradients #emergency_section_top_bar {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffd000', EndColorStr='#ffb800'); /* IE6-IE9 */
+}
+
+#emergency_info {
+    border: 3px solid #d6d6d6;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+#emergency_feature {
+    background: url("../travel/images_global/bg_feature_dropshadow_lg.png") no-repeat left bottom transparent;
+    padding-bottom: 16px;
+}
+
+#emergency_info .locate_embassy_consulate {
+    float: left;
+    width: 621px;
+    border-right: 1px solid #a5a5a5;
+    background: url("images/bg_locate_nearest_embassy.png") no-repeat left top transparent;
+    height: 225px;
+}
+
+#emergency_info #role_in_crisis {
+    float: left;
+    width: 292px;
+    border-left: 1px solid #ffffff;
+    height: 225px;
+}
+
+#main_no_rail #emergency_info .locate_embassy_consulate form {
+    width: 285px;   
+    margin: 50px 0 0 50px;
+}
+
+#main_no_rail #emergency_info .locate_embassy_consulate form label {
+    color: #4D4D4D;
+    font: 24px Georgia,"Times New Roman",Times,serif;
+    margin-bottom: 18px;
+}
+
+#main_no_rail #emergency_info .locate_embassy_consulate span.helper_text {
+    color: #5e5e5e;
+    font: 12px/1.5 Verdana, Geneva, sans-serif; 
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+#main_no_rail #emergency_info #role_in_crisis h2 {
+    width: 255px;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 18px;
+}
+
+div#emergency_section {
+    border: transparent solid 5px;
+}
+
+#emergency_section .emergency_resources h2, #emergency_section .overseas_citizens h2, #emergency_section .lost_stolen_passport h2 {
+    margin-left: 0;
+    margin-top: 0;
+    line-height: 30px;
+}
+
+#emergency_section .emergency_resources h2, #emergency_section .overseas_citizens h2 {
+    margin-bottom: 2px;
+}
+
+#emergency_section .lost_stolen_passport h2 {
+    margin-bottom: 10px;    
+}
+
+#emergency_section ul li .emergency_resources ul li {
+    color: #5E5E5E;
+    font: 14px/1.5 Verdana,sans-serif;
+    background: url("../travel/images_global/bg_li_square.gif") no-repeat scroll left 8px transparent;
+    padding: 0 0 0 20px;
+    min-width: 0;
+}
+
+#emergency_section .overseas_citizens p {
+    font: 12px/1.5 Verdana, Geneva, sans-serif;
+    color: #5e5e5e; 
+    margin-bottom: 20px;
+}
+
+#emergency_section ul li .overseas_citizens ul li.phone_icon, 
+#emergency_section ul li .lost_stolen_passport ul li.phone_icon {
+    background-position: 0 -297px;
+}
+#emergency_section ul li .overseas_citizens ul li, 
+#emergency_section ul li .lost_stolen_passport ul li {
+    background: url("../travel/images_global/sprite_contact.png") no-repeat scroll left top transparent;
+    margin: 0 0 20px;
+    padding-left: 45px;
+    min-width: 0;
+}
+#emergency_section ul li ul li span {
+    color: #4d4d4d;
+    display: block;
+    font-family: Georgia,Times New Roman,times,serif;
+    font-size: 18px;
+}
+#emergency_section ul li ul li span.telephone_number {
+    color: #5e5e5e;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+}
+#emergency_section #lost_passport_get_started {
+    padding: 7px 20px;
+    margin: 0 0 0 65px;
+}
+/*******************************
+    traveler's checklist detail page
+*******************************/
+#main_with_scroller {
+    margin: 30px 0 0 30px;
+    width: 572px;
+    float: left;
+}
+#travelers_checklist_container h1 {
+    font-family: Georgia, Times New Roman, times, serif;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #4d4d4d;
+    margin: 0 0 10px 20px;
+}
+#travelers_checklist_container h2 {
+    font-family: Georgia, Times New Roman, times, serif;
+    font-size: 24px;
+    margin-top: 0;
+}
+#travelers_checklist_container h3 {
+    font-family: Georgia, Times New Roman, times, serif;
+    font-size: 21px;
+    font-style: italic;
+    color: #a3a3a3;
+}
+#travelers_checklist_container h5 {
+    font-family: Verdana, Geneva, sans-serif;   
+    font-size: 14px;
+    font-weight: bold;
+}
+#travelers_checklist_container {
+    position: relative;
+}
+#print_email_pdf_links {
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+#print_email_pdf_links li a {
+    padding: 1px 0 0 14px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 10px;
+    color: #004a94;
+    display: inline-block;
+    height: 14px;
+}
+#print_email_pdf_links ul,
+#print_email_pdf_links ul li {
+    float: left;
+}
+#print_email_pdf_links ul li {
+    margin: 0 20px 0 0;
+}
+#print_email_pdf_links li a.icon_print {
+    background: transparent url(../travel/images_global/icon_print.png) no-repeat left 2px;
+}
+#print_email_pdf_links li a.icon_email {
+    background: transparent url(../travel/images_global/icon_email.png) no-repeat left 2px;
+}
+#print_email_pdf_links li a.icon_pdf {
+    background: transparent url(../travel/images_global/icon_pdf.png) no-repeat left 2px;
+}
+/*#travelers_checklist_tool_container {
+    background-color: #bfbfbf;
+    padding: 20px;
+}
+#travelers_checklist_tool_container #blurb_container {
+    background-color: #99bff9; 
+    border-top: 2px solid #99bff9;
+    padding: 25px 20px 25px 30px;
+    margin-bottom: 
+}
+
+.cssgradients #travelers_checklist_tool_container #blurb_container,
+.cssgradients #travelers_checklist_tool_container #country_selection_tool > h2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#99bff9), to(#567cb4)); 
+  background-image: -webkit-linear-gradient(top, #99bff9, #567cb4); 
+  background-image:    -moz-linear-gradient(top, #99bff9, #567cb4); 
+  background-image:     -ms-linear-gradient(top, #99bff9, #567cb4); 
+  background-image:      -o-linear-gradient(top, #99bff9, #567cb4); 
+  background-image:         linear-gradient(top, #99bff9, #567cb4); 
+}
+.no-cssgradients #travelers_checklist_tool_container #blurb_container,
+.no-cssgradients #travelers_checklist_tool_container #country_selection_tool > h2 {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#99bff9', EndColorStr='#567cb4');
+}
+#travelers_checklist_tool_container #blurb_container p {
+    color: #ffffff;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+}
+#travelers_checklist_tool_container #blurb_container p span {
+    font-family: "lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+#travelers_checklist_tool_container #country_selection_tool {
+    background: #ffffff;
+    overflow: hidden;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-left: 1px solid #9d9d9d;
+    border-right: 1px solid #9d9d9d;
+    border-bottom: 2px ridge #707070;
+}
+
+#travelers_checklist_tool_container #country_selection_tool > h2 {
+    color: #ffffff;
+    padding: 15px 20px 15px 30px;
+    font-weight: lighter; 
+}
+.ie7 #travelers_checklist_tool_container #country_selection_tool > h2 {
+    display: inline-block;
+}
+#travelers_checklist_tool_container #country_selection_tool .country_selection_add {
+    float: left;
+    margin: 20px 0 0 20px; 
+}
+#travelers_checklist_tool_container #country_selection_tool form input.country_name {
+    width: 182px;
+}
+*/
+
+#travelers_checklist {  
+    margin-left: 0;
+}
+div#main_with_scroller #travelers_checklist .content_box_container .form_content .autocomplete_input{
+    width: 182px;
+}
+#travelers_checklist .form_content .autocompleteWrapper,
+#travelers_checklist .form_content #country_add_remove_wrapper {
+    float: left;
+}
+
+#travelers_checklist .form_content .country_selection form {
+    float: left;
+}
+
+#travelers_checklist #country_add_remove_wrapper {
+    width: 205px;
+    float: left;
+    margin: 8px 0 0 20px;
+}
+#travelers_checklist #country_add_remove_wrapper .country_add_remove_clone {
+    display: none;
+}
+#travelers_checklist #country_add_remove_wrapper ul {
+    width: 200px;
+}
+#travelers_checklist #country_add_remove_wrapper li {
+    margin: 0 0 5px 20px;
+}
+#travelers_checklist #country_add_remove_wrapper li p {
+    font-size: 12px;
+}
+#travelers_checklist #country_add_remove_wrapper li p img {
+    width: 16px;
+    height: 11px;
+    margin-right: 3px;
+}
+#travelers_checklist #country_add_remove_wrapper a {
+    background: #cacaca url(../travel/images_global/bg_remove_orange_x.png) no-repeat 3px 3px;
+    padding: 0 0 0 12px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 9px; 
+    color: #5e5e5e;
+    display: inline-block;
+    float: right;
+    margin-top: 2px;
+    
+    
+    -webkit-border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    border-radius: 4px; 
+}
+#travelers_checklist #country_add_remove_wrapper a span {
+    background-color: #e1e1e1;
+    display: inline-block;
+    padding: 3px 7px;
+    
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px; 
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomright: 4px; 
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+#travelers_checklist #country_add_remove_wrapper h5 {
+    color: #5e5e5e;
+    margin-bottom: 15px;
+}
+#travelers_checklist #country_add_remove_wrapper p {
+    display: inline;
+} 
+#travelers_checklist #country_add_remove_wrapper a:hover {
+    color: #ffffff;
+    background-color: #5e5e5e;
+}
+#travelers_checklist #country_add_remove_wrapper a:hover span {
+    background-color: transparent;
+}
+#travelers_checklist_content {
+    clear: left;
+    padding: 25px;
+}
+#travelers_checklist_content .main_section {
+    margin-top: 50px;
+}
+#travelers_checklist_content .main_section:first-child {
+    margin-top: 0px;
+}
+#travelers_checklist_content h2 {
+    margin-bottom: 10px;
+    color: #4d4d4d;
+    font-weight: lighter;
+}
+#travelers_checklist_content h3  {
+    background: transparent url(../travel/images_global/icon_checkmark_green.png) no-repeat left top;
+    min-height: 50px;
+    padding: 0 0 0 50px;
+    font-weight: lighter;
+    line-height: 28px;
+    margin-bottom: 0; 
+}
+#travelers_checklist_content ul li p  {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    color: #5e5e5e;
+    line-height: 22px;
+    margin: 10px 0;
+}
+#country_step_container {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-top: 0;
+}
+.cssgradients #country_step_container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e0e0e0), to(#ffffff)); 
+  background-image: -webkit-linear-gradient(top, #e0e0e0, #ffffff); 
+  background-image:    -moz-linear-gradient(top, #e0e0e0, #ffffff); 
+  background-image:     -ms-linear-gradient(top, #e0e0e0, #ffffff); 
+  background-image:      -o-linear-gradient(top, #e0e0e0, #ffffff); 
+  background-image:         linear-gradient(top, #e0e0e0, #ffffff); 
+}
+.no-cssgradients #country_step_container {
+     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e0e0e0', EndColorStr='#ffffff');
+}
+#country_step_container #inner_step_content {
+    background-color: #c5c5c5;
+    padding: 15px 15px 15px 15px;
+}
+.cssgradients #country_step_container #inner_step_content {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c5c5c5), to(#ffffff)); 
+  background-image: -webkit-linear-gradient(top, #c5c5c5, #ffffff); 
+  background-image:    -moz-linear-gradient(top, #c5c5c5, #ffffff); 
+  background-image:     -ms-linear-gradient(top, #c5c5c5, #ffffff); 
+  background-image:      -o-linear-gradient(top, #c5c5c5, #ffffff); 
+  background-image:         linear-gradient(top, #c5c5c5, #ffffff); 
+}
+.no-cssgradients #country_step_container #inner_step_content {
+     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#c5c5c5', EndColorStr='#ffffff');
+}
+#country_step_container #inner_step_content > p {
+    padding: 25px 0 0 100px;
+    height: 50px;
+    background: transparent url(../travel/images_global/icon_step_shadow.png) no-repeat left top;
+    display: inline-block;
+    
+    font-family: Georgia, Times New Roman, times, serif;
+    font-size: 21px;
+    font-style: italic;
+    color: #4d4d4d;
+}
+#country_step_container #inner_step_content > p span {
+    font-weight: bold;
+}
+/*#country_step_container #inner_step_content form {
+    display: inline-block;
+    margin-left: 75px;
+}*/
+#country_step_container #inner_step_content div.btn {
+    display: inline-block;
+    margin-left: 75px;
+}
+#country_step_container #inner_step_content form #step_get_started {
+    padding: 7px 20px;
+}
+#travelers_checklist_content ul li ul {
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+#travelers_checklist_content ul li ul li {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    color: #5e5e5e;
+    margin: 20px 0 0 50px;
+    line-height: 21px;
+}
+#travelers_checklist_content ul li ul li:first-child {
+    margin-top: 0;
+}
+#travelers_checklist_content .checklist_note {
+    background-color: #f2f9ff;
+    border: 5px solid #f2f2f2;
+    padding: 10px 20px 20px 20px;
+    width: 540px;
+    position: relative;
+    left: -25px;
+    margin: 20px 0;
+    
+    -webkit-border-radius: 8px; 
+    -moz-border-radius: 8px; 
+    border-radius: 8px;
+}
+
+#travelers_checklist_content .country_container {
+    margin: 20px 0 40px 0;
+    /*display: none;*/
+}
+#travelers_checklist_content .country_container p {
+    margin: 0;
+}
+#travelers_checklist_content .country_container .topbar {
+    background-color: #6b9be1;
+    height: 13px;
+}
+.cssgradients #travelers_checklist_content .country_container .topbar {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6b9be1), to(#577db6)); 
+  background-image: -webkit-linear-gradient(top, #6b9be1, #577db6); 
+  background-image:    -moz-linear-gradient(top, #6b9be1, #577db6); 
+  background-image:     -ms-linear-gradient(top, #6b9be1, #577db6); 
+  background-image:      -o-linear-gradient(top, #6b9be1, #577db6); 
+  background-image:         linear-gradient(top, #6b9be1, #577db6); 
+}
+.no-cssgradients #travelers_checklist_content .country_container .topbar {
+     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#6b9be1', EndColorStr='#577db6');
+}
+#travelers_checklist_content .country_container ul {
+    list-style: none;
+}
+#travelers_checklist_content .country_container > ul {
+    border-left: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2;
+    border-bottom: 2px groove #707070;
+    
+    margin: 0;
+    
+    padding: 40px 0 20px 20px;
+}
+#travelers_checklist_content .country_container > ul li > ul {
+    margin: 0 20px 20px 50px;
+}
+#travelers_checklist_content .country_container > ul li > ul li > ul {
+    list-style: disc;
+    margin-bottom: 0;
+}
+
+#travelers_checklist_content .country_container > ul li {
+    margin: 5px 0 0 0;
+    float: none;
+}
+#travelers_checklist_content .country_container .country_flag_name {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5e5e5e;
+    margin-bottom: 10px;
+}
+#travelers_checklist_content .country_container .country_flag_name img {
+    margin-right: 10px;
+}
+#travelers_checklist_content #country_contact_container ul li ul {
+    margin-left: 0;
+}
+#travelers_checklist_content #country_contact_container ul li ul li {
+    background: url("images/sprite_contact.png") no-repeat scroll left top transparent;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 45px;
+}
+#travelers_checklist_content #country_contact_container ul li ul li.phone_icon {
+    background-position: 0 -38px;
+}
+#travelers_checklist_content #country_contact_container ul li ul li:first-child {
+    background: none;
+}
+
+#travelers_checklist_content #country_contact_container ul li ul li span {
+    display: block;
+    font-family: Georgia,Times New Roman,times,serif;
+    font-size: 18px;
+}
+#travelers_checklist_content #country_contact_container ul li ul li span.telephone_number {
+    color: #5e5e5e;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/*******************************
+    scroller navigation
+*******************************/
+#scroller_container {
+    background-color: #ededed;
+    width: 210px;
+    position: relative;
+    z-index: 50;
+    margin-left: 25px;
+    border-bottom: 2px ridge #E3E3E3;
+}
+#scroller_container h4 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #2d4259;
+    background: transparent url(../travel/images_global/bg_blue_bullet_11x11.png) no-repeat left 17px;
+    padding: 15px 0 15px 15px;
+    margin-left: 20px;
+    
+}
+#passports #right_rail #scroller_container ul li {
+    /* resetting global margin-bottom on right rail li */
+    margin-bottom: 0px;
+}
+#scroller_container ul li a {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 13px;
+    color: #595959;
+    text-decoration: none;
+    display: block;
+}
+#scroller_container .scroller_sub_nav {
+    /*padding: 10px 0 20px 0;*/
+    background-color: #dbdbdb;
+}
+#scroller_container .scroller_sub_nav li a {
+    font-size: 11px;
+    line-height: 16px;
+    background: transparent url(../travel/images_global/bg_grey_bullet_5x5.png) no-repeat 18px 11px;
+    padding: 5px 15px 5px 35px;
+}
+#scroller_container ul.scroller_nav > li > a {
+    padding: 11px 15px 10px 25px;
+}
+#scroller_container  ul.scroller_nav > li {
+    position: relative;
+    min-height: 10px;
+}
+#scroller_container  ul.scroller_nav > li.selected span.selected_indicator {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 34px;
+    width: 28px;
+    margin-left: -8px;
+    background: transparent url(../travel/images_global/bg_left_blue_active_arrow.png) no-repeat left top;
+}
+.ie7 #scroller_container  ul.scroller_nav > li.selected span.selected_indicator {
+    /* hide the blue active arrow in ie7 but use it in more modern browsers */
+    background: none;
+}
+#scroller_container  ul.scroller_nav > li.selected > a {
+    background-color: #598cad;
+    color: #ffffff;
+}
+.cssgradients #scroller_container  ul.scroller_nav > li.selected > a {
+
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#598cad), to(#317099)); 
+    background-image: -webkit-linear-gradient(top, #598cad, #317099); 
+    background-image:    -moz-linear-gradient(top, #598cad, #317099); 
+    background-image:     -ms-linear-gradient(top, #598cad, #317099); 
+    background-image:      -o-linear-gradient(top, #598cad, #317099); 
+    background-image:         linear-gradient(top, #598cad, #317099);
+}
+.no-cssgradients #scroller_container ul.scroller_nav > li.selected > a {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#598cad', EndColorStr='#317099');
+}
+/* menu is only two levels - top and sub */ 
+#scroller_container  ul.pure_css > li.selected > ul {
+    display: block;
+}
+#scroller_container  ul.scroller_nav > li.selected > ul {
+    background: #DBDBDB url(../travel/images_global/bg_shadow_scroller_sub_menu_bottom.png) repeat-x left bottom;
+    padding-bottom: 20px;
+}
+#scroller_container  ul.scroller_nav > li.selected > ul li:first-child {
+    background: transparent url(../travel/images_global/bg_shadow_scroller_sub_menu_top.png) repeat-x left top;
+}
+#scroller_container  ul.scroller_nav > li.selected > ul li.selected {
+    background-color: #b3b3b3;
+    background-image: none;
+}
+
+.boxshadow #scroller_container  ul.scroller_nav > li.selected > ul li.selected {
+    -moz-box-shadow:inset 0 0 5px #737373;
+    -webkit-box-shadow:inset 0 0 5px #737373;
+    box-shadow:inset 0 0 5px #737373;
+}
+#scroller_container  ul.scroller_nav > li.selected > ul li.selected a {
+    background: transparent url(../travel/images_global/bg_pastel_yellow_bullet_5x5.png) no-repeat 18px 11px;
+    color: #ffec99; 
+}
+#scroller_container  ul.scroller_nav > li {
+    border-top: 1px solid #d2d2d2;
+}
+#scroller_container .scroller_sub_nav {
+    display: none;
+}
+
+#scroller_container.menu-absolute {
+    position: absolute;
+}
+#scroller_container.menu-fixed {
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+}
+#scroller_container.menu-absolute-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+/****************************************************
+    Traveling Alerts and Warnings Landing Page
+*****************************************************/
+
+div#main ul#ta_tw_description {
+    background: url("../travel/images_global/bg_four_verticle_dots.png") repeat-y 245px top transparent;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+div#main ul#ta_tw_description li {
+    float: left;    
+    width: 235px;
+    margin-right: 29px;
+    padding-left: 0px;
+    background: none;
+}
+
+div#main ul#ta_tw_description li h2 {
+    margin-bottom: 5px; 
+}
+
+div#main ul#ta_tw_description li h2.warning {
+    background: url("images/icon_warning_medium.png") no-repeat 184px 4px transparent;
+}
+
+div#main ul#ta_tw_description li h2.alert {
+    background: url("images/icon_alert_medium.png") no-repeat 148px 4px transparent;
+}
+
+#main #ta_tw_description p {
+    display: block;
+    font: 11px/1.5 Verdana, Geneva, sans-serif;
+}
+
+/* Alerts and Warnings filter table styles */
+
+.autocompleteWrapper label {
+    float: left;    
+    color: #787878;
+    font: italic 21px Georgia, "Times New Roman", Times, serif;
+    margin-right: 10px;
+}
+
+.autocompleteWrapper form .autocomplete_input {
+    border: 1px solid #B7B7B7;
+    margin: 1px 5px 0 0;
+    padding: 7px 3px;
+    width: 185px;
+    font-size: 12px;
+    float: left;  
+    -moz-border-radius: 3px; /* FF1-3.6 */
+    -webkit-border-radius: 3px; /* Saf3-4, iOS 1-3.2, Android <1.6 */
+    border-radius: 3px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+}
+
+a#clear_results {
+    cursor: pointer;
+    color: #006BA8;
+    text-decoration: none;
+    float: right;
+    margin-top: 8px;
+    font: 11px Verdana, Geneva, sans-serif;
+}
+
+.filterable_table td.warning, 
+div#main .filterable_table td.warning {
+    background: transparent url("../travel/images_global/bg_warning_alert_sprite.png") no-repeat 3px 5px;
+}
+
+.filterable_table td.alert,
+div#main .filterable_table td.alert {
+    background: transparent url("../travel/images_global/bg_warning_alert_sprite.png") no-repeat 3px -72px;
+}
+
+div#main .filterable_table td.alert, div#main .filterable_table td.warning{
+    padding: 10px 0 10px 35px;
+}
+
+/******************************************
+    Alerts and Warnings Detail Page
+*******************************************/
+#ta_tw_header_section {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+#ta_tw_header_section.warning {
+    background: transparent url("images/icon_warning_large.png") no-repeat left top
+}
+
+#ta_tw_header_section.alert {
+    background: transparent url("images/icon_alert_large.png") no-repeat left top;
+}
+
+#ta_tw_header_section.caution {
+    background: transparent url("images/icon_caution_large.png") no-repeat left top;
+}
+
+#ta_tw_header_section img {
+    float: left;
+    vertical-align: top;
+    margin: 4px 20px 0 0;
+}
+div#main #ta_tw_header_section h1 {
+    font-size: 30px;
+    border-bottom: none;
+    margin-bottom: 0;
+    margin-left: 60px;
+    padding-top: 5px;
+}
+
+#ta_tw_header_section .updated_date {
+    font-family: Verdana, Geneva, sans-serif;
+    text-transform: uppercase;
+    color: #919191; 
+    font-size: 9px;
+    border-bottom: 1px solid #8c8c8c;
+    display: block;
+    padding-left: 60px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/*******************************
+    about us page
+*******************************/
+
+body.about #content h1 {
+    border-bottom: 1px solid #8C8C8C;
+    color: #4D4D4D;
+    font-family: Georgia,Times New Roman,times,serif;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-top: 35px;
+    margin-left: 60px;
+    padding-bottom: 5px;
+}
+body.about #content div#main h1 {
+    margin-left: 0;
+    margin-top: 0;
+}
+body.about #content #feature,
+body.about #content span.four_dot_divider,
+body.about #content > h1 {
+    margin-left: 52px;
+}
+body.about #main {
+    width: 542px;
+    margin-left: 52px;
+}
+div#main h2 a.point {
+    background: transparent url("../travel/images_global/bg_blue_arrow.png") no-repeat scroll right 10px;
+    padding: 0 20px 0 0;
+}
+
+/*******************************
+    Passports for Minors Under 16 page
+*******************************/
+.passports_under16 #main h1 {
+    margin: 0 0 21px 0;
+}
+.passports_under16 #main h2 {
+    margin: 0 0 7px 0;
+}
+.passports_under16 #main h3 {
+    margin: 0 0 4px 0;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #a3a3a3;
+    padding: 7px 0 0;
+}
+.passports_under16 #main .vert_drawer_main h3 {
+    font-style: italic;
+    font-size: 21px;
+    text-transform: none;
+}
+.passports_under16 #main h4 {
+    margin: 0 0 0 0;
+}
+.passports_under16 #main ul {
+    margin: 0 0 0 0;
+}
+.passports_under16 #main ul li {
+    margin: 0 0 7px 0;
+}
+.passports_under16 #main .quick_facts p {
+    font-size: 12px;
+}
+.passports_under16 #main .vert_drawer_main p.description {
+    font-style: italic;
+}
+.passports_under16 #main .quick_facts h3 {
+    /*background: transparent url('images/bg_dotted_short.png') no-repeat left top;*/
+}
+.passports_under16 #main .quick_facts h3:first-of-type {
+    background: none;
+}
+.passports_under16 .four_dot_divider {
+    margin: 21px 0;
+}
+#main .content_controller.under16 .form_content table span {
+    margin: 7px 0 0;
+}
+.passports_under16 #drawers {
+    margin-bottom: 72px;
+}
+#fees_under16 {
+    margin-top: 90px;
+}
+
+.photo_requirements img.content {
+    margin: 20px 0;
+}
+.what_to_submit {
+    width: 255px;
+    margin: 0 20px 40px 0;
+}
+#main .what_to_submit h4 {
+    background:  transparent url('images/bg_dotted_short.png') no-repeat left top;
+    text-transform: uppercase;
+    margin: 20px 0 0;
+    padding: 20px 0 0;
+}
+#main .what_to_submit h4:first-child {
+    background-image:  none;
+    margin-top: -5px;
+}
+#main .what_to_submit p,
+#main .what_to_submit li {
+    font-size: 12px;
+    line-height: 1.4;
+}
+#main .what_to_submit li {
+    margin-left: -27px;
+}    
+.what_to_submit.left {
+    float: left;
+}
+.what_to_submit.right {
+    float: right;
+}
+.photo_requirements hr,
+.photo-examples hr {
+    clear: both;
+    background: url("../travel/images/bg_four_horizontal_dots.png") repeat-x scroll left top transparent;
+    padding: 20px 0 0;
+    border: none;
+}
+
+/* drawer in #main */
+
+.form_content .vert_drawer_main {
+    margin: 0 0 20px 0;
+}
+    .vert_drawer_main .drawer {
+        overflow: hidden;
+    }
+    /*.ghost { Not sure if this will be needed or not. copy of hidden li's for screenreaders 
+        position: absolute; height: 0; width: 0; overflow: hidden;
+    }*/
+    
+    /* new version with a div for background and the <a> is only the tab area */
+    #main div.moreTab_main {
+        background: transparent url("../travel/images_global/sprite_moreForms.png") no-repeat 0 -208px;
+        width: 540px;
+        height: 59px;
+        margin: -26px 0 0 -26px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+    }
+    #main div.moreTab_main a {
+        font: bold 11px Tahoma, Geneva, sans-serif;
+        color: #36547c;
+        text-transform: uppercase;
+        text-decoration: none;
+        outline: none;
+        display: block;
+        margin: 25px 0 0 325px;
+        padding: 9px 0;
+        width: 161px;
+        text-indent: 57px;
+    }
+    #main .moreTab_main.close {
+        background-position: 0 -272px;
+    }
+/*
+    .open {
+        padding: 0 0 20px;
+    }
+*/    
+    #main .form_content .moreTab_main {
+        background-position: 0 -209px;
+        margin: -46px 0 0 -26px;
+        width: 538px;
+    }
+    #main .form_content a.moreTab_main.close {
+        background-position: 0 -268px;
+    }
+    .button_section .blue {
+        position: relative;
+        /* z-index: 2; */
+    }
+
+
+
+/* photo tool rail  */
+
+.photo_tool.blue {
+    text-align: center;
+}
+.photo_tool.blue a {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+/* Acceptable Passport Photos */
+ul#acceptable_photos {
+    overflow: visible;
+    margin-top: 21px;
+}
+    ul#acceptable_photos li {
+        float: left;
+        background: none;
+        padding: 0;
+        margin: 0 0 28px 15px;
+        position: relative;
+    }
+    ul#acceptable_photos li:first-child {
+        margin: 0 0 0 0;
+    }
+        ul#acceptable_photos li .photo_info {
+            background: transparent url('images/photo_i_corner.png') no-repeat left top;
+            position: absolute;
+            width: 71px;
+            height: 67px;
+            right: 5px;
+            bottom: 5px;
+            text-indent: -50px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .ie7 ul#acceptable_photos li .photo_info {
+            bottom: 3px;
+        }
+        .ie9 ul#acceptable_photos li .photo_info {
+            right: 4px;
+        }
+
+.photo-examples #main .four_dot_divider {
+    margin: 38px 0 16px;
+}
+
+/******************************
+    Photo Carousel
+*******************************/
+#passports_photo_carousel {
+    background: #555 url("images/photo_slider_bg.jpg") repeat-y;
+    width: 548px;
+    overflow: hidden;
+    min-height: 490px;
+    position: relative;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+#slideshow_topic {
+    float: left;
+    width: 178px;
+    margin: 20px 10px 10px;
+}
+    #passports_photo_carousel #slideshow_topic li {
+        background-image: none;
+        font: 17px Georgia, "Times New Roman", Times, serif;
+        color: #ffcd51;
+        padding: 7px 5px;
+        cursor: pointer;
+        -moz-border-radius: 6px; 
+        -webkit-border-radius: 6px; 
+        border-radius: 6px; 
+    }
+    #passports_photo_carousel #slideshow_topic li:hover {
+        background: #666;
+    }
+    #passports_photo_carousel #slideshow_topic li.selected {
+        color: #eee;
+        background: #7a7a7a;
+    }
+
+#main #slideshow-main {
+    width: 235px; 
+    float:left; 
+    position: relative;
+    padding: 0 0 0 18px;
+    top: 20px;
+    height: 450px;
+}
+
+#main #passports_photo_carousel #slideshow-main .large_photo {
+    height: 220px;
+    width: 220px;   
+    position: relative;
+}
+
+#main #passports_photo_carousel #slideshow-main .large_photo span {
+    background: transparent url("images/icons_photo_tool_sprite.png") no-repeat left top;    
+    display: block;
+    height: 40px;
+    width: 50px;    
+    position: absolute;
+    top: 195px;
+    left: 180px;
+}
+
+#main #passports_photo_carousel #slideshow-main .large_photo span.incorrect {
+    background-position: 0 -12px;
+}
+
+#main #passports_photo_carousel #slideshow-main .large_photo span.correct {
+    background-position: -51px -9px;
+}
+
+#main #passports_photo_carousel #carousel li a span {
+    display: block;
+    background: transparent url("images/icons_photo_tool_sprite.png") no-repeat left top;
+    height: 20px;
+    width: 28px;
+    top: 55px;
+    position: absolute;
+    left: 49px; 
+    cursor: pointer;
+}
+
+#main #passports_photo_carousel #carousel li a span.incorrect {
+    background-position: -114px -18px;
+}
+
+#main #passports_photo_carousel #carousel li a span.correct {
+    background-position: -138px -18px;  
+}
+
+#main #slideshow-main span.content { 
+    position: absolute;
+    top: 230px; 
+    left: 0;
+    display: block; 
+    width: 255px;
+    height: 60px;
+    margin: 12px 0 0 0;
+}
+
+#main #slideshow-main span.content p {
+    font-size: 12px;
+    line-height: 1.2;
+    color: #eee;
+    margin: 0 20px 20px 18px;
+}
+    #main #slideshow-main span.content p.tip span {
+        font-weight: bold;
+        font-style: italic;
+    }
+    #main #slideshow-main span.content p.tip span.icon {
+        background: transparent url("images/icons_photo_tool_sprite.png") no-repeat -180px -20px;
+        height: 16px;
+        width: 25px;
+        display: inline-block;
+    }
+
+#main #slideshow-carousel {
+    position:relative;
+    float: right;
+    margin-right: 6px;
+    margin-top: 13px;
+}
+
+#main #slideshow-carousel ul {
+    margin:0; 
+    padding:0;
+    list-style:none;
+    margin-left: 10px;
+    width: 91px;
+}
+
+#main #slideshow-carousel li {
+    position: relative;
+    padding: 0;
+    margin: 0 0 18px;
+    background-image: none;
+}
+
+.ie7 #main #slideshow-carousel li {
+    margin: 0 0 17px;
+}
+
+#main #slideshow-carousel li .arrow {
+    display: none;
+}
+
+#main #slideshow-carousel li a { 
+    display:block; 
+    position: relative;
+    height: 75px;
+    width: 75px;
+}
+
+
+#slideshow-carousel .active {
+    filter:alpha(opacity=100); 
+    -moz-opacity:1.0; 
+    -khtml-opacity: 1.0; 
+    opacity: 1.0;
+}
+
+#slideshow-carousel .faded {
+    filter:alpha(opacity=50); 
+    -moz-opacity:0.5; 
+    -khtml-opacity: 0.5; 
+    opacity: 0.5;
+}
+
+    #main #slideshow-carousel #carousel_viewport {
+        overflow: hidden;
+        height: 385px;
+        width: 91px;
+        position: relative;
+    }
+    
+        #main #slideshow-carousel #carousel {
+            position: absolute;
+            top: 0px;
+        }
+        
+            #main #slideshow-carousel .up_arrow {
+                background: transparent url("images/photo_slider_sprite_arrow.png") no-repeat 26px 2px;  
+                height: 46px;
+                width: 85px;
+                cursor: pointer;
+            }
+            
+            #main #slideshow-carousel .down_arrow {
+                background: transparent url("images/photo_slider_sprite_arrow.png") no-repeat 26px -28px;
+                height: 46px;
+                width: 85px;
+                cursor: pointer;
+            }
+            
+            #main #slideshow-carousel .up_inactive {
+                background-position: 26px -70px;
+                cursor: default;
+            }
+            
+            #main #slideshow-carousel .down_inactive {
+                background-position: 26px -100px;
+                cursor: default;
+            }
+            
+                #main #slideshow-carousel li a img {
+                    cursor: pointer;
+                }
+
+                #main #slideshow-carousel li a:hover {
+                    border: 2px solid #FFC558;
+                }
+                
+                #main #slideshow-carousel li.selected a {
+                    border: 2px solid #2AAAAA;
+                }
+                
+                #main #slideshow-carousel li a {
+                    border: 2px solid transparent;
+                }
+                
+                #main #slideshow-main li {
+                    width: 235px;
+                    height: 290px;
+                    display: block;
+                    position: relative;
+                    padding: 0;
+                    background: none;
+                }
+
+ /*********** Newsroom Landing Page ******************/
+
+div#ca_news_filter h2 {
+    color: #a3a3a3;
+    font: italic 21px Georgia, "Times New Roman", Times, serif;
+    margin-bottom: 10px;
+    margin-top: 22px;
+} 
+
+div#feature_article {
+    background: url("../travel/images/horz_dotted_line.png") repeat-x left top transparent;
+    overflow: hidden;
+    padding: 8px 0;
+}
+
+div#feature_article p {
+    margin-bottom: 0px;
+}
+
+div#feature_article img {
+    float: right;   
+    margin-left: 8px;
+}
+
+div#news_article img {
+    float: right;   
+    margin-left: 25px;
+    max-width: 550px;
+}
+
+div#ca_news_filter p {
+    margin-bottom: 0px; 
+}
+
+div#main a.read_more {
+    color: #c69c6d;
+    font: 10px Verdana,Geneva,sans-serif;
+    margin-top: 18px;
+    text-decoration: none;
+    display: block;
+}
+
+#ca_news_filter label {
+    font: bold 14px Verdana, Geneva, sans-serif;    
+    color: #5e5e5e;
+    margin-top: 18px;
+    margin-bottom: 3px;
+    display: block;
+}
+
+#ca_news_filter select {
+    border: 1px solid #c5c5c5;
+    border-radius: 4px 4px 4px 4px;
+    margin: 1px 0 0;
+    padding: 7px 3px;
+    font: 14px Tahoma, Geneva, sans-serif;
+    color: #333333;
+}
+
+#ca_news_filter #year {
+    width: 135px;   
+}
+
+#ca_news_filter #topic, #ca_news_filter #region, #ca_news_filter #country {
+    width: 196px;   
+}
+
+#ca_news_filter .form_item {
+    float: left;
+    width: 210px;
+}
+
+#ca_news_filter .form_item.filter_btn {
+    width: 65px;    
+    margin-top: 39px;
+}
+
+#ca_news_filter .year {
+    width: 150px;
+}
+
+#ca_news_filter .button_blue {
+    width: 90px;    
+    height: 36px;
+    font: bold 11px Tahoma, Geneva, sans-serif;
+    float: left;
+    margin-top: 40px;
+}
+
+div#main ul#ca_news_filter_results {
+    clear: both;
+}
+
+div#main #ca_news_filter_results>li {
+    background: url("../travel/images/horz_dotted_line.png") repeat-x left top transparent;
+    padding: 20px 0;
+}
+
+div#main #ca_news_filter_results>li>a {
+    display: block;
+    float: left;
+    height: 125px;
+    width: 158px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+div#main #ca_news_filter_results>li div.news_metadata {
+    float: left;
+}
+
+div#main #ca_news_filter_results>li div.news_metadata li {
+    padding: 0;
+    background: none;
+}
+
+div#main ul#ca_news_filter_results p {
+    font: 14px/1.5 "Lucida Grande", sans-serif; 
+    clear: both;
+}
+
+div#main ul#ca_news_filter_results .news_date,
+div#main #news_article .news_date {
+    font: 10px "Lucida Grande", sans-serif;
+    color: #919191;
+    margin-bottom: 15px;
+    display: block;
+    text-transform: uppercase;
+    clear: both;
+}
+
+div#main #feature_article .news_date,
+div#main #news_article .news_date {
+    font: 10px "Lucida Grande", sans-serif;
+    color: #919191;
+    margin-bottom: 15px;
+    display: block;
+    text-transform: uppercase;
+    clear: both;
+}
+
+div#main .news_details {
+    font: 14px Verdana, Geneva, sans-serif; 
+    color: #5e5e5e;
+    margin-bottom: 15px;
+}
+
+div#main .news_details b {
+    font-weight: bold;
+    color: #5e5e5e;
+    font-size: 14px;
+}
+
+#ca_news_filter_results .news_details li {
+    font: 14px/1.5 Verdana, Geneva, sans-serif; 
+}
+
+div#main #ca_news_filter_results>li div li.warning_icon {
+    background: url("images/bg_warning_alert_sprite.png") no-repeat top right transparent;
+    margin-right: 172px;
+}
+
+div#main #ca_news_filter_results>li div li.alert_icon {
+    background: url("images/bg_warning_alert_sprite.png") no-repeat right -79px transparent;
+    margin-right: 197px;
+}
+
+div#main #ca_news_filter_results>li div li.notice_icon {
+    background: url("images/bg_warning_alert_sprite.png") no-repeat right -158px transparent;
+    margin-right: 166px;
+}
+
+.newsroom_subscribe {
+    margin-left: 823px;
+    margin-top: 15px;
+}
+
+.newsroom_subscribe_crisis {
+    margin-left: 823px;
+    margin-top: 2px;    
+}
+
+.cssgradients .subscribe_btn {
+  background-color: #d3d5d7;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d3d5d7), to(#c4c6c7)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #d3d5d7, #c4c6c7); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #d3d5d7, #c4c6c7); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, #d3d5d7, #c4c6c7); /* IE10 */
+  background-image:      -o-linear-gradient(top, #d3d5d7, #c4c6c7); /* Opera 11.10+ */
+  background-image:         linear-gradient(top, #d3d5d7, #c4c6c7);
+            
+}
+
+.no-cssgradients .subscribe_btn { 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#d3d5d7', EndColorStr='#c4c6c7'); /* IE6-IE9 */
+}
+
+.borderradius .subscribe_btn {
+  -webkit-border-radius: 3px; /* Saf3-4, iOS 1-3.2, Android <1.6 */
+     -moz-border-radius: 3px; /* FF1-3.6 */
+          border-radius: 3px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+}
+
+#passports.news div#main .bottom_divide {
+    margin: 20px 0 8px 0;
+    clear: both;
+}
+#passports.news div#main h1{
+    margin-bottom: 15px;
+}
+/* photo_example tooltips */
+    #acceptable_photos li.info_tip {
+        cursor: pointer;    
+    }
+
+    #acceptable_photos li.info_tip .tooltip_box {
+        display: none;
+    }
+    
+    #acceptable_photos li:hover.info_tip .tooltip_box {
+        display: block;
+    }
+
+    #acceptable_photos .tooltip_box {
+         background-color: #ffffff;
+         border: 3px solid #e0e0e0;
+         height: auto;
+         position: absolute;
+         bottom: 162px;
+         right: -25px;
+         width: 476px;
+         z-index: 10;
+    }
+    .boxshadow #acceptable_photos .tooltip_box {
+        -webkit-box-shadow: 0px 7px 20px 0px #454545;
+        -moz-box-shadow: 0px 7px 20px 0px #454545;
+        box-shadow: 0px 7px 20px 0px #454545;
+    }
+        #acceptable_photos .tooltip_box .tooltip_pointer {
+            background: transparent url('../travel/images_global/tooltip_pointer.png') no-repeat 345px top;
+            height: 39px;
+            width: 476px;
+            margin-bottom: -38px;
+        }
+
+        .ie7 #acceptable_photos .tooltip_box .tooltip_pointer,
+        .ie8 #acceptable_photos .tooltip_box .tooltip_pointer {
+            width: 0;
+            height: 0;
+            border-top: 37px solid #e0e0e0;
+            border-right: 0;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            position: absolute;
+            top: 163px;
+            left: 350px;
+            background: none;
+        }
+            .ie7 #acceptable_photos .tooltip_box .tooltip_pointer .tooltip_pointer_inner,
+            .ie8 #acceptable_photos .tooltip_box .tooltip_pointer .tooltip_pointer_inner {
+                width: 0;
+                height: 0;
+                border-top: 32px solid white;
+                border-right: 0;
+                border-left: 35px solid transparent;
+                border-right: 35px solid transparent;
+                position: absolute;
+                top: -37px;
+                left: -35px;
+            }
+
+/* Passport Statistics */
+
+#passports.statistics #feature {
+    margin: 15px 0 0 44px;
+}
+
+#passports.statistics #feature h1 {
+    font-family: Georgia, Times New Roman, times, serif;
+    font-size: 30px;
+    color: #4D4D4D;
+    border-bottom: 1px solid #8C8C8C;
+    font-weight: lighter;
+    padding-bottom: 5px;
+    margin-bottom: 30px;    
+}
+
+#passports.statistics div#main {
+    margin-bottom: 20px;    
+}
+
+#passports.statistics div#right_rail {
+    margin-top: 78px;
+}
+
+#passports.statistics div#ppt_issued_by_state {
+    padding: 0 0 80px 45px;
+    clear: both;
+    width: 879px;
+}
+
+#passports.statistics #right_rail a {
+    color: #0076A3;
+    text-decoration: none;  
+}
+
+#passports.statistics #right_rail a p.enlarge {
+    text-align: center;
+    font-style: italic;
+}
+
+#ppt_issued_by_state h2 {
+    color: #4D4D4D;
+    font: 24px Georgia,"Times New Roman",Times,serif;
+}
+
+#passports_issued,
+#valid_passports_circulation,
+#passport_applications_received {
+    clear: both;    
+}
+
+.cq-wcm-edit #passports_issued,
+.cq-wcm-edit #valid_passports_circulation,
+.cq-wcm-edit #passport_applications_received,
+.cq-wcm-edit #ppt_issued_by_state {
+    display: block !important;
+}
+
+#passports_issued #DataTables_Table_0_wrapper table,
+#valid_passports_circulation #DataTables_Table_0_wrapper table,
+#passport_applications_received #DataTables_Table_0_wrapper table {
+    margin-bottom: 60px;
+}
+
+#select_stats_data label {
+    float: left;
+    color: #787878;
+    font: italic 21px Georgia, "Times New Roman", Times, serif;
+    margin-right: 10px; 
+}
+
+#select_stats_data select {
+    border: 1px solid #C5C5C5;
+    border-radius: 4px 4px 4px 4px;
+    margin-right: 5px;
+    padding: 6px 3px;
+    font: 14px Tahoma, Geneva, sans-serif;
+    color: #333;
+    float: left;
+}
+
+/*********** Passports Agencies Detail Page ******************/
+img#agency_photo {
+    float: left;
+    margin-right: 20px;
+}
+
+#general_appt_info,
+#detailed_appt_info {
+    margin-top: 15px;   
+}
+
+div#main #detailed_appt_info > h3 {
+    font-style: italic;
+}
+
+div#main #detailed_appt_info > h2, 
+div#main #detailed_appt_info .headers h2 {
+    margin-bottom: 20px;
+}
+
+div#main #detailed_appt_info ol {
+    list-style-type: decimal;   
+    margin-left: 50px;
+}
+
+div#main #detailed_appt_info ol > li {
+    background: none;
+    padding: 0;
+}
+
+div#main #general_appt_info #passport_card_info {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 15px;
+    color: #5E5E5E;
+    font: bold 14px/1.5 Verdana,sans-serif;
+}
+
+div#main #general_appt_info #passport_card_info img {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+div#main #general_appt_info #hours_of_operation {
+    margin: 10px 0; 
+}
+
+div#main #general_appt_info #hours_of_operation p {
+    color: #949494;
+    font: 17px Georgia,"Times New Roman",Times,serif;
+    margin: 0;
+}
+
+div#main #general_appt_info p #appointment_number {
+    font: bold 17px Georgia, "Times New Roman", Times, serif;
+    display: block;
+    margin-top: 5px;
+}
+
+/* form links in main area */
+#main .form_list {
+    margin-top: 30px;
+    overflow: visible;
+}
+    #main .content_box_container .form_list li,
+    .passports_under16 #main ul.form_list li,
+    #main .form_list li {
+        background-image: none;
+        margin: 0 0 20px -45px;
+        clear: both;
+        overflow: visible;
+        display: block;
+        height: 68px;
+    }
+    #main .form_list li .pdf li, 
+    #main .form_list li .html li,
+    #main .content_box_container .form_list li {
+        height: 75px;
+    }
+    #main .form_list li .pdf, 
+    #main .form_list li .html {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#3f75ad), to(#244370));
+        background-image: -webkit-linear-gradient(top, #3f75ad, #244370);
+        background-image: -moz-linear-gradient(top, #3f75ad, #244370);
+        background-image: -ms-linear-gradient(top, #3f75ad, #244370);
+        background-image: -o-linear-gradient(top, #3f75ad, #244370);
+        background-image: linear-gradient(top, #3f75ad, #244370);
+        height: 25px;
+       -moz-border-radius: 4px;
+       -webkit-border-radius: 4px;
+        border-radius: 4px;
+    }
+    
+    .no-cssgradients #main .form_list li .pdf,
+    .no-cssgradients #main .form_list li .html {
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#3f75ad, endColorstr=#244370);
+    }
+    
+        #main .form_list p {
+            clear: both;
+            margin: 0;
+        }
+        #main .form_list li span {
+            font-size: 14px;
+        }
+        #main .form_list .formsplit{
+            height: 5px;
+            float: left;
+            width: 100%;
+        }
+        #main .form_list .formtype{
+            float: left;
+            margin: 17px 10px 12px 0;
+            padding: 0 10px 0 3px;
+            width: 40px;
+            position: relative;
+        }
+        #main .form_list .pdf,
+        #main .form_list .html {
+           -moz-border-radius: 2px;
+           -webkit-border-radius: 2px;
+            border-radius: 2px;
+            float: left;
+            margin: 17px 10px 12px 0;
+            padding: 0 10px 0 3px;
+            height: 19px;
+            width: 180px;
+            position: relative;
+            overflow: visible;
+        }
+        #main .form_list a {
+            background: transparent url("../travel/images_global/icon_file_type_large.png") no-repeat 0 0;
+            font: 11px "Lucida Grande", Tahoma, sans-serif; 
+            color: #8c8c8c;
+            text-decoration: none;
+            text-transform: uppercase; 
+            padding: 19px 3px 5px 46px;
+            display: block;
+            overflow: visible;
+            position: absolute;
+            margin-top: -16px;
+            height: 30px;
+            color: #fff !important;
+        }
+        #main .form_list .pdf a, 
+        #main .form_list .html a,
+        #main .content_box_container .form_list a {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: none;
+        }
+        /*#main .form_list .pdf,
+        #main .form_list .html {
+            width: 220px;
+            margin: 17px 10px 12px 0;
+            padding: 0 10px 0 3px;
+        }*/
+        #main .form_list .pdf a {
+            background-position: 0 2px;
+        }
+        #main .form_list .html a {
+            background-position: 0 -74px;
+        }
+        #main .form_list h3 span {
+            font: 16px Verdana, Arial, Helvetica, Geneva, sans-serif;
+        }
+        #main .form_list li.description {
+            height: 0;
+            margin: -20px 0 45px -45px;
+        }
+
+#main ol {
+    margin-bottom: 25px;
+}
+#main ol ol {
+    margin: 0;
+}
+#country_detail ol > li,
+#main ol > li {
+    color: #5E5E5E;
+    font: 14px/1.5 Verdana,sans-serif;
+    background-image: none;
+    padding: 1px 0;
+    margin: 0 0 0 52px;
+}
+
+
+/**** Passport Wizard Tooltips ****/
+#passport_wizard .outcomes .form_content .tooltip_wrapper div.tooltip_box.show {
+    right: 2px;
+}
+
+#passport_wizard .outcomes .form_content .tooltip_wrapper div.tooltip_box.show .tooltip_pointer {
+    background-position: 218px top; 
+}
+
+
+/**** Passport Fees ****/
+#passports.costs #main table th {
+    text-align: left;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+#passports.costs #main table td {
+    padding-right: 5px;
+    position: relative;
+}
+#passports.costs #main h2 {
+    margin-top: 35px;
+}
+#passports.costs #main table td div.plus {
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    color: #0070C0;
+    font-weight: bold;
+    font-size: 18px;
+}
+#passports.costs #main table td span.helper_text,
+#passports.costs #main table th span.helper_text {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+}
+div#main .agency-header {
+    font-style: italic;
+}
+/**** Hide Expand/Collapse button Archive Processing Times ****/
+.refund .expandos .open_close_ctrl {
+    display: none !important;
+}
+
+#passport_wizard .form_row p > span {
+    display: inline-block;
+}
+#passport_wizard .form_row p > span.process_times_label {
+    font-weight: normal;
+}
+#passports.simple_richtextarea .update_routine .update_expedite .update_expedite_at_agency .update_date { font-weight: bold; }
+
+#passports.headerandtext .update_routine .update_expedite .update_expedite_at_agency .update_date { font-weight: bold; }
+
+.process_times_tooltip_gradient {
+    font-weight: bold;
+}
+
+div#main table.passport_processing_times td {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+div#main table.passport_processing_times th {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align:left;
+    width: 23%;
+}
+.tooltip-inner {
+    width: 300px;
+    max-height: 115px;
+    padding: 10px 10px 15px;
+    background-color: #3f75ad;
+    background-image: -webkit-linear-gradient(top, #5196E0, #244370);
+    background-image: -o-linear-gradient(top, #5196E0, #244370);
+    background-image: linear-gradient(top, #5196E0, #244370);
+    margin-bottom: 27px;
+    display: none;
+}
+.process_times_tooltip {
+    display: block;
+    position: absolute;
+    width: 469px; 
+    margin-top: -150px;
+    background: url("images/bg_tooltip_lrg.png") no-repeat 20% 100%;
+}
+#main .tooltip-inner p {
+    color: #fff;
+    text-align: left;
+    width: 365px;
+    padding-left: 20px;
+}
+
+#main table.ppt-times {
+    border-spacing: 0;
+    width: 90%;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    border-collapse: collapse;
+    background-color: #ffffff;  
+    margin-top: 20px;
+}
+#main table.ppt-times td {padding-left: 40px}
+
+#main table.ppt-times th {
+    color: #FFF; 
+    padding-bottom: 9px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+#main table.ppt-times tr:first-child {color: #e2f2ff; background: #4BA3EB}
+
+#main table.ppt-times col:first-child {background: #FF0}
+/*******************************
+    global stuff
+*******************************/
+
+#right_rail .right_rail_content {
+    padding: 20px;
+    position: relative;
+}
+.right_rail_box {
+    margin-bottom: 10px;
+    clear: both;
+}
+
+/*******************************
+    hierarchy stuff
+*******************************/
+#right_rail .high .right_rail_top_border {
+    display: none;
+}
+#right_rail .high .right_rail_header { 
+    padding: 10px 10px 5px 10px;
+}
+#right_rail .high .right_rail_bot_border {
+    height: 10px;
+}
+
+#right_rail .med .right_rail_header { 
+    padding: 10px;
+}
+#right_rail .med .right_rail_bot_border {
+    height: 10px;
+}
+
+#right_rail .low .right_rail_bot_border {
+    display: none;
+}
+#right_rail .low .right_rail_header { 
+    padding: 20px;
+}
+#right_rail .low .right_rail_top_border {
+    height: 10px;
+}
+
+#right_rail .photo .right_rail_header { 
+    padding: 10px;
+}
+#right_rail .photo .right_rail_bot_border {
+    height: 10px;
+}
+
+/* high header */
+#passports #right_rail .high .right_rail_header {
+    background:#ffcd02;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffcd02), to(#fff300));
+    background-image: -webkit-linear-gradient(top, #ffcd02, #fff300 );
+    background-image:    -moz-linear-gradient(top, #ffcd02, #fff300 );
+    background-image:     -ms-linear-gradient(top, #ffcd02, #fff300 );
+    background-image:      -o-linear-gradient(top, #ffcd02, #fff300 );
+    background-image:         linear-gradient(top, #ffcd02, #fff300 );
+    border: 4px solid #dedede;
+    border-bottom: none;
+}
+    .no-cssgradients #passports #right_rail .high .right_rail_header {
+        background:#ffcd02;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffcd02, endColorstr=#fff300);
+    }
+/* high bar */
+#passports #right_rail .high .right_rail_bot_border {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd500), to(#ffc202));
+    background-image: -webkit-linear-gradient(top, #ffd500, #ffc202);
+    background-image:    -moz-linear-gradient(top, #ffd500, #ffc202);
+    background-image:     -ms-linear-gradient(top, #ffd500, #ffc202);
+    background-image:      -o-linear-gradient(top, #ffd500, #ffc202);
+    background-image:         linear-gradient(top, #ffd500, #ffc202);
+    border: 4px solid #dedede;
+    border-top: none;
+    border-bottom: none;
+}
+    .no-cssgradients #passports #right_rail .high .right_rail_bot_border {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffd500, endColorstr=#ffc202);
+        overflow: hidden;
+    }
+/* high content area */
+#passports #right_rail .high .right_rail_content {
+    background: #f4f4f4 url("../travel/images_global/bg_gradient_radial_gray.jpg") no-repeat;
+    border: 4px solid #dedede;
+    border-top: none;
+}
+
+.ie7 #passports #right_rail .high.minidrawer .right_rail_content {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* med header */
+#passports #right_rail .med .right_rail_header {
+    background: #3ea7da;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#2e7bb2), to(#3ea7da));
+    background-image: -webkit-linear-gradient(top, #2e7bb2, #3ea7da);
+    background-image:    -moz-linear-gradient(top, #2e7bb2, #3ea7da);
+    background-image:     -ms-linear-gradient(top, #2e7bb2, #3ea7da);
+    background-image:      -o-linear-gradient(top, #2e7bb2, #3ea7da);
+    background-image:         linear-gradient(top, #2e7bb2, #3ea7da);
+}
+    .no-cssgradients #passports #right_rail .med .right_rail_header {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#2e7bb2, endColorstr=#3ea7da);
+    }
+/* med bar */
+#passports #right_rail .med .right_rail_bot_border {
+    background: #42b3e5;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#45baef), to(#42b3e5));
+    background-image: -webkit-linear-gradient(top, #45baef, #42b3e5);
+    background-image:    -moz-linear-gradient(top, #45baef, #42b3e5);
+    background-image:     -ms-linear-gradient(top, #45baef, #42b3e5);
+    background-image:      -o-linear-gradient(top, #45baef, #42b3e5);
+    background-image:         linear-gradient(top, #45baef, #42b3e5);
+}
+    .no-cssgradients #passports #right_rail .med .right_rail_bot_border {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#45baef, endColorstr=#42b3e5);
+    }
+/* med content */
+#passports #right_rail .med .right_rail_content {
+    border: 1px solid #e4e0db;
+}
+/* low bar */
+#passports #right_rail .low .right_rail_top_border {
+    background:#ffd500;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd500), to(#ffc202));
+    background-image: -webkit-linear-gradient(top, #ffd500, #ffc202);
+    background-image:    -moz-linear-gradient(top, #ffd500, #ffc202);
+    background-image:     -ms-linear-gradient(top, #ffd500, #ffc202);
+    background-image:      -o-linear-gradient(top, #ffd500, #ffc202);
+    background-image:         linear-gradient(top, #ffd500, #ffc202);
+}
+    .no-cssgradients #passports #right_rail .low .right_rail_top_border {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffd500, endColorstr=#ffc202);
+    }
+/* low header */
+#passports #right_rail .low .right_rail_header {
+    border: 1px solid #e0e1dc;
+    border-top: none;
+    border-bottom: none;
+    padding-bottom: 5px;
+}
+/* low content */
+#passports #right_rail .low .right_rail_content {
+    border: 1px solid #e0e1dc;
+    border-top: none;
+    padding-top: 0;
+}
+/* photo header */
+#passports #right_rail .photo .right_rail_header {
+    background: #e7e7e7;
+}
+/* photo bar */
+#passports #right_rail .photo .right_rail_bot_border {
+    background: #42b3e5;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#cfcfcf), to(#aeaeae));
+    background-image: -webkit-linear-gradient(top, #cfcfcf, #aeaeae);
+    background-image:    -moz-linear-gradient(top, #cfcfcf, #aeaeae);
+    background-image:     -ms-linear-gradient(top, #cfcfcf, #aeaeae);
+    background-image:      -o-linear-gradient(top, #cfcfcf, #aeaeae);
+    background-image:         linear-gradient(top, #cfcfcf, #aeaeae);
+}
+    .no-cssgradients #passports #right_rail .photo .right_rail_bot_border {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cfcfcf, endColorstr=#aeaeae);
+    }
+/* photo content */
+#passports #right_rail .photo .right_rail_content {
+    background: #f1f1f1;
+    border-bottom: 1px solid #e4e0db;
+    height: 250px;
+}
+
+/* styles */
+/* h2 */
+#passports #right_rail .right_rail_header h2 {
+    font: 18px Georgia, "Times New Roman", Times, serif;
+    color: #4d4d4d;
+    padding: 0;
+}
+#passports #right_rail .med .right_rail_header h2 {
+    color: #fff;
+}
+#passports #right_rail .low .right_rail_header h2 {
+    margin: 0;
+}
+/* h3 */
+#passports #right_rail h3 {
+    font: 18px Georgia, Times New Roman, times, serif;
+    color: #4d4d4d;
+}
+/* p, list, table cells */
+#passports #right_rail p,
+#passports #right_rail li,
+#passports #right_rail td,
+.site-sia #right_rail p {
+    font: 12px Verdana, Geneva, sans-serif;
+    margin: 0 0 10px 0;
+    color: #5e5e5e;
+}
+
+/* larger serif type links in rail */
+#passports #right_rail p.emphasize a {
+    font: 18px Georgia, serif;
+    color: #0076a3;
+}
+#passports #right_rail p.announcement,
+#passports #right_rail span.hours {
+    font-weight: bold;
+}
+#passports #right_rail .more a,
+#passports #right_rail a.more {
+    background: url("../travel/images_global/arrow_sm_gold.png") no-repeat right 2px;
+    font: 10px Verdana, Geneva, sans-serif !important;
+    color: #c69c6d;
+    text-transform: uppercase;
+    display: block;
+    text-align: right;
+    padding: 0 8px 0 0;
+    margin: 21px 0 0 0;
+    text-decoration: none;
+}
+#passports #right_rail a.edit {
+    background: transparent url("../travel/images_global/icon_pencil.png") no-repeat 0 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 20px;
+    text-indent: -30px;
+}
+#passports #right_rail h3 a {
+    background: transparent url("../travel/images_global/icon_pencil.png") no-repeat right 0;
+    color: #40707e;
+    text-decoration: none;
+    padding-right: 27px;
+}
+#right_rail input[type="text"] {
+    border: 1px solid #B7B7B7;
+    float: left;
+    font-size: 12px;
+    margin: 1px 5px 0 0;
+    padding: 7px 3px;
+    width: 189px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/*******************************
+    specific stuff
+*******************************/
+
+/* input field with go button */
+#right_rail .high input.go {
+    width: 182px;
+}
+#right_rail .med input.go,
+#right_rail .low input.go {
+    width: 190px;
+}
+
+/* contact lists with icons */
+ul.contact_list {}
+    #passports #right_rail ul.contact_list li {
+        font: 18px Georgia, Times New Roman, times, serif;
+        color: #4d4d4d;
+        padding: 4px 0 0 40px;
+        background: transparent url("../travel/images_global/sprite_contact.png") no-repeat 0 0;
+        margin: 0 0 10px 0;
+        min-height: 31px;
+    }
+    #passports #right_rail ul.contact_list li.icon_phone,
+	 #passports #right_rail ul.contact_list li.customtext_icon {
+        background-position: 0 -299px;
+    }
+    #passports #right_rail ul.contact_list li.icon_email {
+        background-position: 0 -450px;
+    }
+    #passports #right_rail ul.contact_list li.icon_info {
+        background-position: 0 -754px;
+    }
+    #passports #right_rail ul.contact_list li.icon_globalphone {
+        background-position: 0 -151px;
+    }
+    #passports #right_rail ul.contact_list li.icon_fax {
+        background-position: 0 -602px;
+    }
+        #passports #right_rail ul.contact_list p.large_number {
+            font: 18px Georgia, "Times New Roman", Times, serif;
+            color: #5e5e5e;
+        }
+        #passports #right_rail ul.contact_list a {
+            color: #0076a3;
+            text-decoration: none;
+}
+#passports #right_rail ul.contact_list a:visited{
+    color: #000f82;
+}
+#passports #right_rail ul.contact_list a:hover, #passports #right_rail ul.contact_list a:active{
+    color: #269cc9;
+    text-decoration: underline;
+}
+
+        #passports #right_rail ul.contact_list span {
+            font: 14px Verdana, Geneva, sans-serif;
+            display: block;
+            margin: 4px 0 7px 0;
+            color: #5e5e5e;
+        }
+
+/* warnings and alerts */
+#right_rail .tw h2 {
+    font: 18px Georgia, Times New Roman, times, serif;
+    color: #4d4d4d;
+}
+
+#right_rail ul.warnings_alerts li {
+    padding: 0 0 0 30px;
+    margin: 0 0 18px 0;
+    background: transparent url("../travel/images_global/bg_warning_alert_sprite.png") no-repeat left top;
+    float: left;
+    width: 210px;
+}
+#right_rail ul.warnings_alerts li.alert {
+    background-position: 0px -75px;
+}
+#right_rail ul.warnings_alerts li.warning {
+    background-position: 0px 2px;
+}
+#right_rail ul.warnings_alerts li.notice {
+    background-position: 0px -155px;
+}
+#right_rail ul.warnings_alerts li.caution {
+    background-position: 0px -234px;
+}
+#right_rail ul.warnings_alerts li span {
+    display: block;
+    color: #ababab;
+    font: normal 9px/1.4 "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+    padding-top: 2px;
+}
+#right_rail ul.warnings_alerts li a {
+    font: 12px/1 Verdana,Geneva,sans-serif;
+    color: #0076A3;
+    text-decoration: none;
+}
+
+/* passport forms */
+.minidrawer {
+    margin-bottom: 43px;
+}
+.ie7 #right_rail .minidrawer {
+    margin-bottom: 30px;
+}
+    .rail_jswrap {
+        overflow: hidden;
+        padding-bottom: 15px;
+        position: relative;
+        z-index: 1;
+    }
+        #passports #right_rail .forms p {
+            clear: both;
+            margin: 0;
+        }
+        #right_rail .forms li span {
+            font-size: 14px;
+        }
+        #right_rail .forms .pdf,
+        #right_rail .forms .html {
+            background: #ddd;
+           -moz-border-radius: 2px;
+           -webkit-border-radius: 2px;
+            border-radius: 2px;
+            float: left;
+            margin: 6px 10px 12px 0;
+            padding: 0 10px 0 3px;
+            height: 14px;
+            width: 70px;
+        }
+        #right_rail .forms .pdf:hover,
+        #right_rail .forms .html:hover {
+            background: #e9e9e9;
+        }
+        #right_rail .forms .html {
+            width: 100px;
+        }
+        #right_rail .forms a {
+            background: url("../travel/images_global/icon_file_type.png") no-repeat 0 0;
+            font: 9px "Lucida Grande", Tahoma, sans-serif; 
+            color: #8c8c8c;
+            text-decoration: none;
+            text-transform: uppercase; 
+            padding: 6px 3px 5px 20px;
+            display: block;
+            overflow: visible;
+            position: absolute;
+            margin-top: -4px;
+        }
+        #right_rail .forms .html a {
+            background-position: 0 -59px;
+        }
+
+/* passport embassy contact drawer */
+#right_rail #contact_map.right_rail_box {
+    margin-bottom: 43px;
+}
+    #passports #right_rail #contact_map .right_rail_content {
+        background-position: 0 -100px;
+    }
+    #right_rail #contact_map.high .right_rail_content {
+        border-bottom: none;
+    }
+    #right_rail #contact_map p {
+        padding-bottom: 10px;
+        margin: 0;
+    }
+    #right_rail a.more.forms { 
+        clear: both;
+        text-align: right;
+        margin: 7px 0 0;
+        overflow: visible;
+    }
+    #right_rail a.moreTab_map {
+        background: url("../travel/images_global/sprite_moreForms.png") no-repeat 0 6px;
+        font:bold  11px Tahoma, Geneva, sans-serif;
+        color: #36547c;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-indent: 125px;
+        outline: none;
+        width: 300px;
+        height: 27px;
+        margin: 14px 0 0 -24px;
+        padding-top: 12px;
+        display: none;
+        overflow: visible;
+        position: absolute;
+    }
+    #right_rail a.close {
+        background: url("../travel/images_global/sprite_moreForms.png") no-repeat 0 -35px;
+        outline: none;
+    }
+    
+    #right_rail .vert_drawer_map {
+        clear: both;
+    }
+
+body.apply .display_selected_agency,
+body.apply #npic_call,
+body.apply #passport_costs,
+body.apply #passport_photo_examples,
+body.apply #enroll_step_rail,
+body.apply .checklist,
+body.apply #research_country {
+    display: none;
+}
+    
+/* passport costs */
+/* Passport Cost Summary (Y) */
+#right_rail .passport_costs {
+    font: 12px Tahoma, Geneva, sans-serif;
+    color: #5e5e5e;
+    overflow: visible;
+    clear: both;
+    float: none;
+    margin-bottom: 10px;
+}
+    #right_rail .passport_costs {
+        width: 100%
+    }
+        #right_rail .passport_costs td {
+            padding-bottom: 14px;
+        }
+        #right_rail .passport_costs td.usd {
+            text-align: right;
+            vertical-align: bottom;
+        }
+        #right_rail .passport_costs tr.total td {
+            border-top: 1px solid #111;
+            padding-top: 14px;
+        }
+        #right_rail .passport_costs tr.total td.usd {
+            vertical-align: top;
+        }
+        #right_rail .passport_costs h3 {
+            font: 18px Georgia, "Times New Roman", Times, serif;
+            color: #406d80;
+            display: inline-block;
+            padding-bottom: 0;
+        }
+        #right_rail .passport_costs p { 
+            font: 12px Tahoma, Geneva, sans-serif;
+            margin-bottom: 0;
+        }
+        #right_rail .passport_costs img {
+        }
+
+/* news twitter blog passports specific style */
+#right_rail #news_twitter_blog {
+    background: transparent url("images/bg_passports_blue_fade.gif") repeat-x left top;
+    color: #5e5e5e;    
+    width: 298px;
+    margin: 0 0 10px;
+}
+    #right_rail #news_twitter_blog #controls {
+        padding: 5px 10px 10px 150px;
+        margin: 0;
+        width: 150px;
+        height: 32px;
+        background: transparent url("images/bg_passports_blue_bar.gif") no-repeat left bottom;
+        overflow: visible;
+    }
+    #right_rail #news_twitter_blog #news_section ul {
+        margin: 12px 0 0 15px;
+    }
+    #right_rail #news_twitter_blog h1 {
+        margin: 5px 0 0 14px;
+        color: #fff;
+        font-weight: lighter;
+        font-size: 20px;
+    }
+    #right_rail #news_twitter_blog #tweet_section {
+        padding: 5px 20px 20px;
+    }
+    #right_rail #news_twitter_blog #controls li {
+        background: #2f7eb4; 
+        border-top: 1px solid #2f7eb4; 
+       -moz-border-radius-topleft: 4px; 
+       -moz-border-radius-topright: 4px; 
+       -webkit-border-top-left-radius: 4px; 
+       -webkit-border-top-right-radius: 4px; 
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        padding: 0 5px;
+        margin: 0 1px -1px 0;
+        height: 30px;
+    }
+    #right_rail #news_twitter_blog #controls li:hover {
+        background: #ccc;
+    }
+    #right_rail #news_twitter_blog #panel_viewport {
+        background: white;
+        border: 1px solid #e5e2dd;
+        border-top: none;
+        padding-bottom: 14px;
+    }
+    #right_rail #news_twitter_blog #controls li.selected {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#8fd4f4), to(#46bbf0)); 
+        background-image: -webkit-linear-gradient(top, #8fd4f4, #46bbf0); 
+        background-image:    -moz-linear-gradient(top, #8fd4f4, #46bbf0); 
+        background-image:     -ms-linear-gradient(top, #8fd4f4, #46bbf0);
+        background-image:      -o-linear-gradient(top, #8fd4f4, #46bbf0);
+        background-image:         linear-gradient(top, #8fd4f4, #46bbf0);
+        border-top: 1px solid #969696;
+        height: 31px;
+    }
+        .no-cssgradients #right_rail #news_twitter_blog #controls li.selected {
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8fd4f4', EndColorStr='#46bbf0');
+        }
+    #right_rail #news_twitter_blog #controls li.selected a {
+        border: none;
+        padding:1px
+    }
+    #right_rail #news_twitter_blog a.morenews {
+        margin: 0;
+        padding: 0 8px 0 0;
+    }
+    #right_rail a.more:hover {
+        text-decoration: underline !important;
+    }
+    #right_rail a.morenews:hover {
+        text-decoration: underline !important;
+    }
+
+/* contact lists with icons */
+ul.contact_list {}
+    #right_rail ul.contact_list li {
+        font: 18px Georgia, Times New Roman, times, serif;
+        color: #4D4D4D;
+        padding: 5px 0 0 45px;
+        background: transparent url("../travel/images_global/sprite_contact.png") no-repeat 0 0;
+        margin: 14px 0 10px 0;
+        min-height: 31px;
+    }
+    #right_rail ul.contact_list li.icon_phone {
+        background-position: 0 -37px;
+    }
+    #right_rail ul.contact_list li.icon_fax {
+        background-position: 0 -75px;
+    }
+    #right_rail ul.contact_list li.icon_email {
+        background-position: 0 -165px;
+    }
+    #right_rail ul.contact_list li.icon_info {
+        background-position: 0 -121px;
+    }
+        #right_rail ul.contact_list a {
+            font: 18px Georgia, Times New Roman, times, serif;
+            color: #0076a3;
+        }
+        #right_rail ul.contact_list span,
+        #right_rail ul.contact_list span a {
+            font: 12px Verdana, Geneva, sans-serif;
+            display: block;
+        }
+
+/* Promos */
+#right_rail .promo_gray_gradient {
+    background: transparent url("images/bg_promo_graygradient.png") no-repeat 0 0;
+    margin-bottom: 14px;
+    overflow: auto;
+}
+    #right_rail .promo_gray_gradient h2 {
+        font: italic 21px Georgia, "Times New Roman", Times, serif;
+        padding-bottom: 0;
+    }
+    #right_rail .promo_gray_gradient p {
+        font-size: 11px;
+        margin-bottom: 14px;
+    }
+    #right_rail .promo_gray_gradient .enroll a {
+        padding: 10px 27px;
+    }
+#right_rail .promo_bluewave {
+    background: transparent url("images/bg_promo_bluewave.jpg") no-repeat 0 0;
+    margin-bottom: 14px;
+    position: relative;
+}
+    #right_rail .promo_bluewave h2 {
+        font: italic 21px Georgia, "Times New Roman", Times, serif;
+        padding-bottom: 0;
+    }
+    #right_rail .promo_bluewave p {
+        font-size: 11px;
+        margin-bottom: 14px;
+    }
+    #right_rail .promo_bluewave a {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-indent: -100px;
+        overflow: hidden;
+        height: 100%;
+        width: 300px;
+}
+#right_rail .promo_bluemap {
+    background: transparent url("images/bg_promo_bluemap.jpg") no-repeat 0 0;
+    margin-bottom: 14px;
+}
+    #right_rail .promo_bluemap h2 {
+        font: italic 21px Georgia, "Times New Roman", Times, serif;
+        padding-bottom: 0;
+    }
+    #right_rail .promo_bluemap p {
+        font-size: 11px;
+        margin-bottom: 14px;
+    }
+
+/* Passport Day in the U.S.A. Promo */
+#right_rail .promo_gray_gradient.passport_day span {
+    display: block;
+    background: transparent url("images/sprite_promo_icons.png") no-repeat 10px 30px;
+    padding: 21px 25px 21px 130px;
+    overflow: auto;
+}
+    #right_rail .promo_gray_gradient #passport_day h2 {
+        text-align: center;
+    }
+
+/* / Passport Day in the U.S.A. Promo */
+/* Other promos with gray gradient BG */
+#right_rail .promo_gray_gradient.step span {
+    display: block;
+    background: transparent url("../travel/images_global/step-logo.png") no-repeat 15px 26px;
+    padding: 32px 25px 21px 120px;
+    overflow: auto;
+}
+    #right_rail .promo_gray_gradient #step .enroll a {
+        padding: 10px 44px;
+    }
+#right_rail .promo_gray_gradient.cna_resources span {
+    display: block;
+    background: transparent url("images/sprite_promo_icons.png") no-repeat 15px -398px;
+    padding: 25px 20px 21px 125px;
+    overflow: auto;
+}
+    #right_rail .promo_gray_gradient #cna_resources .enroll a {
+        padding: 10px 44px;
+    }
+#right_rail .promo_gray_gradient.taskforce_alert span {
+    display: block;
+    padding: 25px;
+}
+    #right_rail .promo_gray_gradient.taskforce_alert {
+        text-align: center;
+    }
+    #right_rail .promo_gray_gradient.taskforce_alert p {
+        text-align: left;
+    }
+        #right_rail .promo_gray_gradient.taskforce_alert.enroll a {
+            padding: 10px 44px;
+        }
+
+/* end/ Other promos with gray gradient BG */
+#right_rail .promo_bluewave {
+    border: 1px solid #e4e0db;
+    padding: 10px;
+}
+    #passports #right_rail .promo_bluemap p,
+    #passports #right_rail .promo_bluewave p {
+        color: #fff;
+    }
+    #right_rail .promo_bluemap a {
+        font: 10px Verdana, Geneva, sans-serif; 
+        color: #fff;
+        text-transform: uppercase;
+        float: right;
+    }
+    #right_rail .promo_bluewave.traveling_country span {
+        display: block;
+        background: transparent url("images/bg_promo_traveling_to_country.png") no-repeat 20px 14px;
+        border: 1px solid #e4e0db;
+        padding: 20px;
+    }
+        #right_rail .promo_bluewave.traveling_country p {
+            font-size: 14px;
+            padding: 90px 0 0;
+            margin: 0;
+        }
+#right_rail .promo_bluemap.traveling_country_2 span {
+    display: block;
+    background: transparent url("images/bg_promo_traveling_to_country_serif.png") no-repeat 120px 14px;
+    border: 1px solid #e4e0db;
+    padding: 20px;
+}
+    #right_rail .promo_bluemap.traveling_country_2 p {
+        font-size: 14px;
+        padding: 26px 0 20px;
+        margin: 0;
+    }
+#right_rail .promo_bluemap {
+    border: 1px solid #e4e0db;
+    padding: 10px;
+}
+    #right_rail .promo_bluewave.passport_issuance span {
+        display: block;
+        background: transparent url("images/bg_promo_passport_issuance.png") no-repeat 10px 1px;
+        border: 1px solid #e4e0db;
+        padding: 20px;
+    }
+        #right_rail .promo_bluewave.passport_issuance p {
+            font-size: 14px;
+            padding: 120px 0 0;
+            margin: 0;
+        }
+
+/* Passport Cost Summary (Y) */
+#right_rail #passport_costs {
+    font: 12px Tahoma, Geneva, sans-serif;
+    color: #5e5e5e;
+    overflow: visible;
+    clear: both;
+    float: none;
+    margin-bottom: 10px;
+}
+    #right_rail #passport_costs table {
+        width: 100%
+    }
+        #right_rail #passport_costs table td {
+            padding-bottom: 14px;
+        }
+        #right_rail #passport_costs table td.usd {
+            text-align: right;
+            vertical-align: bottom;
+        }
+        #right_rail #passport_costs table tr.total td {
+            border-top: 1px solid #111;
+            padding-top: 14px;
+        }
+        #right_rail #passport_costs table tr.total td.usd {
+            vertical-align: top;
+        }
+        #right_rail #passport_costs h3 {
+            font: 18px Georgia, "Times New Roman", Times, serif;
+            color: #406d80;
+            display: inline-block;
+            padding-bottom: 0;
+        }
+        #right_rail #passport_costs p { 
+            font: 12px Tahoma, Geneva, sans-serif;
+            margin-bottom: 0;
+        }
+        #right_rail #passport_costs img {
+        }
+
+/* Children's Passport Monitoring Promo Box */
+#right_rail .monitoring_box {
+    background: #f7f3e4 no-repeat 10px 10px;
+    /*url("images/bg_monitoring_1.jpg")*/
+    border: 1px solid #e4e0db;
+    width: 298px;
+    height: 448px;
+    margin-bottom: 10px;
+    position: relative;
+}
+    #right_rail .monitoring_box .content {
+        background-color: transparent;
+        background-color: rgba(254, 185, 0, 0.8);  
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4CFEB9,endColorstr=#4CFEB9); 
+        zoom: 1;
+        padding: 14px;
+        width: 165px;
+        height: 95px;
+        position: relative;
+        left: 90px;
+        top: 300px
+    }
+        #passports #right_rail .monitoring_box .content h2 {
+            font: bold 16px "Arial Narrow", arial, sans-serif;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+        #right_rail .monitoring_box .content span {
+            font: bold 34px "Courier New", Courier, monospace;
+            color: #d63d6a;
+            letter-spacing: -4px;
+            display:inline-block;
+        }
+        #passports #right_rail .monitoring_box .content p {
+            font: bold 13px "Arial Narrow", arial, sans-serif;
+            color: #fff;
+            letter-spacing: 0;
+            text-transform: uppercase;
+        }
+/* / Children's Passport Monitoring Promo Box */
+
+/* Selected Passport Agency */
+#passports #right_rail p.big_address {
+    font: 18px Georgia, "Times New Roman", Times, serif;
+    color: #a35e21; 
+}
+#passports #right_rail p.note {
+    font-style: italic;
+}
+#right_rail p.note span {
+    color: #f00;
+}
+#passports #right_rail .hide_selected_agency {
+    display: none !important;
+}
+
+/* Processing Times */
+#right_rail #processing_times table {
+    width: 291px;
+    margin: 0 0 10px -20px;
+}
+#right_rail #processing_times table td {
+    padding: 10px 0 10px 0;
+    text-indent: 25px;
+}
+.ie7 #right_rail #processing_times table td {
+    text-indent: 0px;
+}
+#right_rail #processing_times a {
+    font: 12px/1 Verdana,Geneva,sans-serif;
+    color: #0076A3;
+    text-decoration: none;
+}
+#right_rail #processing_times span {
+    color: #f00;
+}
+#passports #right_rail p.date {
+    font-size: 10px;
+    color: #919191;
+}
+#passports #right_rail p.notice {
+    text-indent: -12px;
+    padding-left: 12px;
+}
+.ie8 #right_rail .photo .more{
+    margin-top: -10px; 
+}
+.ie8 #right_rail .jcarouselWrapper, .ie7 #right_rail .jcarouselWrapper{
+    border: 4px solid #cdcdcd;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    
+}
+
+.ie8 #right_rail .jcarousel, .ie7 #right_rail .jcarousel{
+    position: relative;
+    overflow: hidden;
+    width: 139px; 
+    text-align: center;
+    float: none;
+    z-index: 10;
+    padding-top: 20px;
+    border: none;
+    margin: 0 auto;
+}
+
+.ie8 #right_rail div#photoslider, .ie7 #right_rail div#photoslider{
+    border: none;
+}
+
+
+.ie8 #right_rail .jcarousel ul, .ie7 #right_rail .jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.ie8 #right_rail .jcarousel li, .ie7 #right_rail .jcarousel li {
+    float: left;
+}
+
+#right_rail .photo {}
+    #right_rail .photo a.next,
+    #right_rail .photo a.prev {
+        background: transparent url(images/sprite_photoslider_arrows.png) no-repeat 0 0;
+        display: block;
+        height: 31px;
+        width: 13px;
+        top: 110px;
+        position: absolute;
+        text-indent: -20px;
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .ie8 #right_rail .photo a.next, .ie7 #right_rail .photo a.next,
+    .ie8 #right_rail .photo a.prev, .ie7 #right_rail .photo a.prev {
+        margin-top: 0px;
+    } 
+    #right_rail .photo a.next { 
+        right: 20px;
+    }
+    #right_rail .photo a.prev {
+        background-position: 0 -63px;
+        
+    }
+    #right_rail .photo a.next:hover { background-position: 0 -32px; }
+    #right_rail .photo a.prev:hover { background-position: 0 -96px; }
+    #passports #right_rail .photo ul.slider li {
+        height: 193px;
+        background: none;
+        border: none;
+        color: #fff;
+        padding: 0;
+        margin: 120px 0 0;
+        text-align: center;
+    }
+    .ie8 #passports #right_rail .photo ul.slider li {
+        height: 195px;
+        margin: 0px 0 0 -1px;
+    }
+    .ie7 #passports #right_rail .photo ul.slider li {
+        height: 195px;
+        margin-top: 1px;
+    }
+    #right_rail ul.roundabout-holder {
+        list-style: none;
+        padding: 10px 0;
+        margin: 0 auto;
+        width: 6em;
+    
+    }
+    #right_rail div#photoslider {
+        border: 4px solid #cdcdcd;
+        border-left: none;
+        border-right: none;
+        height: 210px;
+        position: relative;
+    }
+        #right_rail ul.slider li.roundabout-moveable-item {
+            height: 193px;
+            width: 140px;
+            cursor: pointer;
+            background-color: #ccc;
+            border: 1px solid #999;
+        }
+        .ie8 #right_rail ul.slider li.roundabout-moveable-item,
+        .ie7 #right_rail ul.slider li.roundabout-moveable-item {
+            height: 195px;
+        }
+        #right_rail ul.slider li.roundabout-moveable-item img.photo {
+            width: 100%;
+        }
+        #right_rail ul.slider li.roundabout-in-focus {
+            cursor: auto;
+        }
+        
+            #right_rail div#photoslider img.nav_base {
+                position: absolute;
+                bottom: -7px;
+                right: 89px;
+                z-index: 31;
+            }
+            .ie8 #right_rail div#photoslider img.nav_base, .ie7 #right_rail div#photoslider img.nav_base {
+                position: absolute;
+                bottom: 20px;
+                right: 35px;
+                z-index: 31;
+            }
+            #right_rail ul.slider img.nav {
+                position: absolute;
+                bottom: -1px;
+                right: 28px;
+                z-index: 32;
+            }
+            .ie8 #right_rail ul.slider img.nav,
+            .ie7 #right_rail ul.slider img.nav {
+                bottom: 0px;
+                right: 27px;
+            }
+            #right_rail ul.slider li.roundabout-moveable-item p,
+            #right_rail ul.slider li.roundabout-moveable-item img.nav {
+                display: none;
+            }
+            #passports #right_rail ul.slider li.roundabout-in-focus p {
+                display: inline-block;
+                margin-top: 5px;
+                max-height: 30px;
+                overflow: hidden;
+                text-align: center;
+            }
+            #right_rail ul.slider li.roundabout-in-focus img.nav {
+                display: block;
+            }
+            
+/* In This Section */
+#right_rail #section.high .right_rail_content {
+    padding: 0;
+    border-bottom: none;
+}
+#passports #right_rail #section.high .right_rail_header {
+    background: #2E7BB2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3EA7DA), to(#2E7BB2));
+    background-image: -webkit-linear-gradient(top, #3EA7DA, #2E7BB2);
+    background-image: -moz-linear-gradient(top, #3EA7DA, #2E7BB2);
+    background-image: -ms-linear-gradient(top, #3EA7DA, #2E7BB2);
+    background-image: -o-linear-gradient(top, #3EA7DA, #2E7BB2);
+    background-image: linear-gradient(top, #3EA7DA, #2E7BB2);
+    border: 4px solid #E5E2DD;
+    border-bottom: none;
+}
+    .no-cssgradients #passports #right_rail #section.high .right_rail_header {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3EA7DA, endColorstr=#2E7BB2);
+        overflow: hidden;
+    }
+    #right_rail #section.high .right_rail_header h2 {
+        color: #fff;
+        font-weight: bold;
+    }
+#right_rail #section.high .right_rail_bot_border {
+    background: #333 url("../travel/images_global/bg_abduction_graydotz.gif") 0 10px;
+    height: 7px;
+   -webkit-box-shadow: inset 0 0 5px 1px #555555;
+   -moz-box-shadow: inset 0 0 5px 1px #555555;
+    box-shadow: inset 0 0 5px 1px #555555;
+}
+    .no-cssgradients #passports #right_rail #section.high .right_rail_bot_border {
+        filter: none;
+        background: #333333 url("../travel/images_global/bg_abduction_graydotz.gif") 0 10px;
+        overflow: hidden;
+    }
+
+#right_rail #section div.section_list {
+        background: #f9f9f9;
+        background-image: -webkit-gradient(circle,50% 50%, circle closest-corner, from(#ffffff), to(#eeeeee)); 
+        background-image: -webkit-radial-gradient(50% 50%, circle closest-corner, #ffffff, #eeeeee); 
+        background-image:    -moz-radial-gradient(50% 50%, circle closest-corner, #ffffff, #eeeeee); 
+        background-image:     -ms-radial-gradient(50% 50%, circle closest-corner, #ffffff, #eeeeee); 
+        background-image:      -o-radial-gradient(50% 50%, circle closest-corner, #ffffff, #eeeeee); 
+        background-image:         radial-gradient(50% 50%, circle closest-corner, #ffffff, #eeeeee);
+    }
+        .no-cssgradients #section div.section_list {
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#eeeeee);
+        }
+    #right_rail #section li.section_list_item {
+        border-top: 2px groove #fff;
+        font: 12px Tahoma, Geneva, sans-serif;
+        padding: 0;
+        margin: 0;
+    }
+    #right_rail #section li.section_list_item:first-child {
+        border-top: 1px solid #ddd;
+    }
+    #right_rail #section .section_list_item>a {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        margin: 0;
+        text-decoration: none;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 12px;
+        color: #0076A3;
+    } 
+        #right_rail #section .section_list_item.selected a.section_list_title,
+        body.role #right_rail #section li#role_nav a.section_list_title,
+        body.leadership #right_rail #section li#leadership_nav a.section_list_title,
+        body.work-in-action #right_rail #section li#work_in_action_nav a.section_list_title {
+            font: 14px Tahoma, Geneva, sans-serif;
+            color: #4d4d4d; 
+            position: relative;
+            overflow: hidden;
+            display: block;
+            margin: -1px 0 0 0;
+            padding: 10px;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#ffb201), to(#ffd323));
+            background-image: -webkit-linear-gradient(top, #ffb201, #ffd323 );
+            background-image:    -moz-linear-gradient(top, #ffb201, #ffd323 );
+            background-image:     -ms-linear-gradient(top, #ffb201, #ffd323 );
+            background-image:      -o-linear-gradient(top, #ffb201, #ffd323 );
+            background-image:         linear-gradient(top, #ffb201, #ffd323 );
+           /*-webkit-box-shadow: 0px 2px 5px #999; 
+           -moz-box-shadow: 0px 2px 5px #999; 
+            box-shadow: 0px 2px 5px #999; */
+        }
+            .no-cssgradients #section .section_list_item.selected a.section_list_title {
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffb201, endColorstr=#ffd323);
+                overflow: hidden;
+            }
+            
+#right_rail #section a.more {
+    background: #777 url("images/arrow_white.png") no-repeat right 4px;
+    font: 10px Verdana, Geneva, sans-serif !important;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    text-align: right;
+    padding: 3px 15px;
+    margin: 0;
+}
+#right_rail #section .back_overview {
+    background: transparent url("images/bg_abduction_graydotz.gif") 0 0;
+    padding: 4px;
+   -moz-box-shadow: inset 3px 3px 3px 1px #999999;
+    box-shadow: inset 0 0 5px 1px #999999;
+}
+
+#right_rail .enroll_in_step {
+    padding: 30px;
+    width: 240px;
+}
+    #right_rail .enroll_in_step img {
+        position: absolute;
+        margin: -30px 0 0 -18px;
+    }
+    #right_rail .enroll_in_step h2,
+    #right_rail .enroll_in_step p {
+        padding-left: 90px;
+    }
+    #right_rail .enroll_in_step .btn {
+        margin-left: 90px;
+    }
+    #right_rail .enroll_in_step a {
+        padding: 10px 44px;
+    }
+
+#passports #right_rail p.emphasize {
+    font: 18px Georgia, Times New Roman, times, serif;
+    color: #a35e21;
+}
+#right_rail #news_section a {
+    color: #0076A3;
+}
+/* hovers */
+#right_rail ul.warnings_alerts li a:hover,
+#right_rail #news_section a:hover {
+    text-decoration: none;
+    color: #33A9D6;
+}
+#right_rail #processing_times a:hover,
+#passports #right_rail h3 a:hover {
+    text-decoration: underline;
+}

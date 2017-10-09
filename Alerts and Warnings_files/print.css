@@ -1,0 +1,62 @@
+/*
+ * TSG Global Print Styles
+ */
+
+#content #main {
+    width: auto;
+    margin: 0 !important;
+}
+
+ul {
+    list-style: disc outside none;
+}
+
+ul li,
+div#main li, 
+div#country_detail li {
+    padding-left: 0;
+}
+.special-issuance-agency #content-links, .special-issuance-agency #right_rail .rightrail, .site-sia #content-links, .site-sia .contentlinks, .site-sia #right_rail .rightrail{
+    display: none;
+}
+
+.reciprocity-schedule .feature-viewport > ul > li {
+    display: block !important;
+    width: 870px !important;
+}
+
+.reciprocity-schedule .feature-viewport {
+    overflow: visible;
+    width: 870px;
+}
+
+.reciprocity-schedule .feature-menu,
+.reciprocity-schedule .arrow-indicator,
+.vc-form,
+.contentpage_Reciprocity #header,
+.contentpage_Reciprocity .megamenu,
+.contentpage_Reciprocity .breadcrumbs,
+.contentpage_Reciprocity .reciprocity-search-warp,
+.contentpage_Reciprocity .contentlinks,
+.contentpage_Reciprocity #right_rail,
+.contentpage_Reciprocity #footer_hook {
+    display: none !important;
+}
+
+.reciprocity-schedule .feature-box-container {
+    border: none;
+}
+
+.reciprocity-schedule .feature-box-inner {
+    overflow: visible;
+    border: none;
+}
+
+.reciprocity-schedule .feature-viewport > ul > li > div {
+    overflow: visible;
+    height: auto;
+}
+
+.reciprocity-schedule .tab1 > div > table tr {
+    display: block;
+}

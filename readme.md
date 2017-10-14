@@ -6,7 +6,7 @@ This project aims to beat the best adventurer I know with the best name: Jules V
 I'll help come up with an around-the-world trip path based on your selected features like sentiment and interests; you just be an adventurer and find something to bet on.
 
 ## Why?
-First and foremost, it's fun! Travel recommendations are somewhat of a dated form of art; travel agencies have largely been replaced by internet in this interwebbed and globally minded world. However, personalizing travels is still a great interest for the most individualistic modern population with the most autonomy the history has ever seen. This is my attempt at tailoring unique travels and experiences for you.
+First and foremost, it's fun! Travel recommendations are somewhat of a dated art; travel agencies have largely been replaced by Google in this interwebbed and globally-minded world. However, personalizing travels is still a great interest for the most individualistic modern population with the most autonomy the history has ever seen. This is my attempt at tailoring unique travels and experiences for you.
 
 ## What kind of data did I use?
 - reviews from tripadvisor.com

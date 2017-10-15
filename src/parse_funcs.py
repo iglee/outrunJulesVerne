@@ -52,9 +52,10 @@ def pg_urltag(endpg):
 
 
 def last_pg(soup):
-    end = soup.find('span', 'pageNum last taLnk ').string
-    return int(end)
+    end = soup.find('span', 'pageNum last taLnk ')
+    if end == None:
+        return 0
+    return int(end.string)
 
-
-
-def format_text(r, soup):
+def format_text(x):
+    soup = BeautifulSoup(str(x), 'html.parser', from_encoding='utf-8')

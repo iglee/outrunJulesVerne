@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 def soupify(url):
     r = requests.get(url)
-    soup = BeautifulSoup(r.content, 'html.parser')
+    soup = BeautifulSoup(r.content, 'html.parser', from_encoding='utf-8')
     soup.prettify()
     return r, soup
 
@@ -27,6 +27,8 @@ def format_url(r_links):
 
 def list_reviews(r, soup):
     p_list = soup.find_all('p', 'partial_entry')
+    for i,x in enumerate(p_list):
+        p_list[i] = p_list[i].get_text()
     return p_list
 
 

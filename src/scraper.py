@@ -9,11 +9,13 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-reviews_done = 1117
+range_i = 0
+range_f = 100
+#reviews_done = 1117
 
 
 reviews_total = []
-for i in range(reviews_done, len(url)):
+for i in range(range_i, range_f):
 
     review_urls = []
     if last_pgs[i]<100:
@@ -38,9 +40,10 @@ attr = df.attraction
 
 attr = [[x] for x in attr]
 
+attr = attr[range_i:range_f]
 attr_label = []
 
-for i in range(reviews_done, len(label_len)):
+for i in range(len(attr)):
     attr_label.append(attr[i]*label_len[i])
 
 
@@ -54,7 +57,7 @@ for i in range(len(reviews_total)):
 
 reviews_so_far = zip(attr_label_total, reviews)
 
-with open('data/reviews_2.csv','wb') as out:
+with open('data/reviews_.csv','wb') as out:
     csv_out=csv.writer(out)
     csv_out.writerow(['attractions','reviews'])
     for row in reviews_so_far:

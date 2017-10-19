@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from src.parse_funcs import soupify, rev_address, \
+from parse_funcs import soupify, rev_address, \
                         format_url, list_reviews, \
                         pgs_reviews_url, pg_urltag
 import pandas as pd
@@ -13,6 +13,9 @@ range_i = 0
 range_f = 100
 #reviews_done = 1117
 
+df = pd.read_csv('../data/attractions.csv')
+url = df.url
+last_pgs = df.last_page_number
 
 reviews_total = []
 for i in range(range_i, range_f):
@@ -57,7 +60,7 @@ for i in range(len(reviews_total)):
 
 reviews_so_far = zip(attr_label_total, reviews)
 
-with open('data/reviews_.csv','wb') as out:
+with open('../data/reviews_.csv','wb') as out:
     csv_out=csv.writer(out)
     csv_out.writerow(['attractions','reviews'])
     for row in reviews_so_far:

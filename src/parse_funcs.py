@@ -1,11 +1,16 @@
 import requests
 from bs4 import BeautifulSoup
+import time
 
 def soupify(url):
-    r = requests.get(url)
-    soup = BeautifulSoup(r.content, 'html.parser', from_encoding='utf-8')
-    soup.prettify()
-    return r, soup
+    try:
+        r = requests.get(url)
+        soup = BeautifulSoup(r.content, 'html.parser', from_encoding='utf-8')
+        soup.prettify()
+        return r, soup
+    except:
+        time.sleep(3)
+
 
 
 

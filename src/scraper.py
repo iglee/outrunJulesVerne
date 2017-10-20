@@ -9,8 +9,8 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-range_i = 0
-range_f = 100
+range_i = 1500
+range_f = 2000
 #reviews_done = 1117
 
 df = pd.read_csv('../data/attractions.csv')
@@ -60,7 +60,7 @@ for i in range(len(reviews_total)):
 
 reviews_so_far = zip(attr_label_total, reviews)
 
-with open('../data/reviews_.csv','wb') as out:
+with open('../data/reviews_4.csv','wb') as out:
     csv_out=csv.writer(out)
     csv_out.writerow(['attractions','reviews'])
     for row in reviews_so_far:

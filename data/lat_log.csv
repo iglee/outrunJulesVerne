@@ -609,7 +609,7 @@ Cote_d_Ivoire,Le_Wharf_du_Sassandra-Sassandra_Haut_Sassandra_Region,"L'Ancienne 
 Cote_d_Ivoire,Le_Pont_Weygand-Sassandra_Haut_Sassandra_Region,"Route de Gagnoa, Sassandra, Cote d'Ivoire",4.9512761,-6.0917517
 Cote_d_Ivoire,Jardin_botanique_de_Bingerville-Abidjan_Lagunes_Region,"Abidjan, Cote d'Ivoire",5.3599517,-4.0082563
 Cote_d_Ivoire,Dipi_Crocodile_Farm-Assinie_Sud_Comoe_Region,"Assinie Mafia Route, Assinie, Cote d'Ivoire",5.1443318,-3.3242226
-Cote_d_Ivoire,Banco_National_Park-Abidjan_Lagunes_Region,"Autoroute Nord | Espace ê©cotouristique du Banco situê© prêës de la Station Serviec Shell., Abidjan, Cote d'Ivoire",5.3599517,-4.0082563
+Cote_d_Ivoire,Banco_National_Park-Abidjan_Lagunes_Region,"Autoroute Nord | Espace ê©cotouristique du Banco situê© prê‘s de la Station Serviec Shell., Abidjan, Cote d'Ivoire",5.3599517,-4.0082563
 Cote_d_Ivoire,Les_Cascades_de_Man-Man_Dix_Huit_Montagnes_Region,"Man, Cote d'Ivoire",7.4064275,-7.5572231
 Egypt,Temple_of_Karnak-Luxor_Nile_River_Valley,"Luxor 81111, Egypt",25.6872431,32.6396357
 Egypt,Abu_Simbel_Temple_Complex-Abu_Simbel_Aswan_Governorate_Nile_River_Valley,"Abu Simbel, Egypt",22.3372319,31.625799
@@ -655,7 +655,7 @@ Kenya,Karen_Blixen_Coffee_Garden_and_Cottages-Nairobi,"336 Karen Road, Nairobi, 
 Kenya,Lamu_Old_Town-Lamu_Island_Coast_Province,"Lamu Island, Kenya",-2.290435,40.8677469
 Kenya,Old_Town-Mombasa_Coast_Province,"Near Ndia Kuu Road, Mombasa 00200, Kenya",-4.0604107,39.6786446
 Kenya,Jumba_la_Mtwana-Mombasa_Coast_Province,"Kilifi district, Coast province, Mombasa 80100, Kenya",-4.0434771,39.6682065
-Kenya,Gede_Ruins-Gede_Coast_Province,"Mombasa-Malindi Road, Gede 5067-80200 MALINDI, Kenya",-100000,-100000
+Kenya,Gede_Ruins-Gede_Coast_Province,"Mombasa-Malindi Road, Gede 5067-80200 MALINDI, Kenya",-3.318675,39.99753
 Kenya,Karen_Blixen_Museum-Nairobi,"Karen Rd | Langata, Nairobi, Kenya",-1.3453563,36.7144005
 Kenya,Nairobi_National_Museum-Nairobi,"Museum Hill, Nairobi 00100, Kenya",-1.273966,36.814488
 Kenya,Fort_Jesus_Museum-Mombasa_Coast_Province,"Ndia Kuu, Mombasa 00200, Kenya",-4.0604107,39.6786446
@@ -668,7 +668,7 @@ Kenya,Nairobi_National_Park-Nairobi,"Langata Road, Nairobi, Kenya",-1.3361981,36
 Kenya,Hell_s_Gate_National_Park-Naivasha_Rift_Valley_Province,"Lake Road South, Naivasha 20117, Kenya",-0.7061655,36.4269237
 Kenya,Watamu_National_Marine_Park-Watamu_Coast_Province,"Watamu 80202, Kenya",-3.3425465,40.0274159
 Kenya,Aberdare_National_Park-Nyeri_Central_Province,"Nyeri, Kenya",-0.4277809,36.9433591
-Kenya,Kisite_Mpunguti_Marine_National_Park_and_Reserve-Shimoni_Coast_Province,"Shimoni KWS HQ, Kenya",-100000,-100000
+Kenya,Kisite_Mpunguti_Marine_National_Park_and_Reserve-Shimoni_Coast_Province,"Shimoni KWS HQ, Kenya",-1.335347,36.7804
 Kenya,Machakos_People_s_Park-Machakos_Eastern_Province,"P.O. box 1712, Machakos 90100, Kenya",-1.298878,36.8328866
 Kenya,August_7th_Memorial_Park-Nairobi,"Moi Avenue/Hail Selassie Junction, Nairobi, Kenya",-1.288986,36.8269605
 Gambia,Kotu_Beach-Kotu_Banjul_Division,"Kotu, Gambia",13.4576795,-16.702825
@@ -797,7 +797,7 @@ Sierra_Leone,Lumley_Beach-Freetown_Western_Area,"Lumley Beach Road, Freetown, Si
 Sierra_Leone,Cotton_Tree-Freetown_Western_Area,"Freetown, Sierra Leone",8.4656765,-13.2317225
 Sierra_Leone,Cotton_Tree-Freetown_Western_Area,"Freetown, Sierra Leone",8.4656765,-13.2317225
 Sierra_Leone,Aberdeen-Freetown_Western_Area,"Freetown, Sierra Leone",8.4656765,-13.2317225
-Sierra_Leone,St_George_s_cathedral-Freetown_Western_Area,"Just up from the waterfront | On a main road, Freetown, Sierra Leone",-100000,-100000
+Sierra_Leone,St_George_s_cathedral-Freetown_Western_Area,"Just up from the waterfront | On a main road, Freetown, Sierra Leone",8.465677,-13.231722
 Sierra_Leone,King_s_Gate-Freetown_Western_Area,"Freetown, Sierra Leone",8.4656765,-13.2317225
 Sierra_Leone,River_Number_Two_Beach-Freetown_Western_Area,"Freetown, Sierra Leone",8.4656765,-13.2317225
 Sierra_Leone,Tacugama_Chimpanzee_Sanctuary-Freetown_Western_Area,"Regent Village | turn right just past Bathurst, where the sign says 'Congo Dam/Chimpanzee Park', Freetown, Sierra Leone",8.4656765,-13.2317225
@@ -1021,7 +1021,7 @@ Peru,Marcahuasi-Lima_Lima_Region,"San Pedro de Casta | Marcahuasi Stone Forest, 
 Peru,Pastoruri_Glacier-Huascaran_National_Park_Ancash_Region,"Huascaran National Park, Peru",-9.2266855,-77.447012
 Peru,Parque_de_las_Leyendas_Zoo-Lima_Lima_Region,"Av La Marina Cuadra 24 | San Miguel, Lima, Peru",-12.0779867,-77.0882062
 Peru,Mariposario_de_Machupicchu-Aguas_Calientes_Sacred_Valley_Cusco_Region,"Avenida Hermanos Ayar | On the Way to the Museum and the Bridge to Climb to Machu Picchu, Aguas Calientes, Peru",-13.1543145,-72.5270504
-Peru,ACOBIA_DWAzoo-Iquitos_Loreto_Region,"On the IIAP compound at KM 4.5 of the highway to Nauta, Iquitos 16000, Peru",-100000,-100000
+Peru,ACOBIA_DWAzoo-Iquitos_Loreto_Region,"On the IIAP compound at KM 4.5 of the highway to Nauta, Iquitos 16000, Peru",-3.750408,-73.243804
 Peru,Fundo_Pedrito-Iquitos_Loreto_Region,"Sobre Amazonas, a 15 minutos de navegacion, Iquitos 16000, Peru",-3.750408,-73.243804
 Peru,Circuito_Magico_del_Agua-Lima_Lima_Region,"Parque de la Reserva | Corner of Jiron Madre de Dios, Lima, Peru",-12.0709507,-77.0340296
 Peru,Miraflores-Lima_Lima_Region,"Miraflores District, Lima, Peru",-12.111062,-77.0315913
@@ -1211,7 +1211,7 @@ Cuba,Valle_de_Vinales-Vinales_Pinar_del_Rio_Province_Cuba,"Vinales, Cuba",22.618
 Cuba,Central_Park-Havana_Ciudad_de_la_Habana_Province_Cuba,"Paseo de Marti, Havana, Cuba",23.1397098,-82.3592422
 Cuba,Parque_el_Cubano-Trinidad_Sancti_Spiritus_Province_Cuba," | La Pastora, Trinidad, Cuba",21.8213474,-79.985009
 Cuba,Parque_Leoncio_Vidal-Santa_Clara_Villa_Clara_Province_Cuba,"Santa Clara, Cuba",22.424398,-79.9416549
-Cuba,Iglesia_San_Juan_Bautista_de_Remedios-Cayo_Santa_Maria_Villa_Clara_Province_Cuba,"Plaza Isabel II Remedios, Cuba",-100000,-100000
+Cuba,Iglesia_San_Juan_Bautista_de_Remedios-Cayo_Santa_Maria_Villa_Clara_Province_Cuba,"Plaza Isabel II Remedios, Cuba",22.496348,-79.546294
 Cuba,Cathedral_of_Our_Lady_of_the_Assumption-Santiago_de_Cuba_Santiago_de_Cuba_Province,"Felix Pena E/ Heredia y San Basilio, Santiago de Cuba 90100, Cuba, Santiago de Cuba 90100, Cuba",20.01693,-75.8301537
 Cuba,Iglesia_Parroquial_Mayor_del_Espiritu_Santo-Sancti_Spiritus_Sancti_Spiritus_Provin,"Off the Plaza Mayor, Sancti Spiritus 62600, Cuba",21.9253494,-79.4430505
 Cuba,Iglesia_Santa_Elvira-Varadero_Matanzas_Province_Cuba,"Nro 4604 Avenida 1 | Calle 47, Varadero 42200, Cuba",23.1501462,-81.2588927
@@ -1220,7 +1220,7 @@ Cuba,Sea_Turtle_Hatchery-Cayo_Largo_Cuba,"Villas Iguana, Cayo Largo 27900, Cuba"
 Cuba,Cayo_Rico-Cayo_Largo_Cuba,"., Cayo Largo, Cuba",21.6117789,-81.5288929
 Cuba,Parque_el_Cubano-Trinidad_Sancti_Spiritus_Province_Cuba," | La Pastora, Trinidad, Cuba",21.8213474,-79.985009
 Cuba,Havana_Cathedral-Havana_Ciudad_de_la_Habana_Province_Cuba,"Plaza de la Catedral | La Habana Vieja, Havana, Cuba",23.1408594,-82.3516196
-Cuba,Iglesia_San_Juan_Bautista_de_Remedios-Cayo_Santa_Maria_Villa_Clara_Province_Cuba,"Plaza Isabel II Remedios, Cuba",-100000,-100000
+Cuba,Iglesia_San_Juan_Bautista_de_Remedios-Cayo_Santa_Maria_Villa_Clara_Province_Cuba,"Plaza Isabel II Remedios, Cuba",22.496348,-79.546294
 Cuba,Church_and_Convent_of_St_Francis_of_Asisi-Havana_Ciudad_de_la_Habana_Province_Cuba,"Plaza de San Francisco | La Habana Vieja, Havana, Cuba",23.137459,-82.348557
 Cuba,Plaza_del_Carmen-Camaguey_Camaguey_Province_Cuba,"Camaguey, Cuba",21.3926035,-77.9053182
 Cuba,Havana_Cathedral-Havana_Ciudad_de_la_Habana_Province_Cuba,"Plaza de la Catedral | La Habana Vieja, Havana, Cuba",23.1408594,-82.3516196
@@ -1282,7 +1282,7 @@ Grenada,Palm_Tree_Gardens_Botanical_Garden-Saint_David_s_Saint_David_Parish_Gren
 Honduras,Little_French_Key-Roatan_Bay_Islands," | French Cay, Roatan 34101, Honduras",16.3520084,-86.4426106
 Honduras,Copan_Ruinas-Copan_Copan_Department,"Copan, Honduras",14.8497254,-89.1467832
 Honduras,West_Bay_Beach-West_Bay_Roatan_Bay_Islands,"West Bay, Roatan, Honduras",16.2764779,-86.5968422
-Honduras,Daniel_Johnson_s_Monkey_and_Sloth_Hang_Out-French_Harbour_Roatan_Bay_Islands,"French Cay, French Harbour, Roatan IB3110, Honduras",-100000,-100000
+Honduras,Daniel_Johnson_s_Monkey_and_Sloth_Hang_Out-French_Harbour_Roatan_Bay_Islands,"French Cay, French Harbour, Roatan IB3110, Honduras",16.329761,-86.529967
 Honduras,Hieroglyphic_Stairway-Copan_Copan_Department,"Copan, Honduras",14.8497254,-89.1467832
 Honduras,Coca_cola_sign_San_pedro_sula_honduras-San_Pedro_Sula_Cortes_Department,"Mountain top, San Pedro Sula CT1100, Honduras",15.498816,-88.036163
 Honduras,Fuerte_San_Cristobal-Gracias_Lempira_Department,"Loma en el centro de Gracias, Gracias LM3100, Honduras",14.5886703,-88.5845363
@@ -1290,14 +1290,14 @@ Honduras,Main_Square-Copan_Copan_Department,"Copan, Honduras",14.8497254,-89.146
 Honduras,Rusty_Fish-Roatan_Bay_Islands," | West End, Half moon bay, opposite baptist church, Roatan, Honduras",16.3050574,-86.5938277
 Honduras,Museo_para_la_Identidad_Nacional-Tegucigalpa_Francisco_Morazan_Department,"Barrio Abajo Calle El Telegrafo, Tegucigalpa FM1100, Honduras",14.1065975,-87.2080095
 Honduras,Sculpture_Museum-Copan_Copan_Department,"Ruines de Copan, Copan, Honduras",14.8372582,-89.1414856
-Honduras,Shawn_Jackson_Photography-West_End_Roatan_Bay_Islands,"West End Road, West End, Roatan IB3108, Honduras",-100000,-100000
+Honduras,Shawn_Jackson_Photography-West_End_Roatan_Bay_Islands,"West End Road, West End, Roatan IB3108, Honduras",16.329761,-86.529967
 Honduras,Macaw_Mountain_Bird_Park_Nature_Reserve-Copan_Copan_Department,"Copan, Honduras",14.8497254,-89.1467832
 Honduras,Gumbalimba_Park-Roatan_Bay_Islands,"Roatan, Honduras",16.3297608,-86.5299673
 Honduras,Blue_Harbor_Tropical_Arboretum-Roatan_Bay_Islands,"Main Road to Mudhole, Roatan 34101, Honduras",16.3494991,-86.5281755
 Honduras,Lancetilla_Botanical_Garden-Tela_Atlantida_Department,"Tela, Honduras",15.7732601,-87.4653502
 Honduras,Catedral_de_San_Miguel-Tegucigalpa_Francisco_Morazan_Department,"Tegucigalpa, Honduras",14.0722751,-87.192136
 Honduras,Catedral_San_Pedro_Apostol-San_Pedro_Sula_Cortes_Department,"Boulevard Morazan, San Pedro Sula CT1100, Honduras",15.505411,-88.0240032
-Honduras,The_Cathedral_of_the_Immaculate_Conception-Comayagua_Comayagua_Department,"Main Square, Comayagua CM2100, Honduras",-100000,-100000
+Honduras,The_Cathedral_of_the_Immaculate_Conception-Comayagua_Comayagua_Department,"Main Square, Comayagua CM2100, Honduras",14.449015,-87.648247
 Honduras,Iglesia_Los_Dolores-Tegucigalpa_Francisco_Morazan_Department,"Tegucigalpa, Honduras",14.0722751,-87.192136
 Mexico,National_Museum_of_Anthropology_Museo_Nacional_de_Antropologia-Mexico_City_Central,"Avenida Paseo de la Reforma | Chapultepec Polanco, Mexico City 11560, Mexico",19.4194815,-99.1894558
 Mexico,Xplor_Park-Playa_del_Carmen_Yucatan_Peninsula,"Calle Carretera Federal 307, Playa del Carmen 77710, Mexico",20.6144106,-87.1008058
@@ -1324,7 +1324,7 @@ Mexico,Edward_James_sculptor_garden_Las_Pozas-Xilitla_Central_Mexico_and_Gulf_Co
 Mexico,Cosmovitral_Jardin_Botanico-Toluca_Central_Mexico_and_Gulf_Coast,"Calle Benito Juarez s/n | esq. Lerdo de Tejada Centro, Toluca, Mexico",19.2932516,-99.6544311
 Mexico,Ethnobotanical_Garden-Oaxaca_Southern_Mexico,"Reforma esquina Constitucion | Centro, Oaxaca 68000, Mexico",17.0653856,-96.7218198
 Mexico,Chichen_Itza-Chichen_Itza_Yucatan_Peninsula," | Merida, Chichen Itza 97170, Mexico",20.9635537,-89.5768772
-Mexico,Zona_Arqueologica_Teotihuacan-San_Juan_Teotihuacan_Central_Mexico_and_Gulf_Coast,"Monterrey | Ecatepec Piramides km.22 + 600, Municipio de Teotihuacan, San Juan Teotihuacan 64140, Mexico",-100000,-100000
+Mexico,Zona_Arqueologica_Teotihuacan-San_Juan_Teotihuacan_Central_Mexico_and_Gulf_Coast,"Monterrey | Ecatepec Piramides km.22 + 600, Municipio de Teotihuacan, San Juan Teotihuacan 64140, Mexico",19.685267,-98.872119
 Mexico,El_Arco_de_Cabo_San_Lucas_Lands_End-Cabo_San_Lucas_Los_Cabos_Baja_California,"Cabo San Lucas T2A 6P2, Mexico",22.8759577,-109.8946738
 Mexico,Palenque_ruinas-Palenque_Southern_Mexico,"Chiapas mexico, Palenque, Mexico",17.5109792,-91.9930466
 Mexico,Chichen_Itza-Chichen_Itza_Yucatan_Peninsula," | Merida, Chichen Itza 97170, Mexico",20.9635537,-89.5768772
@@ -1714,7 +1714,7 @@ France,Parc_Animalier_Des_Pyrenees-Ayzac_Ost_Hautes_Pyrenees_Occitanie,"60 B ave
 France,Arc_de_Triomphe-Paris_Ile_de_France,"Place Charles de Gaulle, 75008 Paris, France",48.873354,2.2947073
 France,Abbaye_du_Mont_Saint_Michel-Mont_Saint_Michel_Manche_Basse_Normandie_Normandy,"BP 22, 50170 Mont-Saint-Michel, France",48.6360166,-1.5111145
 France,Vimy_Memorial-Vimy_Pas_de_Calais_Hauts_de_France,"Vimy Ridge National Historic Site of Canada, 62580 Vimy, France",50.3794695,2.7736612
-France,Army_Museum-Paris_Ile_de_France,"129 rue de Grenelle | Hêätel National des Invalides, 75007 Paris, France",48.8551861,2.3125844
+France,Army_Museum-Paris_Ile_de_France,"129 rue de Grenelle | Hê_tel National des Invalides, 75007 Paris, France",48.8551861,2.3125844
 France,Le_Puy_du_Fou-Les_Epesses_Vendee_Pays_de_la_Loire,"85590 Les Epesses, France",46.884536,-0.899612
 France,Le_Grand_Defi-Saint_Julien_des_Landes_Vendee_Pays_de_la_Loire,"40 Rue de l'Etoile, 85150 Saint-Julien-des-Landes, France",46.6461342,-1.714996
 France,Walt_Disney_Studios_Park-Marne_la_Vallee_Seine_et_Marne_Ile_de_France,"Marne-la-Vallee, France",48.859276,2.598505
@@ -1740,7 +1740,7 @@ Germany,Mercedes_Benz_Museum-Stuttgart_Baden_Wurttemberg,"Mercedesstrasse 100, 7
 Germany,Topography_of_Terror-Berlin,"Niederkirchnerstrasse 8, 10963 Berlin, Germany",52.5067418,13.3834565
 Germany,Museum_Island-Berlin,"Osloerstrasse 116a 13359 Berlin, 13089 Berlin, Germany",52.5552783,13.3870548
 Germany,Brandenburg_Gate-Berlin,"Pariser Platz, 10117 Berlin, Germany",52.5158907,13.3789525
-Germany,The_Holocaust_Memorial_Memorial_to_the_Murdered_Jews_of_Europe-Berlin,"Near the Brandenburg Gate | Information Center: Cora-Berliner-StraêÈe 1, 10117 Berlin, Germany",52.5139474,13.3787127
+Germany,The_Holocaust_Memorial_Memorial_to_the_Murdered_Jews_of_Europe-Berlin,"Near the Brandenburg Gate | Information Center: Cora-Berliner-Straêée 1, 10117 Berlin, Germany",52.5139474,13.3787127
 Germany,Volkerschlachtdenkmal-Leipzig_Saxony,"Strasse des 18. Oktober 100, 04299, Leipzig, Saxony, Germany",51.3222147,12.3943653
 Germany,Victory_Column_Siegessaule-Berlin,"Grosser Stern 15, 10557 Berlin, Germany",52.5145165,13.3500945
 Germany,Leipzig_Zoo_Zoologischer_Garten_Leipzig-Leipzig_Saxony,"Pfaffendorfer-Strasse 29, 04105, Leipzig, Saxony, Germany",51.3480335,12.3713182
@@ -1929,7 +1929,7 @@ Norway,Swords_in_Rock-Stavanger_Stavanger_Municipality_Rogaland_Western_Norway,"
 Norway,Tiger_Sculpture-Oslo_Eastern_Norway,"Jernbanetorget 1, Oslo 0154, Norway",59.910789,10.7515024
 Norway,Dyreparken-Kristiansand_Vest_Agder_Southern_Norway,"Dyreparkveien 1, Kristiansand 4636, Norway",58.181647,8.1457904
 Norway,Atlantic_Sea_Park-Alesund_More_og_Romsdal_Western_Norway,"Tueneset, Alesund 6006, Norway",62.4600436,6.0889632
-Norway,Bjorneparken-Fla_Buskerud_Eastern_Norway,"Bjorneparkvegen 61 | Flê‰, Fla 3539, Norway",60.3837212,9.4859048
+Norway,Bjorneparken-Fla_Buskerud_Eastern_Norway,"Bjorneparkvegen 61 | Flêä, Fla 3539, Norway",60.3837212,9.4859048
 Norway,Polar_Park-Bardu_Municipality_Troms_Northern_Norway,"Bonesveien, 9360, Norway",68.6912763,18.1100721
 Norway,Pulpit_Rock-Stavanger_Stavanger_Municipality_Rogaland_Western_Norway,"Forsand, Stavanger 4119, Norway",58.867417,5.7390727
 Norway,Trolltunga-Odda_Hardanger_Hordaland_Western_Norway,"Odda 5750, Norway",60.0751644,6.4913524
@@ -2054,7 +2054,7 @@ Russia,H2O_Aquapark-Rostov_on_Don_Rostov_Oblast_Southern_District,"Mikhaila Nagi
 Russia,Red_Square_Krasnaya_ploshchad-Moscow_Central_Russia,"Krasnaya ploshchad, Moscow, Russia",55.7539303,37.620795
 Russia,Palace_Square_Dvortsovaya_Ploshchad-St_Petersburg_Northwestern_District,"Dvortsovaya Ploshchad, St. Petersburg 190000, Russia",59.9382077,30.3152025
 Russia,The_Motherland_Calls_Sculpture-Volgograd_Volgograd_Oblast_Southern_District,"Mamaev Kurgan, Volgograd, Russia",48.7419011,44.5381101
-Russia,Curonian_Spit-Kaliningrad_Kaliningrad_Oblast_Northwestern_District,"98 Km peninsula Nationalpark KursiU Nerija | Klaip„†da - Lesnoje, Kaliningrad 238535, Russia",55.1394668,20.794096
+Russia,Curonian_Spit-Kaliningrad_Kaliningrad_Oblast_Northwestern_District,"98 Km peninsula Nationalpark KursiU Nerija | Klaipã da - Lesnoje, Kaliningrad 238535, Russia",55.1394668,20.794096
 Russia,Bolshoi_Theatre-Moscow_Central_Russia,"Teatralny dr., 1, Moscow 109012, Russia",55.7601704,37.618626
 Russia,State_Academical_Mariinskiy_Theatre-St_Petersburg_Northwestern_District,"Pisareva St., 20, St. Petersburg 190121, Russia",59.9253276,30.2860471
 Russia,Novosibirsk_State_Academic_Opera_and_Ballet_Theatre-Novosibirsk_Novosibirsky_Distr,"Krasny Ave., 36, Novosibirsk 630099, Russia",55.0285129,82.9202027

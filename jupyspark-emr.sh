@@ -8,10 +8,11 @@ export PYSPARK_DRIVER_PYTHON_OPTS="notebook --no-browser --NotebookApp.ip='0.0.0
 ${SPARK_HOME}/bin/pyspark \
 	--master yarn \
         --deploy-mode client \
-	--executor-memory 3G \
-        --executor-cores 1 \
-	--driver-memory 3G \
-        --driver-cores 1 \
 	--packages com.databricks:spark-csv_2.11:1.5.0 \
 	--packages com.amazonaws:aws-java-sdk-pom:1.10.34 \
-	--packages org.apache.hadoop:hadoop-aws:2.7.3
+	--packages org.apache.hadoop:hadoop-aws:2.7.3 \
+	--executor-memory 9G \
+        --executor-cores 3 \
+	--driver-memory 3G \
+	--driver-cores 1 \
+	--py-files src.zip

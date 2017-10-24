@@ -5,7 +5,7 @@ touch $HOME/.bootstrap-begin
 
 sudo yum -y update
 sudo yum -y install tmux
-
+sudo yum -y install git
 
 # Create the anaconda directory on a volume with more space
 sudo mkdir /mnt1/anaconda

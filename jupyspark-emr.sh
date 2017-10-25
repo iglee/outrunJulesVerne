@@ -15,4 +15,5 @@ ${SPARK_HOME}/bin/pyspark \
         --executor-cores 3 \
 	--driver-memory 10G \
 	--driver-cores 1 \
-	--py-files src.zip
+	--py-files src.zip \
+	--conf spark.rpc.message.maxSize=1024

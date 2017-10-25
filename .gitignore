@@ -3,3 +3,6 @@
 reviews_*.csv
 reviews*.csv
 *.pkl
+*.pyc
+metastore_db
+*.swp

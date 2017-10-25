@@ -11,8 +11,8 @@ ${SPARK_HOME}/bin/pyspark \
 	--packages com.databricks:spark-csv_2.11:1.5.0 \
 	--packages com.amazonaws:aws-java-sdk-pom:1.10.34 \
 	--packages org.apache.hadoop:hadoop-aws:2.7.3 \
-	--executor-memory 9G \
+	--executor-memory 10G \
         --executor-cores 3 \
-	--driver-memory 3G \
+	--driver-memory 10G \
 	--driver-cores 1 \
 	--py-files src.zip

@@ -1,5 +1,5 @@
-Tue Oct 24 22:02:19 UTC 2017 Thread[Thread-2,5,main] Cleanup action starting
-java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@53a014fd, see the next exception for details.
+Tue Oct 24 18:48:31 PDT 2017 Thread[Thread-2,5,main] Cleanup action starting
+java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@4a39f81d, see the next exception for details.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
@@ -65,13 +65,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1235)
-	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:175)
-	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:167)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1234)
+	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:174)
+	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:166)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -112,11 +110,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@53a014fd, see the next exception for details.
+Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@4a39f81d, see the next exception for details.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
-	... 112 more
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+	... 110 more
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -163,9 +161,9 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
-	... 109 more
+	... 107 more
 ============= begin nested exception, level (1) ===========
-java.sql.SQLException: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+java.sql.SQLException: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
@@ -230,13 +228,11 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1235)
-	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:175)
-	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:167)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1234)
+	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:174)
+	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:166)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -277,7 +273,7 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -324,10 +320,10 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
-	... 109 more
+	... 107 more
 ============= end nested exception, level (1) ===========
 ============= begin nested exception, level (2) ===========
-ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -436,13 +432,11 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /mnt
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1235)
-	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:175)
-	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:167)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1234)
+	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:174)
+	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:166)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -485,8 +479,8 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /mnt
 	at java.lang.Thread.run(Thread.java:748)
 ============= end nested exception, level (2) ===========
 Cleanup action completed
-Tue Oct 24 22:02:19 UTC 2017 Thread[Thread-2,5,main] Cleanup action starting
-java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@53a014fd, see the next exception for details.
+Tue Oct 24 18:48:31 PDT 2017 Thread[Thread-2,5,main] Cleanup action starting
+java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@4a39f81d, see the next exception for details.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
@@ -552,13 +546,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1235)
-	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:175)
-	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:167)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1234)
+	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:174)
+	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:166)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -599,11 +591,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@53a014fd, see the next exception for details.
+Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@4a39f81d, see the next exception for details.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
-	... 112 more
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+	... 110 more
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -650,9 +642,9 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
-	... 109 more
+	... 107 more
 ============= begin nested exception, level (1) ===========
-java.sql.SQLException: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+java.sql.SQLException: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
@@ -717,13 +709,11 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1235)
-	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:175)
-	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:167)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1234)
+	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:174)
+	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:166)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -764,7 +754,7 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -811,10 +801,10 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
-	... 109 more
+	... 107 more
 ============= end nested exception, level (1) ===========
 ============= begin nested exception, level (2) ===========
-ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -923,13 +913,11 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /mnt
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1235)
-	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:175)
-	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:167)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1234)
+	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:174)
+	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:166)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -972,8 +960,8 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /mnt
 	at java.lang.Thread.run(Thread.java:748)
 ============= end nested exception, level (2) ===========
 Cleanup action completed
-Tue Oct 24 22:02:19 UTC 2017 Thread[Thread-2,5,main] Cleanup action starting
-java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@53a014fd, see the next exception for details.
+Tue Oct 24 18:48:32 PDT 2017 Thread[Thread-2,5,main] Cleanup action starting
+java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@4a39f81d, see the next exception for details.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
@@ -1039,13 +1027,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1235)
-	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:175)
-	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:167)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1234)
+	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:174)
+	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:166)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -1086,11 +1072,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@53a014fd, see the next exception for details.
+Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@4a39f81d, see the next exception for details.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
-	... 112 more
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+	... 110 more
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -1137,9 +1123,9 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
-	... 109 more
+	... 107 more
 ============= begin nested exception, level (1) ===========
-java.sql.SQLException: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+java.sql.SQLException: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
@@ -1204,13 +1190,11 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1235)
-	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:175)
-	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:167)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1234)
+	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:174)
+	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:166)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -1251,7 +1235,7 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -1298,10 +1282,10 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
-	... 109 more
+	... 107 more
 ============= end nested exception, level (1) ===========
 ============= begin nested exception, level (2) ===========
-ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -1410,13 +1394,11 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /mnt
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1235)
-	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:175)
-	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:167)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1234)
+	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:174)
+	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:166)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -1459,8 +1441,8 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /mnt
 	at java.lang.Thread.run(Thread.java:748)
 ============= end nested exception, level (2) ===========
 Cleanup action completed
-Tue Oct 24 22:02:19 UTC 2017 Thread[Thread-2,5,main] Cleanup action starting
-java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@53a014fd, see the next exception for details.
+Tue Oct 24 18:48:32 PDT 2017 Thread[Thread-2,5,main] Cleanup action starting
+java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@4a39f81d, see the next exception for details.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
@@ -1526,13 +1508,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1235)
-	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:175)
-	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:167)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1234)
+	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:174)
+	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:166)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -1573,11 +1553,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@53a014fd, see the next exception for details.
+Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@4a39f81d, see the next exception for details.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
-	... 112 more
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+	... 110 more
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -1624,9 +1604,9 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
-	... 109 more
+	... 107 more
 ============= begin nested exception, level (1) ===========
-java.sql.SQLException: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+java.sql.SQLException: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
@@ -1691,13 +1671,11 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1235)
-	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:175)
-	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:167)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1234)
+	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:174)
+	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:166)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -1738,7 +1716,7 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -1785,10 +1763,10 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
-	... 109 more
+	... 107 more
 ============= end nested exception, level (1) ===========
 ============= begin nested exception, level (2) ===========
-ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -1897,13 +1875,11 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /mnt
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1235)
-	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:175)
-	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:167)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getAllDatabases(Hive.java:1234)
+	at org.apache.hadoop.hive.ql.metadata.Hive.reloadFunctions(Hive.java:174)
+	at org.apache.hadoop.hive.ql.metadata.Hive.<clinit>(Hive.java:166)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -1946,8 +1922,8 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /mnt
 	at java.lang.Thread.run(Thread.java:748)
 ============= end nested exception, level (2) ===========
 Cleanup action completed
-Tue Oct 24 22:02:19 UTC 2017 Thread[Thread-2,5,main] Cleanup action starting
-java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@53a014fd, see the next exception for details.
+Tue Oct 24 18:48:32 PDT 2017 Thread[Thread-2,5,main] Cleanup action starting
+java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@4a39f81d, see the next exception for details.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
@@ -2013,10 +1989,8 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -2057,11 +2031,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@53a014fd, see the next exception for details.
+Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@4a39f81d, see the next exception for details.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
-	... 109 more
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+	... 107 more
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -2108,9 +2082,9 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
-	... 106 more
+	... 104 more
 ============= begin nested exception, level (1) ===========
-java.sql.SQLException: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+java.sql.SQLException: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
@@ -2175,10 +2149,8 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -2219,7 +2191,7 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -2266,10 +2238,10 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
-	... 106 more
+	... 104 more
 ============= end nested exception, level (1) ===========
 ============= begin nested exception, level (2) ===========
-ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -2378,10 +2350,8 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /mnt
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -2424,8 +2394,8 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /mnt
 	at java.lang.Thread.run(Thread.java:748)
 ============= end nested exception, level (2) ===========
 Cleanup action completed
-Tue Oct 24 22:02:19 UTC 2017 Thread[Thread-2,5,main] Cleanup action starting
-java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@53a014fd, see the next exception for details.
+Tue Oct 24 18:48:32 PDT 2017 Thread[Thread-2,5,main] Cleanup action starting
+java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@4a39f81d, see the next exception for details.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
@@ -2491,10 +2461,8 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -2535,11 +2503,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@53a014fd, see the next exception for details.
+Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@4a39f81d, see the next exception for details.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
-	... 109 more
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+	... 107 more
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -2586,9 +2554,9 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
-	... 106 more
+	... 104 more
 ============= begin nested exception, level (1) ===========
-java.sql.SQLException: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+java.sql.SQLException: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
@@ -2653,10 +2621,8 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -2697,7 +2663,7 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -2744,10 +2710,10 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
-	... 106 more
+	... 104 more
 ============= end nested exception, level (1) ===========
 ============= begin nested exception, level (2) ===========
-ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -2856,10 +2822,8 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /mnt
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -2902,8 +2866,8 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /mnt
 	at java.lang.Thread.run(Thread.java:748)
 ============= end nested exception, level (2) ===========
 Cleanup action completed
-Tue Oct 24 22:02:19 UTC 2017 Thread[Thread-2,5,main] Cleanup action starting
-java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@53a014fd, see the next exception for details.
+Tue Oct 24 18:48:32 PDT 2017 Thread[Thread-2,5,main] Cleanup action starting
+java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@4a39f81d, see the next exception for details.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
@@ -2969,10 +2933,8 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -3013,11 +2975,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@53a014fd, see the next exception for details.
+Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@4a39f81d, see the next exception for details.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
-	... 109 more
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+	... 107 more
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -3064,9 +3026,9 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
-	... 106 more
+	... 104 more
 ============= begin nested exception, level (1) ===========
-java.sql.SQLException: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+java.sql.SQLException: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
@@ -3131,10 +3093,8 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -3175,7 +3135,7 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -3222,10 +3182,10 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
-	... 106 more
+	... 104 more
 ============= end nested exception, level (1) ===========
 ============= begin nested exception, level (2) ===========
-ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -3334,10 +3294,8 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /mnt
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -3380,8 +3338,8 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /mnt
 	at java.lang.Thread.run(Thread.java:748)
 ============= end nested exception, level (2) ===========
 Cleanup action completed
-Tue Oct 24 22:02:19 UTC 2017 Thread[Thread-2,5,main] Cleanup action starting
-java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@53a014fd, see the next exception for details.
+Tue Oct 24 18:48:32 PDT 2017 Thread[Thread-2,5,main] Cleanup action starting
+java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@4a39f81d, see the next exception for details.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
@@ -3447,10 +3405,8 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -3491,11 +3447,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@53a014fd, see the next exception for details.
+Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@4a39f81d, see the next exception for details.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
-	... 109 more
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+	... 107 more
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -3542,9 +3498,9 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
-	... 106 more
+	... 104 more
 ============= begin nested exception, level (1) ===========
-java.sql.SQLException: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+java.sql.SQLException: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
@@ -3609,10 +3565,8 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -3653,7 +3607,7 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -3700,10 +3654,10 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection$4.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
-	... 106 more
+	... 104 more
 ============= end nested exception, level (1) ===========
 ============= begin nested exception, level (2) ===========
-ERROR XSDB6: Another instance of Derby may have already booted the database /mnt1/outrunJulesVerne/metastore_db.
+ERROR XSDB6: Another instance of Derby may have already booted the database /Users/isabellelee/Desktop/data_science/capstone/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -3812,10 +3766,8 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /mnt
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.<init>(RetryingMetaStoreClient.java:86)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:132)
 	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:104)
-	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.getProxy(RetryingMetaStoreClient.java:98)
-	at org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClientFactory.createMetaStoreClient(SessionHiveMetaStoreClientFactory.java:42)
-	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3007)
-	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3042)
+	at org.apache.hadoop.hive.ql.metadata.Hive.createMetaStoreClient(Hive.java:3005)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getMSC(Hive.java:3024)
 	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:503)
 	at org.apache.spark.sql.hive.client.HiveClientImpl.<init>(HiveClientImpl.scala:191)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)

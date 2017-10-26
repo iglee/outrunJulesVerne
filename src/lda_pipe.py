@@ -13,7 +13,7 @@ def save_to_s3(filename, path):
 def lda_model_score(df,num_topics):
     lda = LDA(k=num_topics, optimizer="em")
     model = lda.fit(df)
-    topics = model.describeTopics().collect()
+    topics = model.describeTopics(40).collect()
     transformed = model.transform(df)
     return lda, model, topics, transformed
 

@@ -8,14 +8,14 @@ sudo yum -y install tmux
 sudo yum -y install git
 
 # Create the anaconda directory on a volume with more space
-sudo mkdir /mnt1/anaconda
-sudo chown hadoop:hadoop /mnt1/anaconda
-ln -s /mnt1/anaconda $HOME/anaconda
+sudo mkdir /mnt/anaconda
+sudo chown hadoop:hadoop /mnt/anaconda
+ln -s /mnt/anaconda $HOME/anaconda
 
 # Create the nltk_data directory on a volume with more space
-sudo mkdir /mnt1/nltk_data
-sudo chown hadoop:hadoop /mnt1/nltk_data
-sudo ln -s /mnt1/nltk_data /usr/share/nltk_data
+sudo mkdir /mnt/nltk_data
+sudo chown hadoop:hadoop /mnt/nltk_data
+sudo ln -s /mnt/nltk_data /usr/share/nltk_data
 sudo chown hadoop:hadoop /usr/share/nltk_data
 
 # Download Anaconda2

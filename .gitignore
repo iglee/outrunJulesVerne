@@ -6,3 +6,4 @@ reviews*.csv
 *.pyc
 metastore_db
 *.swp
+*.log

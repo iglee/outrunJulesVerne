@@ -609,7 +609,7 @@ Cote_d_Ivoire,Le_Wharf_du_Sassandra-Sassandra_Haut_Sassandra_Region,"L'Ancienne 
 Cote_d_Ivoire,Le_Pont_Weygand-Sassandra_Haut_Sassandra_Region,"Route de Gagnoa, Sassandra, Cote d'Ivoire",4.9512761,-6.0917517
 Cote_d_Ivoire,Jardin_botanique_de_Bingerville-Abidjan_Lagunes_Region,"Abidjan, Cote d'Ivoire",5.3599517,-4.0082563
 Cote_d_Ivoire,Dipi_Crocodile_Farm-Assinie_Sud_Comoe_Region,"Assinie Mafia Route, Assinie, Cote d'Ivoire",5.1443318,-3.3242226
-Cote_d_Ivoire,Banco_National_Park-Abidjan_Lagunes_Region,"Autoroute Nord | Espace ê©cotouristique du Banco situê© prê‘s de la Station Serviec Shell., Abidjan, Cote d'Ivoire",5.3599517,-4.0082563
+Cote_d_Ivoire,Banco_National_Park-Abidjan_Lagunes_Region,"Autoroute Nord | Espace ê©cotouristique du Banco situê© prêÔs de la Station Serviec Shell., Abidjan, Cote d'Ivoire",5.3599517,-4.0082563
 Cote_d_Ivoire,Les_Cascades_de_Man-Man_Dix_Huit_Montagnes_Region,"Man, Cote d'Ivoire",7.4064275,-7.5572231
 Egypt,Temple_of_Karnak-Luxor_Nile_River_Valley,"Luxor 81111, Egypt",25.6872431,32.6396357
 Egypt,Abu_Simbel_Temple_Complex-Abu_Simbel_Aswan_Governorate_Nile_River_Valley,"Abu Simbel, Egypt",22.3372319,31.625799
@@ -1390,7 +1390,7 @@ Panama,Metropolitan_National_Park-Panama_City_Panama_Province,"Avenue Juan Pablo
 Panama,The_Lost_Waterfalls_Boquete-Boquete_Chiriqui_Province,"Bajo Mono, Boquete 0413, Panama",8.8385181,-82.4806322
 Panama,The_Lovers_Falls-El_Valle_de_Anton_Cocle_Province,"La Piedra Pintada, El Valle de Anton, Panama",8.6128226,-80.1451001
 Panama,El_Chorro_Macho-El_Valle_de_Anton_Cocle_Province,"Anton Valley, El Valle de Anton 1001, Panama",8.6058376,-80.1345268
-Panama,Bermejo_Waterfalls-Santa_Fe_Veraguas_Province,"Bermejito River, Santa Fe 0921, Panama",31.7498201,-106.4876704
+Panama,Bermejo_Waterfalls-Santa_Fe_Veraguas_Province,"Bermejito River, Santa Fe 0921, Panama",8.510642,-81.078225
 United_States,Central_Park-New_York_City_New_York,"59th to 110th Street, Manhattan Borough, from Central Park West to 5th Avenue, New York City, NY 10022",40.7828647,-73.9653551
 United_States,The_National_9_11_Memorial_Museum-New_York_City_New_York,"180 Greenwich St, World Trade Center, New York City, NY 10007-0089",40.7114147,-74.0124786
 United_States,Bellagio_Fountains-Las_Vegas_Nevada,"3600 Las Vegas Blvd S, Bellagio Hotel Resort, Las Vegas, NV 89109-4303",36.1126264,-115.1767051
@@ -1740,7 +1740,7 @@ Germany,Mercedes_Benz_Museum-Stuttgart_Baden_Wurttemberg,"Mercedesstrasse 100, 7
 Germany,Topography_of_Terror-Berlin,"Niederkirchnerstrasse 8, 10963 Berlin, Germany",52.5067418,13.3834565
 Germany,Museum_Island-Berlin,"Osloerstrasse 116a 13359 Berlin, 13089 Berlin, Germany",52.5552783,13.3870548
 Germany,Brandenburg_Gate-Berlin,"Pariser Platz, 10117 Berlin, Germany",52.5158907,13.3789525
-Germany,The_Holocaust_Memorial_Memorial_to_the_Murdered_Jews_of_Europe-Berlin,"Near the Brandenburg Gate | Information Center: Cora-Berliner-Straêée 1, 10117 Berlin, Germany",52.5139474,13.3787127
+Germany,The_Holocaust_Memorial_Memorial_to_the_Murdered_Jews_of_Europe-Berlin,"Near the Brandenburg Gate | Information Center: Cora-Berliner-Straê_e 1, 10117 Berlin, Germany",52.5139474,13.3787127
 Germany,Volkerschlachtdenkmal-Leipzig_Saxony,"Strasse des 18. Oktober 100, 04299, Leipzig, Saxony, Germany",51.3222147,12.3943653
 Germany,Victory_Column_Siegessaule-Berlin,"Grosser Stern 15, 10557 Berlin, Germany",52.5145165,13.3500945
 Germany,Leipzig_Zoo_Zoologischer_Garten_Leipzig-Leipzig_Saxony,"Pfaffendorfer-Strasse 29, 04105, Leipzig, Saxony, Germany",51.3480335,12.3713182
@@ -1929,7 +1929,7 @@ Norway,Swords_in_Rock-Stavanger_Stavanger_Municipality_Rogaland_Western_Norway,"
 Norway,Tiger_Sculpture-Oslo_Eastern_Norway,"Jernbanetorget 1, Oslo 0154, Norway",59.910789,10.7515024
 Norway,Dyreparken-Kristiansand_Vest_Agder_Southern_Norway,"Dyreparkveien 1, Kristiansand 4636, Norway",58.181647,8.1457904
 Norway,Atlantic_Sea_Park-Alesund_More_og_Romsdal_Western_Norway,"Tueneset, Alesund 6006, Norway",62.4600436,6.0889632
-Norway,Bjorneparken-Fla_Buskerud_Eastern_Norway,"Bjorneparkvegen 61 | Flêä, Fla 3539, Norway",60.3837212,9.4859048
+Norway,Bjorneparken-Fla_Buskerud_Eastern_Norway,"Bjorneparkvegen 61 | Flê_, Fla 3539, Norway",60.3837212,9.4859048
 Norway,Polar_Park-Bardu_Municipality_Troms_Northern_Norway,"Bonesveien, 9360, Norway",68.6912763,18.1100721
 Norway,Pulpit_Rock-Stavanger_Stavanger_Municipality_Rogaland_Western_Norway,"Forsand, Stavanger 4119, Norway",58.867417,5.7390727
 Norway,Trolltunga-Odda_Hardanger_Hordaland_Western_Norway,"Odda 5750, Norway",60.0751644,6.4913524
@@ -2054,7 +2054,7 @@ Russia,H2O_Aquapark-Rostov_on_Don_Rostov_Oblast_Southern_District,"Mikhaila Nagi
 Russia,Red_Square_Krasnaya_ploshchad-Moscow_Central_Russia,"Krasnaya ploshchad, Moscow, Russia",55.7539303,37.620795
 Russia,Palace_Square_Dvortsovaya_Ploshchad-St_Petersburg_Northwestern_District,"Dvortsovaya Ploshchad, St. Petersburg 190000, Russia",59.9382077,30.3152025
 Russia,The_Motherland_Calls_Sculpture-Volgograd_Volgograd_Oblast_Southern_District,"Mamaev Kurgan, Volgograd, Russia",48.7419011,44.5381101
-Russia,Curonian_Spit-Kaliningrad_Kaliningrad_Oblast_Northwestern_District,"98 Km peninsula Nationalpark KursiU Nerija | Klaipã da - Lesnoje, Kaliningrad 238535, Russia",55.1394668,20.794096
+Russia,Curonian_Spit-Kaliningrad_Kaliningrad_Oblast_Northwestern_District,"98 Km peninsula Nationalpark KursiU Nerija | Klaip‹Êda - Lesnoje, Kaliningrad 238535, Russia",55.1394668,20.794096
 Russia,Bolshoi_Theatre-Moscow_Central_Russia,"Teatralny dr., 1, Moscow 109012, Russia",55.7601704,37.618626
 Russia,State_Academical_Mariinskiy_Theatre-St_Petersburg_Northwestern_District,"Pisareva St., 20, St. Petersburg 190121, Russia",59.9253276,30.2860471
 Russia,Novosibirsk_State_Academic_Opera_and_Ballet_Theatre-Novosibirsk_Novosibirsky_Distr,"Krasny Ave., 36, Novosibirsk 630099, Russia",55.0285129,82.9202027

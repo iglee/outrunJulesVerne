@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 from geopy.distance import vincenty
+from itertools import izip
 
 max_vincenty = 20036
 
@@ -23,6 +24,19 @@ def first_recommendation(world):
 
 def distance_btw_recommendations(x,y):
     return vincenty(x,y).km/max_vincenty
+
+def extract_loc(i,j, df_sampled):
+    x = (df_sampled.iloc[i].latitude, df_sampled.iloc[i].longitude)
+    y = (df_sampled.iloc[j].latitude, df_sampled.iloc[j].longitude)
+    return x, y
+
+def total_distance(df_sampled, tour):
+    d = 0
+    for i in izip(tour[:-1], tour[1:]):
+        x,y = extract_loc(i[0],i[1], df_sampled)
+        d+=distance_btw_recommendations(x,y)
+    return d
+
 
 #so, by continent, we would have 10 nodes
 #europe = 3

@@ -11,15 +11,15 @@
     <title>outrunjulesverne - An around-the-world trip recommender</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="../static/css/grayscale.min.css" rel="stylesheet">
 
   </head>
 
@@ -126,11 +126,38 @@
                 </tr>
               </table><br>
             <button onclick="myFunction()" type="button" class="btn btn-primary">Try it</button></p>
-
+            <script
+              src="https://code.jquery.com/jquery-3.2.1.js"
+              integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+              crossorigin="anonymous"></script>
             <script>
             function myFunction() {
-                var x = document.getElementById("myCheck");
-                x.checked = true;
+                var x = [];
+                x.push(document.getElementById("0").checked);
+                x.push(document.getElementById("1").checked);
+                x.push(document.getElementById("2").checked);
+                x.push(document.getElementById("3").checked);
+                x.push(document.getElementById("4").checked);
+                x.push(document.getElementById("5").checked);
+                x.push(document.getElementById("6").checked);
+                x.push(document.getElementById("7").checked);
+                x.push(document.getElementById("8").checked);
+                x.push(document.getElementById("9").checked);
+                x.push(document.getElementById("10").checked);
+                x.push(document.getElementById("11").checked);
+                x.push(document.getElementById("12").checked);
+                x.push(document.getElementById("13").checked);
+                x.push(document.getElementById("14").checked);
+                x.push(document.getElementById("15").checked);
+                x.push(document.getElementById("16").checked);
+                x.push(document.getElementById("17").checked);
+                x.push(document.getElementById("18").checked);
+                x.push(document.getElementById("19").checked);
+                //alert(x);
+                $.post({url: "/input", data:JSON.stringify({topics:x})
+                , contentType: "application/json"
+                , success:function(data){alert('yay!'+data)}})
+                //$.post({url: "/output",})
             }
             </script>
 
@@ -189,17 +216,17 @@
     <!-- Footer -->
     <footer>
       <div class="container text-center">
-        <p><img src="img/world_map.png" alt="map of all" width="700" height="400"></p>
+        <p><img src="../static/img/world_map.png" alt="map of all" width="700" height="400"></p>
         <p>Copyright &copy; Isabelle Lee 2017</p>
       </div>
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAr9Alcdx8WqvbSU0V6ECkMkw9bzBQeAlI&sensor=false"></script>

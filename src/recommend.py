@@ -8,9 +8,8 @@ max_vincenty = 20036
 world = pd.read_pickle('../data/total_everything_world.pkl')
 
 #after you get a user input in the form of a list: (call it lst_topics)
-lst_topics = [4, 14, 9]
 
-def lda_scores(x, lst_topics=[4, 14, 9]):
+def lda_scores(x, lst_topics=[0, 4, 7]):
     total_score = []
     for i in lst_topics:
         total_score.append(x[i])
@@ -37,7 +36,10 @@ def total_distance(df_sampled, tour):
         d+=distance_btw_recommendations(x,y)
     return d
 
-
+def take_user_input(world, input_ls):
+    world['lda_score'] = world.topicDistribution.apply(lambda x: \
+                                                       lda_scores(x,lst_topics= input_ls))
+    return world
 #so, by continent, we would have 10 nodes
 #europe = 3
 #africa = 1

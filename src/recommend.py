@@ -5,7 +5,7 @@ from itertools import izip
 
 max_vincenty = 20036
 
-world = pd.read_pickle('../data/total_everything_world.pkl')
+#world = pd.read_pickle('../data/total_everything_world.pkl')
 
 #after you get a user input in the form of a list: (call it lst_topics)
 
@@ -39,7 +39,8 @@ def sample_df(world, user_input):
 
     return sample_asia, sample_africa, sample_europe, sample_na, sample_sa, sample_oceania
 
-def make_tour(sample_asia, sample_africa, sample_europe, sample_na, sample_sa, sample_oceania):
+def make_tour(world, user_input):
+    sample_asia, sample_africa, sample_europe, sample_na, sample_sa, sample_oceania = sample_df(world, user_input)
     tour = pd.DataFrame()
     tour_asia = sample_asia.sample(n=2)
     tour_africa = sample_africa.sample(n=2)

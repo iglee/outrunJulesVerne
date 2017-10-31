@@ -8,11 +8,13 @@ data_dir ='/Users/isabellelee/Desktop/data_science/capstone/data'
 from recommend import sample_df, make_tour
 from plot_rec import plot_map
 
-def output(user_input):
+def output(user_input, unique_n):
     world = pd.read_pickle(data_dir+"/jules_world.pkl")
     tour = make_tour(world,user_input)
     map_ = plot_map(tour)
+    plt.savefig("static/img/map{}.png".format(unique_n), bbox_inches = "tight")
     tour = tour[['continent','country','attraction']]
+
 
     tour_io = StringIO.StringIO()
     map_io = StringIO.StringIO()

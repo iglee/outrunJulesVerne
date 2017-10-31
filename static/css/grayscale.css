@@ -92,6 +92,10 @@ a {
         background-color: rgba(255, 255, 255, 0.3); }
         #mainNav .nav-link.active:hover {
           color: white; } }
+.img-centered{
+  width: 100%;
+  margin: 0 auto;
+}
 
 .masthead {
   display: table;

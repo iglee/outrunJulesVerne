@@ -10,7 +10,7 @@ def list_locations(list_df):
 
 def plot_map(df):
     list_lon, list_lat = list_locations(df)
-    fig = plt.figure(figsize=(18,8))
+    fig = plt.figure(figsize=(11,5))
     map_ = Basemap(projection='robin',resolution='c',lat_0=0,lon_0=0)
     map_.bluemarble()
     # Add some more info to the map

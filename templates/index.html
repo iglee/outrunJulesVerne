@@ -131,13 +131,15 @@
               integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
               crossorigin="anonymous"></script>
 
-            <div id="results_map">
-              <img id="map_final"></img>
-            </div>
 
+            <div id="results_map">
+              
+            </div>
+          <!--
             <div id="results_table">
 
             </div>
+          -->
 
             <script>
 
@@ -170,7 +172,7 @@
                 , success:function(data){
                   //$("#map_final").attr('src',data)
                   //$("#results_table").html(data.tour_results)
-                  $("#results_table").html(data)
+                  $("#results_map").html(data)
                 }})
                 //$.post({url: "/output",})
             }

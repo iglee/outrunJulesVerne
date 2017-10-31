@@ -21,6 +21,44 @@ def take_user_input(world, input_ls):
                                                        lda_scores(x,lst_topics= input_ls))
     return world
 
+def initialize_tour(world, user_input):
+    sample_asia, sample_africa, sample_europe, sample_na, sample_sa, sample_oceania = sample_df(world, user_input)
+    tour = pd.DataFrame()
+    tour_asia = sample_asia.sample(n=2)
+    sample_asia = sample_asia.drop(tour_asia.index)
+    tour_africa = sample_africa.sample(n=2)
+    sample_africa = sample_africa.drop(tour_africa.index)
+    tour_europe = sample_europe.sample(n=3)
+    sample_europe = sample_europe.drop(tour_europe.index)
+    tour_na = sample_na.sample(n=1)
+    sample_na = sample_na.drop(tour_na.index)
+    tour_sa = sample_sa.sample(n=1)
+    sample_sa = sample_sa.drop(tour_sa.index)
+    tour_oceania = sample_oceania.sample(n=1)
+    sample_oceania = sample_oceania.drop(tour_oceania.index)
+    tour = tour.append(tour_asia).append(tour_africa).append(tour_europe)\
+               .append(tour_na).append(tour_sa).append(tour_oceania)
+    return tour.sort_values('longitude'), sample_asia, sample_africa, sample_europe, sample_na, sample_sa, sample_oceania
+
+
+def new_tour(tour, sample_asia, sample_africa, sample_europe, sample_na, sample_sa, sample_oceania):
+    #sample from tour
+    s = tour.sample(n=1)
+    #new sample from the same continent as s
+    x= 'sample_'+ s.continent.values[0]
+    s_x = eval(x).sample(n=1)
+    #replace s with s_x to make new tour
+    newtour = tour.loc[:s.index.values[0]][:-1].append(s_x)\
+                    .append(tour.loc[s.index.values[0]:][1:])
+    #put s back in its continent
+    vars()[x] = eval(x).drop(s_x.index).append(s)
+    newtour = newtour.sort_values('longitude')
+    return newtour, sample_asia, sample_africa, sample_europe, sample_na, sample_sa, sample_oceania
+
+
+
+
+
 def sample_df(world, user_input):
     world = take_user_input(world, user_input)
     oceania = world[world.continent == "oceania"]

@@ -130,8 +130,19 @@
               src="https://code.jquery.com/jquery-3.2.1.js"
               integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
               crossorigin="anonymous"></script>
+
+            <div id="results_map">
+              <img id="map_final"></img>
+            </div>
+
+            <div id="results_table">
+
+            </div>
+
             <script>
+
             function myFunction() {
+                $("#results_map").html("hold on!")
                 var x = [];
                 x.push(document.getElementById("0").checked);
                 x.push(document.getElementById("1").checked);
@@ -156,7 +167,11 @@
                 //alert(x);
                 $.post({url: "/input", data:JSON.stringify({topics:x})
                 , contentType: "application/json"
-                , success:function(data){alert('yay!'+data)}})
+                , success:function(data){
+                  //$("#map_final").attr('src',data)
+                  //$("#results_table").html(data.tour_results)
+                  $("#results_table").html(data)
+                }})
                 //$.post({url: "/output",})
             }
             </script>

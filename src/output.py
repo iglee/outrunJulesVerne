@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sys
 import StringIO
-data_dir ='/Users/isabellelee/Desktop/data_science/capstone/data'
+data_dir ='/home/ubuntu/outrunJulesVerne/data'
 
 from recommend import sample_df, make_tour
 from plot_rec import plot_map

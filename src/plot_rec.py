@@ -1,7 +1,11 @@
 import pandas as pd
 import numpy as np
+import matplotlib
+matplotlib.pyplot.switch_backend('agg')
+
 from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
+
 
 def list_locations(list_df):
     lon = list(list_df.longitude)

@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 import sys
 
-sys.path.insert(0, '/Users/isabellelee/Desktop/data_science/capstone/src')
-data_dir ='/Users/isabellelee/Desktop/data_science/capstone/data'
+sys.path.insert(0, '/home/ubuntu/outrunJulesVerne/src')
+data_dir ='/home/ubuntu/outrunJulesVerne/src'
 from output import output
 
 

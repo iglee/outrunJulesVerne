@@ -18,13 +18,13 @@ First and foremost, it's fun! Travel recommendations are somewhat of a dated art
 
 ## How can I recommend a path around globe for you?
 - Natural Language Processing to extract features like sentiment, local attractions, characteristics, etc.
-- Monte Carlo Metropolis algorithm to find paths
+- Monte Carlo Metropolis algorithm to add some randomness.
 
 ## How well did I do?
 - Show friends and others, and ask them to evaluate.
 
 ## Show & tell
-- I plan to deploy this on a website :)
+- The project is deployed on as a webapp: http://outrunjulesverne.com/
 
 ## Useful Information
  - https://www.goodreads.com/book/show/54479.Around_the_World_in_Eighty_Days

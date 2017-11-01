@@ -7,7 +7,7 @@ import StringIO
 data_dir ='/home/ubuntu/outrunJulesVerne/data'
 
 from recommend import sample_df, make_tour
-from plot_rec import plot_map
+from plot_rec import plot_map, format_table
 
 def output(user_input, unique_n):
     world = pd.read_pickle(data_dir+"/jules_world.pkl")

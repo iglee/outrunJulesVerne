@@ -1,4 +1,5 @@
 import pandas as pd
+pd.set_option('display.max_colwidth', -1)
 import numpy as np
 import matplotlib.pyplot as plt
 import sys
@@ -13,8 +14,7 @@ def output(user_input, unique_n):
     tour = make_tour(world,user_input)
     map_ = plot_map(tour)
     plt.savefig("static/img/map{}.png".format(unique_n), bbox_inches = "tight")
-    tour = tour[['continent','country','attraction']]
-
+    tour = format_table(tour)
 
     tour_io = StringIO.StringIO()
     map_io = StringIO.StringIO()

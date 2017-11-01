@@ -24,3 +24,17 @@ def plot_map(df):
     map_.plot(x,y, 'ro', markersize=8)
     map_.plot(x,y,linewidth=2,color='r')
     return map_
+
+def replace_(x):
+    return x.replace('_',' ')
+
+def format_table(tour):
+    tour.loc[tour.continent == "na", "continent"] = "North America"
+    tour.loc[tour.continent == "sa", "continent"] = "South America"
+    tour.loc[tour.continent == "asia", "continent"] = "Asia"
+    tour.loc[tour.continent == "oceania", "continent"] = "Oceania"
+    tour.loc[tour.continent == "africa", "continent"] = "Africa"
+    tour.loc[tour.continent == "europe", "continent"] = "Europe"
+    tour.country = tour.country.apply(replace_)
+    tour = tour.rename(columns={'continent': 'Continent', 'attraction': 'Attraction', 'country':'Country'})
+    return tour[['Continent', 'Country', 'Attraction']]

@@ -8,3 +8,4 @@ metastore_db
 *.swp
 *.log
 *.png
+src/*.pyc

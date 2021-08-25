@@ -19,7 +19,7 @@ First and foremost, it's fun! Travel recommendations are somewhat of a dated art
 - GIS data: publicly available
 
 ## How can I recommend a path around globe for you?
-- Natural Language Processing to extract features like sentiment, local attractions, characteristics, etc.
+- Natural Language Processing to extract features like sentiment, local attractions, characteristics, etc. Namely, I used spark's LDA.
 - Monte Carlo Metropolis algorithm to add some randomness.
 
 For detailed implementation, take a look at `README.md` in `src` folder.

@@ -38,7 +38,7 @@ And one example of an output path around the world is:
 And along the way, you'll see these beauties of the world:
 ![beauties around the world](img/placesToSee.png)
 
-This app may come back in the near future :]. I really enjoyed this project, and hope you thought so too. Welp, at least maybe inspire a grand trip.
+This app may come back in the near future :]. I really enjoyed this project, and hope you did too. Welp, at least maybe inspire a grand trip.
 
 ## Useful Information
  - https://www.goodreads.com/book/show/54479.Around_the_World_in_Eighty_Days
